@@ -8,17 +8,170 @@
     "customTables": "Tische nach Maß",
     "forBusinesses": "Für Firmen",
     "process": "Ablauf",
-    "inquiry": "Anfrage"
+    "inquiry": "Anfrage",
+    "menu": "Menü",
+    "close": "Schließen"
   },
   "hero": {
+    "eyebrow": "Massivholz · Berlin & Deutschland",
     "headline": "Holzarbeiten nach Maß aus unserer Werkstatt.",
     "subheadline": "Massivholztische aus echtem Holz: Couchtische, Esstische, Bistrotische und Tische für Cafés, Büros und Restaurants. Gefertigt nach Wunsch und geliefert nach Berlin und deutschlandweit.",
     "cta1": "Tisch anfragen",
-    "cta2": "Aktuelle Stücke ansehen"
+    "cta2": "Aktuelle Stücke ansehen",
+    "trust1": "Massivholz",
+    "trust2": "Nach Maß gefertigt",
+    "trust3": "Lieferung deutschlandweit"
+  },
+  "featured": {
+    "eyebrow": "Aktuell in der Werkstatt",
+    "title": "Ausgewählte Stücke",
+    "subtitle": "Eine Auswahl unserer aktuellen Tische — verfügbar, in Fertigung oder bereits verkauft als Inspiration.",
+    "viewAll": "Alle Stücke ansehen"
+  },
+  "categories": {
+    "eyebrow": "Kategorien",
+    "title": "Was wir fertigen",
+    "subtitle": "Sieben Tischtypen. Jeder einzelne nach Ihren Maßen, Wünschen und Räumen gefertigt.",
+    "coffee": {
+      "title": "Couchtische",
+      "desc": "Kompakte Massivholztische für Wohnzimmer, Apartments und Loungebereiche. Auf Wunsch mit gerader Kante, natürlicher Baumkante oder dezentem Harzdetail."
+    },
+    "dining": {
+      "title": "Esstische",
+      "desc": "Esstische aus massivem Holz, gefertigt nach Maß für Wohnung, Haus oder Besprechungsraum. Größe, Kante, Gestell und Oberfläche werden abgestimmt."
+    },
+    "bistro": {
+      "title": "Bistro- & Küchentische",
+      "desc": "Runde und kompakte Tische für Küchen, kleine Essbereiche, Cafés und Terrassen. Ideal, wenn wenig Platz trotzdem hochwertig wirken soll."
+    },
+    "desk": {
+      "title": "Schreibtische",
+      "desc": "Schreibtische in Massivholz für Homeoffice, Studio oder Büro. Stabil, ergonomisch, langlebig."
+    },
+    "business": {
+      "title": "Café-, Büro- & Restauranttische",
+      "desc": "Tische für gewerbliche Räume: passende Serien, robuste Oberflächen und klare Abstimmung vor der Fertigung."
+    }
+  },
+  "process": {
+    "eyebrow": "So arbeiten wir",
+    "title": "Vom ersten Gespräch zum fertigen Tisch",
+    "subtitle": "Vier klare Schritte. Keine Überraschungen.",
+    "time": "Meist 2–4 Wochen, abhängig von Größe, Holz und Ausführung.",
+    "step1": {
+      "title": "Anfrage senden",
+      "desc": "Maße, Wunschholz, Referenzfotos. Per Formular oder WhatsApp."
+    },
+    "step2": {
+      "title": "Empfehlung & Angebot",
+      "desc": "Wir schlagen Proportionen, Holz und Gestell vor und senden ein Festpreisangebot."
+    },
+    "step3": {
+      "title": "Fertigung in der Werkstatt",
+      "desc": "Ihr Tisch wird in unserer Werkstatt gebaut — von Hand, mit Sorgfalt."
+    },
+    "step4": {
+      "title": "Lieferung oder Abholung",
+      "desc": "Wir liefern nach Berlin und deutschlandweit oder stimmen Abholung ab."
+    }
+  },
+  "currentPreview": {
+    "eyebrow": "Werkstatt-Status",
+    "title": "Was gerade entsteht",
+    "available": "Sofort verfügbar",
+    "production": "In Fertigung",
+    "soldInspiration": "Verkauft / Inspiration",
+    "viewAll": "Alle Stücke ansehen"
+  },
+  "b2b": {
+    "eyebrow": "Für Firmen",
+    "title": "Tische für Cafés, Büros und Restaurants.",
+    "subtitle": "Passende Serien, robuste matte Oberflächen, planbare Fertigung. Wir arbeiten mit Gastronomie, Innenarchitekten und Unternehmen in ganz Deutschland.",
+    "cta": "B2B-Anfrage senden",
+    "useCases": ["Cafés & Bistros", "Restaurants & Bars", "Büros & Coworking", "Boutique-Hotels", "Innenarchitektur"]
+  },
+  "faq": {
+    "eyebrow": "Fragen & Antworten",
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Wie lange dauert die Fertigung?",
+        "a": "Meist 2–4 Wochen, abhängig von Größe, Holz, Gestell und aktueller Auslastung."
+      },
+      {
+        "q": "Liefert ihr nach Berlin?",
+        "a": "Ja. Berlin ist der wichtigste Lieferbereich. Lieferung in andere Städte in Deutschland kann je nach Stück abgestimmt werden."
+      },
+      {
+        "q": "Sind Sondermaße möglich?",
+        "a": "Ja. Die meisten Tische werden nach Maß gefertigt. Wenn Sie uns Raum, Wunschgröße und Referenzbilder schicken, schlagen wir passende Proportionen vor."
+      },
+      {
+        "q": "Muss der Tisch Epoxidharz haben?",
+        "a": "Nein. Harzdetails sind optional. Viele Tische können auch ganz ohne Harz gefertigt werden."
+      },
+      {
+        "q": "Kann ich ein verkauftes Stück nachbauen lassen?",
+        "a": "Ja, verkaufte Stücke dienen als Inspiration. Holzmaserung und Details sind nie exakt identisch, aber ein ähnlicher Tisch ist möglich."
+      },
+      {
+        "q": "Kann ich mehrere Tische für Café, Büro oder Restaurant bestellen?",
+        "a": "Ja. Für Firmen können passende Serien oder mehrere Größen abgestimmt werden."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Bereit, Ihren Tisch zu planen?",
+    "subtitle": "Schicken Sie uns Maße, Raum und Referenzen. Wir antworten meist innerhalb eines Werktags.",
+    "primary": "Anfrage starten",
+    "whatsapp": "Per WhatsApp schreiben"
   },
   "footer": {
+    "tagline": "Massivholztische nach Maß. Aus unserer Werkstatt, geliefert nach Berlin und deutschlandweit.",
+    "navTitle": "Navigation",
+    "legalTitle": "Rechtliches",
+    "contactTitle": "Kontakt",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "status": {
+    "available": "Sofort verfügbar",
+    "in_production": "In Fertigung",
+    "reserved": "Reserviert",
+    "sold": "Verkauft"
+  },
+  "cta": {
+    "available": "Anfragen / Reservieren",
+    "in_production": "Vor Fertigstellung anfragen",
+    "reserved": "Ähnlichen Tisch anfragen",
+    "sold": "Ähnlichen Tisch anfragen",
+    "onRequest": "Auf Anfrage",
+    "from": "ab"
+  },
+  "form": {
+    "title": "Anfrage",
+    "subtitle": "Erzählen Sie uns von Ihrem Wunschtisch.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon / WhatsApp",
+    "city": "Lieferstadt",
+    "productType": "Tischtyp",
+    "dimensions": "Wunschmaße",
+    "edge": "Wunschkante",
+    "edgeStraight": "Gerade Kante",
+    "edgeLive": "Baumkante",
+    "edgeUnsure": "Noch unklar",
+    "resin": "Harzdetail",
+    "resinNone": "Kein Harz",
+    "resinBlack": "Schwarz",
+    "resinUnsure": "Noch unklar",
+    "reference": "Referenzfoto / Inspiration (Link)",
+    "budget": "Budget",
+    "timing": "Wunschzeitpunkt",
+    "message": "Nachricht",
+    "submit": "Anfrage senden",
+    "whatsapp": "Lieber per WhatsApp? Schreiben Sie uns direkt mit Maßen und Referenzfoto."
   }
 }

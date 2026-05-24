@@ -8,17 +8,170 @@
     "customTables": "Custom Tables",
     "forBusinesses": "For Businesses",
     "process": "Process",
-    "inquiry": "Inquiry"
+    "inquiry": "Inquiry",
+    "menu": "Menu",
+    "close": "Close"
   },
   "hero": {
+    "eyebrow": "Solid wood · Berlin & Germany",
     "headline": "Custom woodwork from our workshop.",
     "subheadline": "Solid wood tables made to order: coffee tables, dining tables, bistro tables and tables for cafés, offices and restaurants. Built to your requirements and delivered to Berlin and across Germany.",
     "cta1": "Request a table",
-    "cta2": "View current pieces"
+    "cta2": "View current pieces",
+    "trust1": "Solid wood",
+    "trust2": "Made to order",
+    "trust3": "Delivered across Germany"
+  },
+  "featured": {
+    "eyebrow": "Currently in the workshop",
+    "title": "Selected pieces",
+    "subtitle": "A selection of our current tables — available, in production, or already sold as inspiration.",
+    "viewAll": "View all pieces"
+  },
+  "categories": {
+    "eyebrow": "Categories",
+    "title": "What we build",
+    "subtitle": "Seven table types. Every single one built to your dimensions, wishes, and space.",
+    "coffee": {
+      "title": "Coffee tables",
+      "desc": "Compact solid wood tables for living rooms, apartments and lounge areas. Available with straight edge, live edge or subtle resin detail."
+    },
+    "dining": {
+      "title": "Dining tables",
+      "desc": "Made-to-order solid wood dining tables for homes, apartments and meeting rooms. Size, edge, base and finish are agreed before production."
+    },
+    "bistro": {
+      "title": "Bistro & kitchen tables",
+      "desc": "Round and compact tables for kitchens, small dining areas, cafés and terraces. Built for spaces where every centimeter matters."
+    },
+    "desk": {
+      "title": "Desks",
+      "desc": "Solid wood desks for home offices, studios or workspaces. Sturdy, ergonomic, built to last."
+    },
+    "business": {
+      "title": "Cafe, office & restaurant tables",
+      "desc": "Tables for commercial spaces: matching batches, durable matte finishes and a clear process before production starts."
+    }
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "From first conversation to finished table",
+    "subtitle": "Four clear steps. No surprises.",
+    "time": "Usually 2–4 weeks, depending on size, wood and finish.",
+    "step1": {
+      "title": "Send your inquiry",
+      "desc": "Dimensions, preferred wood, reference photos. By form or WhatsApp."
+    },
+    "step2": {
+      "title": "Recommendation & quote",
+      "desc": "We suggest proportions, wood and base, then send a fixed-price quote."
+    },
+    "step3": {
+      "title": "Built in the workshop",
+      "desc": "Your table is built in our workshop — by hand, with care."
+    },
+    "step4": {
+      "title": "Delivery or pickup",
+      "desc": "We deliver to Berlin and across Germany, or arrange pickup."
+    }
+  },
+  "currentPreview": {
+    "eyebrow": "Workshop status",
+    "title": "What's being built",
+    "available": "Available now",
+    "production": "In production",
+    "soldInspiration": "Sold / Inspiration",
+    "viewAll": "View all pieces"
+  },
+  "b2b": {
+    "eyebrow": "For businesses",
+    "title": "Tables for cafés, offices and restaurants.",
+    "subtitle": "Matching batches, durable matte surfaces, predictable production. We work with hospitality, interior designers and companies across Germany.",
+    "cta": "Send B2B inquiry",
+    "useCases": ["Cafés & bistros", "Restaurants & bars", "Offices & coworking", "Boutique hotels", "Interior design"]
+  },
+  "faq": {
+    "eyebrow": "Questions & answers",
+    "title": "Frequently asked",
+    "items": [
+      {
+        "q": "How long does production take?",
+        "a": "Usually 2–4 weeks, depending on size, wood, base and current workload."
+      },
+      {
+        "q": "Do you deliver to Berlin?",
+        "a": "Yes. Berlin is our primary delivery area. Delivery to other German cities can be arranged depending on the piece."
+      },
+      {
+        "q": "Can I get custom dimensions?",
+        "a": "Yes. Most tables are made to measure. Send us your space, preferred size and reference images — we'll suggest fitting proportions."
+      },
+      {
+        "q": "Does the table need to have epoxy resin?",
+        "a": "No. Resin details are optional. Many tables can be made without any resin at all."
+      },
+      {
+        "q": "Can I order a similar table to a sold one?",
+        "a": "Yes — sold pieces work as inspiration. The wood grain and details will never be identical, but a similar table is possible."
+      },
+      {
+        "q": "Can I order multiple tables for a café, office or restaurant?",
+        "a": "Yes. We can plan matching batches or multiple sizes for businesses."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to plan your table?",
+    "subtitle": "Send us dimensions, your space and references. We usually reply within one business day.",
+    "primary": "Start an inquiry",
+    "whatsapp": "Write us on WhatsApp"
   },
   "footer": {
+    "tagline": "Custom solid wood tables. From our workshop, delivered to Berlin and across Germany.",
+    "navTitle": "Navigation",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
     "imprint": "Imprint",
     "privacy": "Privacy",
-    "contact": "Contact"
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "status": {
+    "available": "Available now",
+    "in_production": "In production",
+    "reserved": "Reserved",
+    "sold": "Sold"
+  },
+  "cta": {
+    "available": "Inquire / Reserve",
+    "in_production": "Inquire before completion",
+    "reserved": "Request a similar table",
+    "sold": "Request a similar table",
+    "onRequest": "On request",
+    "from": "from"
+  },
+  "form": {
+    "title": "Inquiry",
+    "subtitle": "Tell us about your ideal table.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "city": "Delivery city",
+    "productType": "Table type",
+    "dimensions": "Desired dimensions",
+    "edge": "Preferred edge",
+    "edgeStraight": "Straight edge",
+    "edgeLive": "Live edge",
+    "edgeUnsure": "Not sure yet",
+    "resin": "Resin detail",
+    "resinNone": "No resin",
+    "resinBlack": "Black",
+    "resinUnsure": "Not sure yet",
+    "reference": "Reference photo / inspiration (link)",
+    "budget": "Budget",
+    "timing": "Desired timing",
+    "message": "Message",
+    "submit": "Send inquiry",
+    "whatsapp": "Prefer WhatsApp? Write us directly with dimensions and reference photo."
   }
 }

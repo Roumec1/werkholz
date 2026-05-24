@@ -8,17 +8,170 @@
     "customTables": "Stoly na míru",
     "forBusinesses": "Pro firmy",
     "process": "Postup",
-    "inquiry": "Poptávka"
+    "inquiry": "Poptávka",
+    "menu": "Menu",
+    "close": "Zavřít"
   },
   "hero": {
+    "eyebrow": "Masivní dřevo · Berlín & Německo",
     "headline": "Zakázková výroba ze dřeva z naší dílny.",
     "subheadline": "Masivní stoly na míru: konferenční, jídelní, bistro stoly a stoly pro kavárny, kanceláře a restaurace. Vyrobeno podle zadání a doručeno do Berlína i po celém Německu.",
     "cta1": "Poptat stůl",
-    "cta2": "Zobrazit aktuální kusy"
+    "cta2": "Zobrazit aktuální kusy",
+    "trust1": "Masivní dřevo",
+    "trust2": "Vyrobeno na míru",
+    "trust3": "Doručení po celém Německu"
+  },
+  "featured": {
+    "eyebrow": "Aktuálně v dílně",
+    "title": "Vybrané kusy",
+    "subtitle": "Výběr našich aktuálních stolů — dostupné, ve výrobě nebo již prodané jako inspirace.",
+    "viewAll": "Zobrazit všechny kusy"
+  },
+  "categories": {
+    "eyebrow": "Kategorie",
+    "title": "Co vyrábíme",
+    "subtitle": "Sedm typů stolů. Každý vyrobený podle vašich rozměrů, přání a prostoru.",
+    "coffee": {
+      "title": "Konferenční stolky",
+      "desc": "Kompaktní stoly z masivního dřeva pro obývací pokoje, byty a odpočinkové zóny. Na přání s rovnou hranou, přírodní hranou nebo decentním pryskyřičným detailem."
+    },
+    "dining": {
+      "title": "Jídelní stoly",
+      "desc": "Jídelní stoly z masivního dřeva vyrobené na míru pro byty, domy nebo zasedací místnosti. Velikost, hrana, podnož a povrch se domlouvají před výrobou."
+    },
+    "bistro": {
+      "title": "Bistro & kuchyňské stoly",
+      "desc": "Kulaté a kompaktní stoly pro kuchyně, malé jídelní kouty, kavárny a terasy. Ideální tam, kde má i málo místa vypadat hodnotně."
+    },
+    "desk": {
+      "title": "Psací stoly",
+      "desc": "Psací stoly z masivního dřeva pro domácí kanceláře, studia a pracovny. Stabilní, ergonomické, trvanlivé."
+    },
+    "business": {
+      "title": "Stoly pro kavárny, kanceláře a restaurace",
+      "desc": "Stoly pro komerční prostory: sjednocené série, odolné matné povrchy a jasný proces před zahájením výroby."
+    }
+  },
+  "process": {
+    "eyebrow": "Jak pracujeme",
+    "title": "Od prvního rozhovoru k hotovému stolu",
+    "subtitle": "Čtyři jasné kroky. Žádná překvapení.",
+    "time": "Obvykle 2–4 týdny, podle velikosti, dřeva a provedení.",
+    "step1": {
+      "title": "Poslat poptávku",
+      "desc": "Rozměry, preferované dřevo, referenční fotky. Přes formulář nebo WhatsApp."
+    },
+    "step2": {
+      "title": "Doporučení & nabídka",
+      "desc": "Navrhneme proporce, dřevo a podnož a pošleme cenovou nabídku."
+    },
+    "step3": {
+      "title": "Výroba v dílně",
+      "desc": "Váš stůl se vyrobí v naší dílně — ručně, s péčí."
+    },
+    "step4": {
+      "title": "Doručení nebo vyzvednutí",
+      "desc": "Doručujeme do Berlína i po celém Německu, nebo si stůl můžete vyzvednout."
+    }
+  },
+  "currentPreview": {
+    "eyebrow": "Stav dílny",
+    "title": "Co právě vzniká",
+    "available": "Ihned k dispozici",
+    "production": "Ve výrobě",
+    "soldInspiration": "Prodáno / Inspirace",
+    "viewAll": "Zobrazit všechny kusy"
+  },
+  "b2b": {
+    "eyebrow": "Pro firmy",
+    "title": "Stoly pro kavárny, kanceláře a restaurace.",
+    "subtitle": "Sjednocené série, odolné matné povrchy, plánovatelná výroba. Spolupracujeme s gastronomií, interiérovými architekty a firmami v celém Německu.",
+    "cta": "Poslat B2B poptávku",
+    "useCases": ["Kavárny & bistra", "Restaurace & bary", "Kanceláře & coworking", "Butikové hotely", "Interiérový design"]
+  },
+  "faq": {
+    "eyebrow": "Otázky & odpovědi",
+    "title": "Časté otázky",
+    "items": [
+      {
+        "q": "Jak dlouho trvá výroba?",
+        "a": "Obvykle 2–4 týdny, podle velikosti, dřeva, podnože a aktuálního vytížení."
+      },
+      {
+        "q": "Doručujete do Berlína?",
+        "a": "Ano. Berlín je naše hlavní oblast doručení. Doručení do jiných německých měst lze domluvit podle konkrétního kusu."
+      },
+      {
+        "q": "Můžu si nechat vyrobit netypické rozměry?",
+        "a": "Ano. Většina stolů se vyrábí na míru. Pošlete nám prostor, vysněnou velikost a referenční fotky — navrhneme vhodné proporce."
+      },
+      {
+        "q": "Musí mít stůl epoxidovou pryskyřici?",
+        "a": "Ne. Pryskyřičné detaily jsou volitelné. Mnoho stolů lze vyrobit zcela bez pryskyřice."
+      },
+      {
+        "q": "Můžu si nechat vyrobit podobný k prodanému kusu?",
+        "a": "Ano — prodané kusy slouží jako inspirace. Kresba dřeva a detaily nebudou nikdy stejné, ale podobný stůl je možný."
+      },
+      {
+        "q": "Můžu objednat více stolů pro kavárnu, kancelář nebo restauraci?",
+        "a": "Ano. Pro firmy plánujeme sjednocené série nebo více velikostí."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Připraveni naplánovat svůj stůl?",
+    "subtitle": "Pošlete nám rozměry, prostor a reference. Obvykle odpovíme do jednoho pracovního dne.",
+    "primary": "Začít poptávku",
+    "whatsapp": "Napsat na WhatsApp"
   },
   "footer": {
+    "tagline": "Masivní stoly na míru. Z naší dílny, doručené do Berlína i po celém Německu.",
+    "navTitle": "Navigace",
+    "legalTitle": "Právní",
+    "contactTitle": "Kontakt",
     "imprint": "Výtisk",
-    "privacy": "Ochrana osobních údajů",
-    "contact": "Kontakt"
+    "privacy": "Ochrana dat",
+    "contact": "Kontakt",
+    "rights": "Všechna práva vyhrazena."
+  },
+  "status": {
+    "available": "Ihned k dispozici",
+    "in_production": "Ve výrobě",
+    "reserved": "Rezervováno",
+    "sold": "Prodáno"
+  },
+  "cta": {
+    "available": "Poptat / Rezervovat",
+    "in_production": "Poptat před dokončením",
+    "reserved": "Poptat podobný stůl",
+    "sold": "Poptat podobný stůl",
+    "onRequest": "Na poptávku",
+    "from": "od"
+  },
+  "form": {
+    "title": "Poptávka",
+    "subtitle": "Řekněte nám o svém vysněném stole.",
+    "name": "Jméno",
+    "email": "E-mail",
+    "phone": "Telefon / WhatsApp",
+    "city": "Město doručení",
+    "productType": "Typ stolu",
+    "dimensions": "Požadované rozměry",
+    "edge": "Preferovaná hrana",
+    "edgeStraight": "Rovná hrana",
+    "edgeLive": "Přírodní hrana",
+    "edgeUnsure": "Ještě nevím",
+    "resin": "Pryskyřičný detail",
+    "resinNone": "Bez pryskyřice",
+    "resinBlack": "Černá",
+    "resinUnsure": "Ještě nevím",
+    "reference": "Referenční foto / inspirace (odkaz)",
+    "budget": "Rozpočet",
+    "timing": "Požadovaný termín",
+    "message": "Zpráva",
+    "submit": "Odeslat poptávku",
+    "whatsapp": "Raději WhatsApp? Napište nám přímo s rozměry a referenční fotkou."
   }
 }
