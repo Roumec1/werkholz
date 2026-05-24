@@ -1,5 +1,6 @@
 import type { Locale } from "@/lib/routes";
 import type { Dictionary } from "@/lib/i18n";
+import Reveal from "../Reveal";
 
 interface Props {
   locale: Locale;
@@ -13,7 +14,7 @@ export default function Process({ dict }: Props) {
     <section className="py-24 sm:py-32">
       <div className="container-w">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
-          <div className="lg:col-span-4">
+          <Reveal className="lg:col-span-4">
             <p className="eyebrow">{dict.process.eyebrow}</p>
             <h2 className="mt-4 section-title">{dict.process.title}</h2>
             <p className="mt-5 section-subtitle">{dict.process.subtitle}</p>
@@ -26,13 +27,15 @@ export default function Process({ dict }: Props) {
                 {dict.process.time}
               </p>
             </div>
-          </div>
+          </Reveal>
 
           <div className="lg:col-span-8">
             <ol className="space-y-px">
               {steps.map((step, i) => (
-                <li
+                <Reveal
                   key={i}
+                  delay={i * 70}
+                  as="li"
                   className="group relative grid grid-cols-[auto_1fr] gap-6 sm:gap-10 py-8 border-t border-stone-200 first:border-t-0"
                 >
                   <div className="font-display text-5xl sm:text-6xl text-stone-300 leading-none w-16 sm:w-20 tabular-nums group-hover:text-oak-400 transition-colors duration-500">
@@ -46,7 +49,7 @@ export default function Process({ dict }: Props) {
                       {step.desc}
                     </p>
                   </div>
-                </li>
+                </Reveal>
               ))}
             </ol>
           </div>

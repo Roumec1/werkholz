@@ -1,9 +1,9 @@
 import type { Locale } from "@/lib/routes";
 import type { Dictionary } from "@/lib/i18n";
-import { tablesByStatus } from "@/lib/tables";
-import TableCard from "../TableCard";
+import { SAMPLE_TABLES, tablesByStatus } from "@/lib/tables";
 import PageHeader from "./PageHeader";
 import FinalCTA from "../sections/FinalCTA";
+import CurrentPiecesGrid from "../CurrentPiecesGrid";
 
 interface Props {
   locale: Locale;
@@ -11,47 +11,67 @@ interface Props {
 }
 
 export default function CurrentPiecesPage({ locale, dict }: Props) {
-  const available = tablesByStatus("available");
-  const inProduction = tablesByStatus("in_production");
-  const reserved = tablesByStatus("reserved");
-  const sold = tablesByStatus("sold");
-
-  const groups = [
-    { label: dict.currentPreview.available, items: available, indicator: true, color: "text-status-available" },
-    { label: dict.currentPreview.production, items: inProduction, indicator: false, color: "text-status-production" },
-    { label: dict.status.reserved, items: reserved, indicator: false, color: "text-status-reserved" },
-    { label: dict.currentPreview.soldInspiration, items: sold, indicator: false, color: "text-stone-500" },
-  ].filter((g) => g.items.length > 0);
+  const stats = {
+    available: tablesByStatus("available").length,
+    inProduction: tablesByStatus("in_production").length,
+    reserved: tablesByStatus("reserved").length,
+    sold: tablesByStatus("sold").length,
+  };
 
   return (
     <>
       <PageHeader
         eyebrow={dict.featured.eyebrow}
-        title={locale === "de" ? "Alle aktuellen Stücke" : locale === "en" ? "All current pieces" : "Všechny aktuální kusy"}
+        title={
+          locale === "de"
+            ? "Alle aktuellen Stücke"
+            : locale === "en"
+              ? "All current pieces"
+              : "Všechny aktuální kusy"
+        }
         subtitle={dict.featured.subtitle}
       />
 
-      {groups.map((group, gi) => (
-        <section key={gi} className="py-8 sm:py-12">
-          <div className="container-w">
-            <div className="flex items-center gap-3 mb-10">
-              <div className={`inline-flex items-center gap-2 ${group.color}`}>
-                {group.indicator && <span className="pulse-dot" />}
-                <span className="eyebrow text-current">{group.label}</span>
-              </div>
-              <span className="text-stone-400 text-sm">· {group.items.length}</span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {group.items.map((item) => (
-                <TableCard key={item.id} item={item} locale={locale} dict={dict} />
-              ))}
-            </div>
+      <section className="pb-4">
+        <div className="container-w">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            <Stat label={dict.status.available} value={stats.available} pulse />
+            <Stat label={dict.status.in_production} value={stats.inProduction} />
+            <Stat label={dict.status.reserved} value={stats.reserved} />
+            <Stat label={dict.status.sold} value={stats.sold} muted />
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
+
+      <CurrentPiecesGrid items={SAMPLE_TABLES} locale={locale} dict={dict} />
 
       <FinalCTA locale={locale} dict={dict} />
     </>
+  );
+}
+
+function Stat({
+  label,
+  value,
+  pulse = false,
+  muted = false,
+}: {
+  label: string;
+  value: number;
+  pulse?: boolean;
+  muted?: boolean;
+}) {
+  return (
+    <div
+      className={`p-5 rounded-2xl border ${
+        muted ? "bg-stone-100 border-stone-200" : "bg-cream border-stone-200/60"
+      }`}
+    >
+      <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-stone-500">
+        {pulse && <span className="pulse-dot text-status-available" />}
+        {label}
+      </div>
+      <p className="mt-2 font-display text-3xl text-ink tabular-nums">{value}</p>
+    </div>
   );
 }

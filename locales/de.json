@@ -53,6 +53,41 @@
       "desc": "Tische für gewerbliche Räume: passende Serien, robuste Oberflächen und klare Abstimmung vor der Fertigung."
     }
   },
+  "filters": {
+    "all": "Alle",
+    "filterBy": "Filter",
+    "sortBy": "Sortieren",
+    "sortNewest": "Neueste zuerst",
+    "sortPriceAsc": "Preis: aufsteigend",
+    "sortPriceDesc": "Preis: absteigend",
+    "noResults": "Keine Stücke gefunden. Versuchen Sie einen anderen Filter."
+  },
+  "reviews": {
+    "eyebrow": "Was Kunden sagen",
+    "title": "Geliefert. Eingerichtet. Geliebt.",
+    "items": [
+      { "quote": "Der Tisch ist genau so geworden, wie wir ihn uns vorgestellt haben — und sieht im Raum noch besser aus als auf den Fotos.", "name": "Anna K.", "role": "Esstisch Eiche · Berlin Kreuzberg" },
+      { "quote": "Klare Kommunikation, schnelle Lieferung, perfekte Verarbeitung. Wir haben für unser Café 12 Tische bestellt und sind begeistert.", "name": "Café Felix", "role": "Gastronomie · Berlin Mitte" },
+      { "quote": "Bei der Maßanfertigung wurde wirklich auf jedes Detail eingegangen. Der Tisch passt millimetergenau in unsere Küche.", "name": "Familie Brandt", "role": "Küchentisch Buche · Potsdam" }
+    ]
+  },
+  "workshop": {
+    "eyebrow": "In der Werkstatt",
+    "title": "Hier entstehen Ihre Tische.",
+    "subtitle": "Keine Massenfertigung, keine Filialkette. Jeder Tisch wird in unserer Werkstatt geplant, zugeschnitten, geschliffen und veredelt — von Hand.",
+    "labels": ["Planung", "Zuschnitt", "Verleimung", "Schliff", "Veredelung", "Endkontrolle"]
+  },
+  "materials": {
+    "eyebrow": "Material",
+    "title": "Hölzer, mit denen wir arbeiten",
+    "subtitle": "Wir wählen jedes Holz mit Bedacht — von der Lokalität bis zum Schliff. Hier eine Übersicht der Hölzer, die wir am häufigsten verwenden.",
+    "items": [
+      { "name": "Eiche", "origin": "Europa", "character": "Robust, hell-warm, klassisch. Der Allrounder für Esstische und Konferenztische." },
+      { "name": "Nussbaum", "origin": "Amerika", "character": "Tief schokoladenbraun, lebendige Maserung. Premium-Optik, ideal für Wohn- und Couchtische." },
+      { "name": "Esche", "origin": "Europa", "character": "Hell, klar, betonte Maserung. Modern, leicht, schreibtisch-freundlich." },
+      { "name": "Buche", "origin": "Europa", "character": "Cremig-rosa Ton, ruhige Zeichnung. Sehr stabil, ideal für Küchentische." }
+    ]
+  },
   "process": {
     "eyebrow": "So arbeiten wir",
     "title": "Vom ersten Gespräch zum fertigen Tisch",

@@ -53,6 +53,41 @@
       "desc": "Stoly pro komerční prostory: sjednocené série, odolné matné povrchy a jasný proces před zahájením výroby."
     }
   },
+  "filters": {
+    "all": "Vše",
+    "filterBy": "Filtr",
+    "sortBy": "Řadit",
+    "sortNewest": "Nejnovější",
+    "sortPriceAsc": "Cena: od nejnižší",
+    "sortPriceDesc": "Cena: od nejvyšší",
+    "noResults": "Žádné kusy nenalezeny. Zkuste jiný filtr."
+  },
+  "reviews": {
+    "eyebrow": "Co říkají zákazníci",
+    "title": "Doručeno. Postaveno. Milováno.",
+    "items": [
+      { "quote": "Stůl vypadá přesně tak, jak jsme si představovali — a v prostoru ještě lépe než na fotkách.", "name": "Anna K.", "role": "Jídelní stůl dub · Berlin Kreuzberg" },
+      { "quote": "Jasná komunikace, rychlé doručení, perfektní řemeslo. Pro naši kavárnu jsme objednali 12 stolů a jsme nadšeni.", "name": "Café Felix", "role": "Gastronomie · Berlin Mitte" },
+      { "quote": "Při výrobě na míru se opravdu mysleli na každý detail. Stůl pasuje do naší kuchyně na milimetr.", "name": "Rodina Brandtových", "role": "Kuchyňský stůl buk · Postupim" }
+    ]
+  },
+  "workshop": {
+    "eyebrow": "V dílně",
+    "title": "Tady vzniká váš stůl.",
+    "subtitle": "Žádná masová výroba, žádný franšízový řetězec. Každý stůl je v naší dílně plánován, řezán, broušen a dokončen — ručně.",
+    "labels": ["Plánování", "Řezání", "Lepení", "Broušení", "Povrch", "Kontrola"]
+  },
+  "materials": {
+    "eyebrow": "Materiál",
+    "title": "Dřeva, se kterými pracujeme",
+    "subtitle": "Každý kus dřeva vybíráme s rozmyslem — od původu po broušení. Stručný přehled dřevin, které používáme nejčastěji.",
+    "items": [
+      { "name": "Dub", "origin": "Evropa", "character": "Robustní, teple světlý, klasický. Univerzál pro jídelní a konferenční stoly." },
+      { "name": "Ořech", "origin": "Amerika", "character": "Hluboce čokoládově hnědý, živá kresba. Prémiový vzhled, ideální pro obývací a konferenční stolky." },
+      { "name": "Jasan", "origin": "Evropa", "character": "Světlý, čistý, výrazná kresba. Moderní, vzdušný, ideální pro psací stoly." },
+      { "name": "Buk", "origin": "Evropa", "character": "Krémově růžový tón, klidná kresba. Velmi stabilní, ideální pro kuchyňské stoly." }
+    ]
+  },
   "process": {
     "eyebrow": "Jak pracujeme",
     "title": "Od prvního rozhovoru k hotovému stolu",

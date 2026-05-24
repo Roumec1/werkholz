@@ -53,6 +53,41 @@
       "desc": "Tables for commercial spaces: matching batches, durable matte finishes and a clear process before production starts."
     }
   },
+  "filters": {
+    "all": "All",
+    "filterBy": "Filter",
+    "sortBy": "Sort",
+    "sortNewest": "Newest first",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "noResults": "No pieces found. Try a different filter."
+  },
+  "reviews": {
+    "eyebrow": "What customers say",
+    "title": "Delivered. Installed. Loved.",
+    "items": [
+      { "quote": "The table turned out exactly how we imagined it — and looks even better in the space than in the photos.", "name": "Anna K.", "role": "Oak dining table · Berlin Kreuzberg" },
+      { "quote": "Clear communication, quick delivery, perfect craft. We ordered 12 tables for our café and couldn't be happier.", "name": "Café Felix", "role": "Hospitality · Berlin Mitte" },
+      { "quote": "Every detail of the custom order was considered. The table fits our kitchen to the millimeter.", "name": "Brandt family", "role": "Beech kitchen table · Potsdam" }
+    ]
+  },
+  "workshop": {
+    "eyebrow": "In the workshop",
+    "title": "This is where your table is made.",
+    "subtitle": "No mass production, no franchise chain. Every table is planned, cut, sanded and finished in our workshop — by hand.",
+    "labels": ["Planning", "Cutting", "Gluing", "Sanding", "Finishing", "Final check"]
+  },
+  "materials": {
+    "eyebrow": "Material",
+    "title": "Woods we work with",
+    "subtitle": "We pick every piece of wood with intent — from where it grew to how it's sanded. Here's a quick look at the woods we use most often.",
+    "items": [
+      { "name": "Oak", "origin": "Europe", "character": "Robust, warm-light, classic. The all-rounder for dining and conference tables." },
+      { "name": "Walnut", "origin": "America", "character": "Deep chocolate-brown with lively grain. Premium look, ideal for living and coffee tables." },
+      { "name": "Ash", "origin": "Europe", "character": "Light, clear, pronounced grain. Modern, airy, desk-friendly." },
+      { "name": "Beech", "origin": "Europe", "character": "Creamy-pink tone, calm grain. Very stable, ideal for kitchen tables." }
+    ]
+  },
   "process": {
     "eyebrow": "How we work",
     "title": "From first conversation to finished table",

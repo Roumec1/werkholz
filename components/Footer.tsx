@@ -23,7 +23,7 @@ export default function Footer({ locale, dict }: Props) {
   ];
 
   return (
-    <footer className="bg-ink text-bone mt-32">
+    <footer role="contentinfo" className="bg-ink text-bone mt-32">
       <div className="container-w py-20 sm:py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
           <div className="md:col-span-5">

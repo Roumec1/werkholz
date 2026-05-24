@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { localePath, type Locale } from "@/lib/routes";
 import type { Dictionary } from "@/lib/i18n";
+import Reveal from "../Reveal";
 
 interface Props {
   locale: Locale;
@@ -39,21 +40,25 @@ export default function Categories({ locale, dict }: Props) {
   return (
     <section className="py-24 sm:py-32 bg-cream">
       <div className="container-w">
-        <div className="max-w-2xl mb-16">
+        <Reveal className="max-w-2xl mb-16">
           <p className="eyebrow">{dict.categories.eyebrow}</p>
           <h2 className="mt-4 section-title">{dict.categories.title}</h2>
           <p className="mt-5 section-subtitle">{dict.categories.subtitle}</p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {CARDS.map((card) => {
+          {CARDS.map((card, idx) => {
             const cat = dict.categories[card.key];
             return (
-              <Link
+              <Reveal
                 key={card.key}
+                delay={idx * 60}
+                className={card.big ? "lg:col-span-2 lg:row-span-2" : ""}
+              >
+              <Link
                 href={localePath(locale, "currentPieces")}
-                className={`group relative overflow-hidden rounded-2xl card-hover ${
-                  card.big ? "lg:col-span-2 lg:row-span-2 aspect-square lg:aspect-auto" : "aspect-[4/5]"
+                className={`group relative overflow-hidden rounded-2xl card-hover block ${
+                  card.big ? "aspect-square lg:aspect-auto lg:h-full" : "aspect-[4/5]"
                 }`}
               >
                 <div
@@ -84,6 +89,7 @@ export default function Categories({ locale, dict }: Props) {
                   </div>
                 </div>
               </Link>
+              </Reveal>
             );
           })}
         </div>

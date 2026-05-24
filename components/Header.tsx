@@ -41,6 +41,7 @@ export default function Header({ locale, dict }: Props) {
   return (
     <>
       <header
+        role="banner"
         className={`fixed top-0 inset-x-0 z-40 transition-all duration-300 ${
           scrolled
             ? "bg-bone/85 backdrop-blur-md border-b border-stone-200/60"
@@ -57,7 +58,7 @@ export default function Header({ locale, dict }: Props) {
               WERKHOLZ
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-10">
+            <nav aria-label="Primary" className="hidden lg:flex items-center gap-10">
               {nav.map((item) => (
                 <Link
                   key={item.href}
@@ -118,7 +119,7 @@ export default function Header({ locale, dict }: Props) {
               </button>
             </div>
 
-            <nav className="flex flex-col gap-2 mt-12 flex-1">
+            <nav aria-label="Mobile" className="flex flex-col gap-2 mt-12 flex-1">
               {nav.map((item, i) => (
                 <Link
                   key={item.href}

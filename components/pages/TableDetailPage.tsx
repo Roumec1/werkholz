@@ -4,6 +4,7 @@ import type { Dictionary } from "@/lib/i18n";
 import { type TableItem, SAMPLE_TABLES } from "@/lib/tables";
 import StatusBadge from "../StatusBadge";
 import TableCard from "../TableCard";
+import TableGallery from "../TableGallery";
 
 interface Props {
   item: TableItem;
@@ -41,39 +42,8 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
           </Link>
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
-            {/* Gallery placeholder */}
             <div className="lg:col-span-7">
-              <div
-                className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl shadow-stone-900/10"
-                style={{ background: item.placeholderGradient }}
-              >
-                <svg viewBox="0 0 400 500" className="absolute inset-0 w-full h-full opacity-25">
-                  <g stroke="#1F170E" strokeWidth="0.5" fill="none">
-                    {Array.from({ length: 16 }).map((_, i) => (
-                      <path key={i} d={`M0,${30 + i * 30} Q100,${25 + i * 30} 200,${35 + i * 30} T400,${30 + i * 30}`} />
-                    ))}
-                  </g>
-                </svg>
-              </div>
-
-              {/* Thumbnails */}
-              <div className="mt-4 grid grid-cols-4 gap-3">
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="aspect-square rounded-xl overflow-hidden border border-stone-200"
-                    style={{ background: item.placeholderGradient, filter: `brightness(${0.85 + i * 0.05})` }}
-                  >
-                    <svg viewBox="0 0 100 100" className="w-full h-full opacity-25">
-                      <g stroke="#1F170E" strokeWidth="0.3" fill="none">
-                        {Array.from({ length: 8 }).map((_, j) => (
-                          <path key={j} d={`M0,${10 + j * 12} Q25,${8 + j * 12} 50,${12 + j * 12} T100,${10 + j * 12}`} />
-                        ))}
-                      </g>
-                    </svg>
-                  </div>
-                ))}
-              </div>
+              <TableGallery item={item} />
             </div>
 
             {/* Details */}

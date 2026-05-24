@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import { getDictionary, normalizeLocale } from "@/lib/i18n";
 import { LOCALES } from "@/lib/routes";
+import { organizationSchema, websiteSchema } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -51,8 +53,15 @@ export default async function LocaleLayout({
 
   return (
     <>
+      <JsonLd data={[organizationSchema(), websiteSchema()]} />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-ink focus:text-bone focus:px-4 focus:py-2 focus:rounded"
+      >
+        {loc === "de" ? "Zum Inhalt springen" : loc === "en" ? "Skip to content" : "Přejít na obsah"}
+      </a>
       <Header locale={loc} dict={dict} />
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
       <Footer locale={loc} dict={dict} />
     </>
   );
