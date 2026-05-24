@@ -53,6 +53,30 @@
       "desc": "Tische für gewerbliche Räume: passende Serien, robuste Oberflächen und klare Abstimmung vor der Fertigung."
     }
   },
+  "inspiration": {
+    "eyebrow": "Inspiration",
+    "title": "Stücke, die schon bei Kunden stehen.",
+    "subtitle": "Verkaufte Tische werden zur Inspiration. Wir bauen niemals zwei identische Stücke — aber wir bauen ähnliche.",
+    "cta": "Ähnlichen Tisch anfragen"
+  },
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "gefertigte Tische" },
+      { "value": "12", "label": "Jahre Erfahrung" },
+      { "value": "2–4", "label": "Wochen Fertigung" },
+      { "value": "100%", "label": "Massivholz" }
+    ]
+  },
+  "care": {
+    "eyebrow": "Pflege",
+    "title": "Wie Sie Ihren Tisch ein Leben lang behalten.",
+    "subtitle": "Massivholz arbeitet. Es will gepflegt — nicht versiegelt — werden. Hier ist alles, was Sie wissen müssen.",
+    "items": [
+      { "title": "Täglich", "desc": "Mit weichem, leicht feuchtem Tuch abwischen. Trockenwischen. Keine scharfen Reiniger." },
+      { "title": "Monatlich", "desc": "Eine dünne Schicht Pflegeöl auftragen. Kreisförmig einreiben, einziehen lassen, abwischen." },
+      { "title": "Bei Bedarf", "desc": "Kratzer leicht anschleifen, Öl auftragen. Wir senden gerne ein Pflegeset zur Bestellung." }
+    ]
+  },
   "filters": {
     "all": "Alle",
     "filterBy": "Filter",

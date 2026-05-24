@@ -53,6 +53,30 @@
       "desc": "Tables for commercial spaces: matching batches, durable matte finishes and a clear process before production starts."
     }
   },
+  "inspiration": {
+    "eyebrow": "Inspiration",
+    "title": "Pieces already living with customers.",
+    "subtitle": "Sold tables become inspiration. We never build two identical pieces — but we build similar ones.",
+    "cta": "Request a similar table"
+  },
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "tables built" },
+      { "value": "12", "label": "years of craft" },
+      { "value": "2–4", "label": "weeks production" },
+      { "value": "100%", "label": "solid wood" }
+    ]
+  },
+  "care": {
+    "eyebrow": "Care",
+    "title": "How to keep your table for a lifetime.",
+    "subtitle": "Solid wood lives and moves. It wants to be cared for — not sealed. Here's everything you need to know.",
+    "items": [
+      { "title": "Daily", "desc": "Wipe with a soft, slightly damp cloth. Dry-wipe afterwards. No harsh cleaners." },
+      { "title": "Monthly", "desc": "Apply a thin coat of care oil. Rub in circular motions, let absorb, wipe off." },
+      { "title": "If needed", "desc": "Lightly sand scratches, apply oil. We're happy to send a care kit with your order." }
+    ]
+  },
   "filters": {
     "all": "All",
     "filterBy": "Filter",

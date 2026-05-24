@@ -53,6 +53,30 @@
       "desc": "Stoly pro komerční prostory: sjednocené série, odolné matné povrchy a jasný proces před zahájením výroby."
     }
   },
+  "inspiration": {
+    "eyebrow": "Inspirace",
+    "title": "Kusy, které už žijí u zákazníků.",
+    "subtitle": "Prodané stoly se stávají inspirací. Nikdy nestavíme dva identické kusy — ale stavíme podobné.",
+    "cta": "Poptat podobný stůl"
+  },
+  "stats": {
+    "items": [
+      { "value": "200+", "label": "vyrobených stolů" },
+      { "value": "12", "label": "let zkušeností" },
+      { "value": "2–4", "label": "týdny výroby" },
+      { "value": "100%", "label": "masivní dřevo" }
+    ]
+  },
+  "care": {
+    "eyebrow": "Péče",
+    "title": "Jak si stůl udržet celý život.",
+    "subtitle": "Masivní dřevo žije a pracuje. Chce být ošetřováno — ne zatěsněno. Tady je vše, co potřebujete vědět.",
+    "items": [
+      { "title": "Denně", "desc": "Otřete měkkým, lehce vlhkým hadříkem. Vysušte. Žádné agresivní čističe." },
+      { "title": "Měsíčně", "desc": "Naneste tenkou vrstvu pečujícího oleje. Vetřete krouživým pohybem, nechte vsáknout, otřete." },
+      { "title": "Dle potřeby", "desc": "Lehce přebrouste škrábance, naneste olej. Rádi pošleme s objednávkou pečující sadu." }
+    ]
+  },
   "filters": {
     "all": "Vše",
     "filterBy": "Filtr",
