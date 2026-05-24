@@ -1,0 +1,24 @@
+{
+  "brand": {
+    "name": "WERKHOLZ",
+    "tagline": "Custom woodwork from our workshop."
+  },
+  "nav": {
+    "currentPieces": "Current Pieces",
+    "customTables": "Custom Tables",
+    "forBusinesses": "For Businesses",
+    "process": "Process",
+    "inquiry": "Inquiry"
+  },
+  "hero": {
+    "headline": "Custom woodwork from our workshop.",
+    "subheadline": "Solid wood tables made to order: coffee tables, dining tables, bistro tables and tables for cafés, offices and restaurants. Built to your requirements and delivered to Berlin and across Germany.",
+    "cta1": "Request a table",
+    "cta2": "View current pieces"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  }
+}

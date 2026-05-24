@@ -1,0 +1,24 @@
+{
+  "brand": {
+    "name": "WERKHOLZ",
+    "tagline": "Holzarbeiten nach Maß aus unserer Werkstatt."
+  },
+  "nav": {
+    "currentPieces": "Aktuelle Stücke",
+    "customTables": "Tische nach Maß",
+    "forBusinesses": "Für Firmen",
+    "process": "Ablauf",
+    "inquiry": "Anfrage"
+  },
+  "hero": {
+    "headline": "Holzarbeiten nach Maß aus unserer Werkstatt.",
+    "subheadline": "Massivholztische aus echtem Holz: Couchtische, Esstische, Bistrotische und Tische für Cafés, Büros und Restaurants. Gefertigt nach Wunsch und geliefert nach Berlin und deutschlandweit.",
+    "cta1": "Tisch anfragen",
+    "cta2": "Aktuelle Stücke ansehen"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
+  }
+}

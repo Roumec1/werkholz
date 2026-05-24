@@ -1,0 +1,24 @@
+{
+  "brand": {
+    "name": "WERKHOLZ",
+    "tagline": "Zakázková výroba ze dřeva z naší dílny."
+  },
+  "nav": {
+    "currentPieces": "Aktuální kusy",
+    "customTables": "Stoly na míru",
+    "forBusinesses": "Pro firmy",
+    "process": "Postup",
+    "inquiry": "Poptávka"
+  },
+  "hero": {
+    "headline": "Zakázková výroba ze dřeva z naší dílny.",
+    "subheadline": "Masivní stoly na míru: konferenční, jídelní, bistro stoly a stoly pro kavárny, kanceláře a restaurace. Vyrobeno podle zadání a doručeno do Berlína i po celém Německu.",
+    "cta1": "Poptat stůl",
+    "cta2": "Zobrazit aktuální kusy"
+  },
+  "footer": {
+    "imprint": "Výtisk",
+    "privacy": "Ochrana osobních údajů",
+    "contact": "Kontakt"
+  }
+}
