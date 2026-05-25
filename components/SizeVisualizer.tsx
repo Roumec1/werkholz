@@ -31,11 +31,14 @@ export default function SizeVisualizer({ item, locale }: Props) {
   const tableLabel =
     locale === "de" ? "Ihr Tisch" : locale === "en" ? "Your table" : "Váš stůl";
 
-  // Center the composition
-  const totalWidth = tableWidthPx + 80 + 50; // table + gap + person
-  const startX = Math.max(20, (400 - totalWidth) / 2);
+  // Center the composition, leaving room for the height-label on the left
+  const labelGutter = 38;
+  const personWidth = 50;
+  const gap = 40;
+  const totalWidth = tableWidthPx + gap + personWidth;
+  const startX = Math.max(labelGutter, (400 - totalWidth) / 2);
   const tableX = startX;
-  const personX = startX + tableWidthPx + 40;
+  const personX = startX + tableWidthPx + gap;
 
   return (
     <div className="rounded-2xl bg-cream border border-stone-200/60 p-6">
@@ -117,14 +120,14 @@ export default function SizeVisualizer({ item, locale }: Props) {
             opacity="0.4"
           />
           <text
-            x={tableX - 12}
+            x={tableX - 11}
             y={groundY - tableHeightPx / 2 + 3}
             fontSize="9"
             fill="#1A1814"
             textAnchor="end"
             opacity="0.7"
           >
-            {heightCm} cm
+            {heightCm}cm
           </text>
           <text
             x={tableX + tableWidthPx / 2}

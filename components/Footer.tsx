@@ -13,6 +13,7 @@ export default function Footer({ locale, dict }: Props) {
   const navLinks = [
     { label: dict.nav.currentPieces, href: localePath(locale, "currentPieces") },
     { label: dict.nav.customTables, href: localePath(locale, "customTables") },
+    { label: dict.nav.materials, href: localePath(locale, "materials") },
     { label: dict.nav.forBusinesses, href: localePath(locale, "forBusinesses") },
     { label: dict.nav.process, href: localePath(locale, "process") },
     { label: dict.nav.inquiry, href: localePath(locale, "contact") },

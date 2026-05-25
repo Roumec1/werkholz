@@ -53,6 +53,30 @@
     }
   }
 
+  /* Page transitions */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  ::view-transition-old(root) {
+    animation-name: fade-out-transition;
+  }
+
+  ::view-transition-new(root) {
+    animation-name: fade-in-transition;
+  }
+
+  @keyframes fade-out-transition {
+    to { opacity: 0; }
+  }
+
+  @keyframes fade-in-transition {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   a {
     color: inherit;
     text-decoration: none;

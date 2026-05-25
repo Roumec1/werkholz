@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import FloatingContact from "@/components/FloatingContact";
 import CookieNotice from "@/components/CookieNotice";
+import ScrollProgress from "@/components/ScrollProgress";
 import { getDictionary, normalizeLocale } from "@/lib/i18n";
 import { LOCALES } from "@/lib/routes";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
@@ -56,6 +57,7 @@ export default async function LocaleLayout({
   return (
     <>
       <JsonLd data={[organizationSchema(), websiteSchema()]} />
+      <ScrollProgress />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-ink focus:text-bone focus:px-4 focus:py-2 focus:rounded"
