@@ -4,39 +4,30 @@
 
 **WERKHOLZ** is a multilingual website for a custom woodwork business focused on solid wood tables. The site serves as a living catalog and inquiry engine for Berlin/Germany customers.
 
-**Status**: Phase 1 complete (full static prototype + design system + all pages). Ready for Phase 2 (Sanity CMS) and Phase 3 (real inquiry backend).
+**Status**: Phase 1 complete + extensive polish. Deployed on Vercel, ready for Phase 2 (Sanity CMS) and Phase 3 (real inquiry backend).
 
-## Brand & Positioning
-
-- **Brand**: WERKHOLZ (temporary placeholder, editable via locale dictionaries)
-- **Core message**: "Custom woodwork from our workshop"
-- **Do NOT say**: "European workshop", "Czech company", "Czech-made"
-- **Market**: Berlin + Germany
-- **Legal entity**: Czech company / workshop operations (disclosed in Impressum only)
-
-## Tech Stack
-
-- **Framework**: Next.js 15 (App Router, RSC)
-- **Language**: TypeScript (strict)
-- **Styling**: Tailwind CSS with custom design tokens
-- **Fonts**: Inter (sans) + Fraunces (display serif) via `next/font/google`
-- **CMS**: Sanity (Phase 2)
-- **Inquiry form**: Tally / Formspree / Resend (Phase 3)
-- **Deployment**: Vercel (auto-deploy on push to `main`)
-
-## Live Site
+## Live & Repo
 
 - **Production**: https://werkholz-aqp1v91yb-roumec1s-projects.vercel.app
 - **Repo**: https://github.com/Roumec1/werkholz
+- **Build**: 71 statically generated pages + dynamic OG endpoints
 
-## Languages & Localization
+## Brand & Positioning
 
-- **Locales**: German (`de`, default), English (`en`), Czech (`cs`)
-- **Routing**: All paths prefixed `/de`, `/en`, `/cs`; URL segments are localized too
-- **Root redirect**: `/` reads `preferred_locale` cookie → `Accept-Language` header → DE fallback
-- **Cookie**: `preferred_locale` only (essential, set by language switcher)
-- **Dictionaries**: `locales/{de,en,cs}.json`
-- **Helper**: `lib/routes.ts` exposes `localePath(locale, route, slug?)` for type-safe links
+- **Brand**: WERKHOLZ (placeholder, editable via locale dictionaries)
+- **Core message**: "Custom woodwork from our workshop"
+- **Do NOT say**: "European workshop", "Czech company", "Czech-made" — legal pages only
+- **Market**: Berlin + Germany
+- **Languages**: German (default), English, Czech
+
+## Tech Stack
+
+- Next.js 15 (App Router)
+- TypeScript strict
+- Tailwind CSS 3.4 with custom design tokens
+- Inter (sans) + Fraunces (display serif) via `next/font/google`
+- Sanity (Phase 2)
+- Vercel auto-deploy
 
 ## Project Structure
 
@@ -44,25 +35,43 @@
 werkholz/
 ├── app/
 │   ├── [locale]/
-│   │   ├── layout.tsx                  # Header + Footer + per-locale metadata/hreflang
-│   │   ├── page.tsx                    # Homepage (8 sections)
-│   │   ├── [section]/
-│   │   │   ├── page.tsx                # Resolves localized section URLs
-│   │   │   └── [slug]/page.tsx         # Table detail pages
-│   ├── layout.tsx                      # Root <html>, font setup, base metadata
-│   ├── page.tsx                        # Root redirect based on locale detection
-│   ├── globals.css                     # Tailwind layers + component classes
-│   ├── sitemap.ts                      # All 48 URLs (locales × pages × tables)
-│   └── robots.ts
+│   │   ├── layout.tsx              # Per-locale layout, metadata, JSON-LD
+│   │   ├── page.tsx                # Homepage (12 sections)
+│   │   └── [section]/
+│   │       ├── page.tsx            # Section router (resolves localized URLs)
+│   │       └── [slug]/
+│   │           ├── page.tsx        # Table detail with product schema
+│   │           └── opengraph-image.tsx  # Per-table OG image
+│   ├── layout.tsx                  # Root html + fonts
+│   ├── page.tsx                    # Root redirect (cookie → header → DE)
+│   ├── not-found.tsx               # Branded 404
+│   ├── opengraph-image.tsx         # Default site OG
+│   ├── icon.tsx                    # 32x32 favicon
+│   ├── apple-icon.tsx              # 180x180 apple touch icon
+│   ├── sitemap.ts                  # All URLs
+│   ├── robots.ts
+│   └── globals.css                 # Tailwind layers + animations + a11y
 ├── components/
-│   ├── Header.tsx                      # Sticky header, mobile menu, lang switcher
-│   ├── Footer.tsx                      # Dark footer with columns, lang switcher
-│   ├── Hero.tsx                        # Hero with animated wood-grain backdrop
-│   ├── LanguageSwitcher.tsx            # Header dropdown + footer inline variant
-│   ├── TableCard.tsx                   # Reusable card for table grids
-│   ├── StatusBadge.tsx                 # Available/in_production/reserved/sold badge
-│   ├── InquiryForm.tsx                 # Full inquiry form, item prefill from URL
-│   ├── pages/                          # Page-level components (rendered by section router)
+│   ├── Header.tsx                  # Sticky, mobile menu, lang switcher
+│   ├── Footer.tsx                  # Dark footer + Newsletter
+│   ├── LanguageSwitcher.tsx        # Header dropdown + footer inline
+│   ├── Hero.tsx                    # Hero with SVG table illustration
+│   ├── ScrollProgress.tsx          # Top scroll-progress bar
+│   ├── FloatingContact.tsx         # Fixed corner chat bubble
+│   ├── CookieNotice.tsx            # Essential-cookie banner
+│   ├── Newsletter.tsx              # Subscribe form
+│   ├── Reveal.tsx                  # IntersectionObserver fade-up wrapper
+│   ├── CountUp.tsx                 # Animated number counter
+│   ├── TableCard.tsx               # Reusable card with illustration
+│   ├── TableIllustration.tsx       # Bespoke SVG of each table type
+│   ├── TableGallery.tsx            # Carousel + lightbox + thumbnails
+│   ├── SizeVisualizer.tsx          # SVG scale comparison vs. 175cm person
+│   ├── StatusBadge.tsx             # Status pill with pulse-dot
+│   ├── InquiryForm.tsx             # Full inquiry form with prefill
+│   ├── CurrentPiecesGrid.tsx       # Filter/sort interactive grid
+│   ├── JsonLd.tsx                  # Structured data injection
+│   ├── SectionDivider.tsx          # Wood-grain dividers
+│   ├── pages/                      # Page-level components
 │   │   ├── PageHeader.tsx
 │   │   ├── CurrentPiecesPage.tsx
 │   │   ├── TableDetailPage.tsx
@@ -70,29 +79,33 @@ werkholz/
 │   │   ├── ForBusinessesPage.tsx
 │   │   ├── ProcessPage.tsx
 │   │   ├── ContactPage.tsx
+│   │   ├── MaterialsPage.tsx       # Dedicated Materials page
 │   │   ├── ImpressumPage.tsx
 │   │   └── PrivacyPage.tsx
-│   └── sections/                       # Reusable homepage/sub-page sections
+│   └── sections/
 │       ├── FeaturedPieces.tsx
-│       ├── Categories.tsx
-│       ├── Process.tsx
-│       ├── CurrentPreview.tsx
+│       ├── Categories.tsx          # 5 cards (one big)
+│       ├── Materials.tsx           # 4 wood swatches
+│       ├── Workshop.tsx            # 6-tile process mural
+│       ├── Process.tsx             # 4 numbered steps
+│       ├── CurrentPreview.tsx      # Status counts (dark)
+│       ├── Inspiration.tsx         # Asymmetric mosaic
+│       ├── Reviews.tsx             # 3 testimonials
+│       ├── Care.tsx                # Daily/monthly/if-needed
 │       ├── B2BSection.tsx
-│       ├── FAQ.tsx
+│       ├── Stats.tsx               # Animated count-up stats
+│       ├── FAQ.tsx                 # Accordion
 │       └── FinalCTA.tsx
 ├── lib/
-│   ├── routes.ts                       # ROUTES table + localePath() helper
-│   ├── i18n.ts                         # getDictionary + normalizeLocale
-│   └── tables.ts                       # Sample TableItem data + filters
-├── locales/                            # Full DE/EN/CS dictionaries
-│   ├── de.json
-│   ├── en.json
-│   └── cs.json
-├── public/                             # Future: real product images
+│   ├── routes.ts                   # ROUTES table + localePath()
+│   ├── i18n.ts                     # getDictionary
+│   ├── tables.ts                   # 12 sample TableItems
+│   └── seo.ts                      # Schema.org generators
+├── locales/                        # de/en/cs.json — full copy
+├── postcss.config.mjs              # Tailwind + autoprefixer
+├── tailwind.config.ts              # Custom palette, fonts, animations
 ├── next.config.ts
-├── tailwind.config.ts                  # Custom palette + display fonts + animations
-├── tsconfig.json
-└── package.json
+└── tsconfig.json
 ```
 
 ## Pages (all 3 locales)
@@ -101,147 +114,142 @@ werkholz/
 |------|---|---|---|
 | Home | `/de` | `/en` | `/cs` |
 | Current pieces | `/de/aktuelle-stuecke` | `/en/current-pieces` | `/cs/aktualni-kusy` |
-| Table detail | `/de/aktuelle-stuecke/[slug]` | `/en/current-pieces/[slug]` | `/cs/aktualni-kusy/[slug]` |
+| Table detail | `/de/aktuelle-stuecke/[slug]` | `…/current-pieces/[slug]` | `…/aktualni-kusy/[slug]` |
 | Custom tables | `/de/tische-nach-mass` | `/en/custom-tables` | `/cs/stoly-na-miru` |
+| Materials | `/de/hoelzer` | `/en/materials` | `/cs/drevo` |
 | For businesses | `/de/fuer-firmen` | `/en/for-businesses` | `/cs/pro-firmy` |
 | Process | `/de/ablauf` | `/en/process` | `/cs/postup` |
 | Contact | `/de/kontakt` | `/en/contact` | `/cs/kontakt` |
 | Imprint | `/de/impressum` | `/en/imprint` | `/cs/vytisk` |
 | Privacy | `/de/datenschutz` | `/en/privacy` | `/cs/ochrana-dat` |
 
-Total: **48 statically generated pages** + sitemap + robots.
+## Homepage Sections (in order)
+
+1. Hero — animated headline + real SVG table illustration + floating chips
+2. Stats — animated count-up (200+, 12 years, 2-4 weeks, 100% solid wood)
+3. Featured pieces — 3 cards with status badges
+4. Categories — 5 cards (one large) wood-grain backgrounds
+5. Materials — 4 wood swatches with character
+6. Workshop — 6-tile process mural (planning → check)
+7. Process — 4 numbered steps + production-time chip
+8. Current preview — dark section, status counts
+9. Inspiration — asymmetric mosaic of sold pieces
+10. Reviews — 3 testimonials
+11. Care — daily/monthly/if-needed care instructions
+12. B2B — split card with use cases
+13. FAQ — accordion with 6 questions
+14. Final CTA — dark panel with inquiry + WhatsApp
+
+## Table Detail Page Features
+
+- 4-image gallery with prev/next, keyboard nav (←/→/Esc)
+- Lightbox fullscreen view
+- Size Visualizer — scale comparison to person silhouette
+- Status badge (animated pulse for available)
+- Status-aware CTA (Inquire / Reserve / Pre-order / Request similar)
+- Care kit free-bonus card
+- Reservation widget — delivery estimate + WhatsApp quick-ask
+- Full spec list (dimensions, wood, edge, base, finish, resin)
+- Similar pieces grid
+- Inquiry prefill via `?item=<slug>&status=<status>`
 
 ## Design System
 
-**Colors** (Tailwind tokens — `tailwind.config.ts`)
+**Colors**
 - `bone` (#F7F4EE) — primary warm off-white background
 - `cream` (#FBF8F2) — slightly lighter card surface
 - `ink` (#1A1814) — primary near-black text / CTA
-- `graphite` (#2B2722) — hover state for ink
 - `oak.{50..900}` — wood-warmth accent palette
 - `stone.{50..900}` — neutral scale
-- `status.available` (warm green), `production` (oak), `reserved` (deeper oak), `sold` (stone gray)
+- `status.available/production/reserved/sold` — subtle, not neon
 
 **Typography**
 - `font-sans` → Inter (body)
-- `font-display` → Fraunces (light, soft, optical) — used for headings
-- Custom fluid type scale: `text-display-xl/lg/md`
-
-**Components classes** (`globals.css`)
-- `.container-w` — page container with responsive padding
-- `.btn-primary`, `.btn-secondary`, `.btn-ghost`
-- `.eyebrow` — uppercase tracking-widest label
-- `.section-title`, `.section-subtitle`
-- `.badge`, `.badge-available/production/reserved/sold`
-- `.pulse-dot` — animated pulse for "available now" status
-- `.grain` — subtle SVG paper-grain texture overlay
+- `font-display` → Fraunces (headings, optical variant)
+- Fluid type scale: `text-display-xl/lg/md` using clamp()
 
 **Animations**
-- `animate-fade-up` — staggered entry for hero text/cards
-- `animate-fade-in` — overlay transitions
-- `animate-slide-down` — dropdown menus
-- Smooth scroll, balance text wrap
+- `Reveal` component fades up sections on scroll
+- `CountUp` animates numeric stats into view
+- `pulse-dot` for available-now status
+- View-transitions API for route changes
+- Respects `prefers-reduced-motion`
+
+## Interactivity
+
+- Locale-aware Language Switcher (header dropdown + footer inline)
+- Mobile full-screen menu overlay
+- Sticky header with translucent-on-scroll
+- Filter + sort on Current Pieces (client-side)
+- FAQ accordion
+- Image gallery with carousel + lightbox + keyboard nav
+- Cookie consent banner (dismissable, persists)
+- Newsletter signup with form/success states
+- Floating contact bubble with WhatsApp shortcut
+- Scroll progress bar
 
 ## Sample Table Data
 
-`lib/tables.ts` holds 6 sample tables covering all statuses:
-- `available` (2): Oak dining 220, Walnut coffee live-edge
-- `in_production` (2): Oak bistro round, Ash desk
-- `reserved` (1): Beech kitchen table
-- `sold` (1): Oak conference 300
+12 tables in `lib/tables.ts` covering all statuses:
+- **Available** (4): Oak dining 220, Walnut coffee live-edge, Walnut desk 180, Beech round 100, Walnut live-edge 260
+- **In production** (2): Oak bistro round, Ash desk, Oak coffee 100
+- **Reserved** (1): Beech kitchen 160
+- **Sold** (3): Oak conference 300, Ash bistro round 70, Oak restaurant set of 8
 
-Each has localized title/description/wood/base/finish + a wood-tone gradient placeholder (real photos replace later).
+Each has localized title/description/wood/base/finish + bespoke SVG illustration.
+
+## SEO
+
+- `sitemap.xml` with all 71 URLs
+- `robots.ts` pointing to sitemap
+- hreflang alternates per locale on every page
+- OG metadata + dynamic OG image generation (default + per-table)
+- Schema.org JSON-LD: `Organization`, `WebSite`, `Product`, `BreadcrumbList`
+- Canonical URLs per locale
+- Localized URL slugs (DE/EN/CS)
+
+## Accessibility
+
+- Skip-to-content link (visible on focus)
+- `:focus-visible` outlines only for keyboard users
+- `prefers-reduced-motion` disables animations
+- Semantic landmarks (`role=banner/contentinfo/main`)
+- ARIA labels on nav, buttons
+- `aria-modal` lightbox
+- Keyboard shortcuts (Esc closes lightbox, ←/→ navigates gallery)
 
 ## Inquiry Flow
 
-`components/InquiryForm.tsx`:
-- All fields from brief (name, email, phone, city, type, dimensions, edge, resin, reference, budget, timing, message)
-- Reads `?item=<slug>&status=<status>` query params from table detail CTAs → shows referenced piece card
-- Phase 1: simulated submit (logs success). Phase 3: wire to Tally/Formspree/Resend.
-
-## What's Working
-
-✅ All 48 pages render statically  
-✅ Multilingual routing with localized URL segments  
-✅ Header sticky/translucent on scroll, full mobile menu overlay  
-✅ Language switcher in header (dropdown) + footer (inline)  
-✅ Locale persistence via `preferred_locale` cookie  
-✅ Root path detects locale from cookie/header  
-✅ Status badges with pulse animation for available pieces  
-✅ Status-aware CTAs on table detail pages  
-✅ Inquiry form prefilled from item link  
-✅ Sitemap + robots.txt  
-✅ hreflang alternates + OpenGraph metadata  
-✅ Mobile-first responsive across breakpoints  
-✅ Build: 48 static pages generated  
-✅ Deployed to Vercel  
+`components/InquiryForm.tsx` — all 13 fields from brief:
+- Reads `?item=<slug>&status=<status>` from table detail CTAs
+- Shows referenced piece card at top of form
+- Phase 1: simulated submit. Phase 3: wire to Tally / Formspree / Resend API route
 
 ## Phase 2 — Sanity CMS
 
-Replace `lib/tables.ts` with Sanity-driven data:
-
-```ts
-// sanity/schemas/tableItem.ts
-TableItem {
-  title: { de, en, cs }
-  slug: { de, en, cs }
-  description: { de, en, cs }
-  status: "available" | "in_production" | "reserved" | "sold"
-  productType: string
-  price: number (EUR)
-  dimensions: { lengthCm, widthCm, diameterCm, heightCm, thicknessCm }
-  woodType: string (localized)
-  edgeType: "straight_edge" | "live_edge" | "soft_rounded" | "custom"
-  resinDetail: "none" | "black" | "smoke" | "clear" | "custom"
-  legBaseType: string (localized)
-  finish: string (localized)
-  images: image[]                  // ← real photos
-  estimatedCompletionDate: date
-  deliveryNote: { de, en, cs }
-  featured: boolean
-  soldDate: date
-  sortOrder: number
-}
-```
-
-Then swap `getTableBySlug` / `tablesByStatus` / `featuredTables` for Sanity GROQ queries. Component interfaces stay the same.
+Replace `lib/tables.ts` with Sanity queries — `TableItem` schema in CLAUDE.md prior section. Component interfaces unchanged.
 
 ## Phase 3 — Inquiry Backend
 
-Choose one:
-- **Tally embed**: drop iframe into `InquiryForm.tsx`
-- **Formspree**: POST form data to formspree endpoint
-- **Resend**: Next.js Route Handler `app/api/inquiry/route.ts` that emails workshop + sends auto-reply
-
-Add WhatsApp number to `components/Footer.tsx` and `FinalCTA.tsx` (currently `+49 170 0000000` placeholder).
+Wire form to Tally / Formspree / `app/api/inquiry/route.ts` with Resend for email. WhatsApp number to update in Footer, FinalCTA, FloatingContact, and InquiryForm.
 
 ## Phase 4 — Launch Readiness
 
-- [ ] Replace placeholder Impressum + Datenschutz with real legal text
-- [ ] Add real product photos (replace gradient placeholders)
-- [ ] Custom domain (werkholz.de or similar)
+- [ ] Real Impressum + Datenschutz text
+- [ ] Real product photos (replace SVG illustrations)
+- [ ] Custom domain (werkholz.de)
 - [ ] Set `NEXT_PUBLIC_SITE_URL` env var on Vercel
-- [ ] Verify hreflang in Google Search Console
-- [ ] Submit sitemap.xml
-
-## Key Rules (from brief — do not break)
-
-1. **No ecommerce at launch** — inquiry only
-2. **Don't say "European workshop" or "Czech company"** in marketing copy
-3. **Language switcher always visible** — header
-4. **Sold items still convert** — "Request similar table"
-5. **Mobile-first** — test on all screens
-6. **Real images ASAP** — gradients are placeholders
-7. **Tables only** — no shelves/boards/decor categories yet
+- [ ] Submit sitemap.xml to Google Search Console
+- [ ] Set real WhatsApp number
 
 ## Development
 
 ```bash
 npm run dev    # http://localhost:3000
-npm run build  # static build
-npm run start  # production preview
+npm run build  # Static build (71 pages)
+npm run start  # Production preview
 ```
 
-## Full Brief
+## Brief
 
-See `werkholz_website_megabrief.md` in the project root (or `~/Downloads`) for the complete product/design spec.
+Full product/design spec: `werkholz_website_megabrief.md`
