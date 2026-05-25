@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/lib/i18n";
 import Reveal from "../Reveal";
+import CountUp from "../CountUp";
 
 interface Props {
   dict: Dictionary;
@@ -14,7 +15,7 @@ export default function Stats({ dict }: Props) {
             <Reveal key={i} delay={i * 80}>
               <div className="text-center md:text-left">
                 <p className="font-display text-5xl sm:text-6xl text-ink tabular-nums leading-none">
-                  {stat.value}
+                  <CountUp value={stat.value} />
                 </p>
                 <p className="mt-3 text-sm text-stone-600 leading-snug">
                   {stat.label}

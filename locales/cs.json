@@ -53,6 +53,28 @@
       "desc": "Stoly pro komerční prostory: sjednocené série, odolné matné povrchy a jasný proces před zahájením výroby."
     }
   },
+  "reservation": {
+    "title": "Rezervace",
+    "deliveryFrom": "Doba dodání",
+    "daysShort": "dní",
+    "weeksShort": "týdnů",
+    "deliveryRegion": "Doručení po celém Německu",
+    "berlin": "Berlín: prémiové doručení",
+    "questions": "Otázky před poptávkou?",
+    "callUs": "Zeptat se na WhatsApp"
+  },
+  "newsletter": {
+    "title": "Zůstaňte v obraze",
+    "subtitle": "Asi jednou měsíčně: nové kusy, charaktery dřeva a poznámky z dílny. Žádný marketing.",
+    "placeholder": "Váš e-mail",
+    "submit": "Přihlásit se",
+    "thanks": "Děkujeme! Ozveme se."
+  },
+  "cookies": {
+    "message": "Používáme pouze jeden nezbytný cookie pro uložení vaší jazykové preference. Žádné sledovací cookies.",
+    "accept": "Rozumím",
+    "more": "Více informací"
+  },
   "inspiration": {
     "eyebrow": "Inspirace",
     "title": "Kusy, které už žijí u zákazníků.",

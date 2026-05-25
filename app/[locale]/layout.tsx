@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import FloatingContact from "@/components/FloatingContact";
+import CookieNotice from "@/components/CookieNotice";
 import { getDictionary, normalizeLocale } from "@/lib/i18n";
 import { LOCALES } from "@/lib/routes";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
@@ -65,6 +66,7 @@ export default async function LocaleLayout({
       <main id="main-content">{children}</main>
       <Footer locale={loc} dict={dict} />
       <FloatingContact locale={loc} dict={dict} />
+      <CookieNotice locale={loc} dict={dict} />
     </>
   );
 }

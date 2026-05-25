@@ -53,6 +53,28 @@
       "desc": "Tables for commercial spaces: matching batches, durable matte finishes and a clear process before production starts."
     }
   },
+  "reservation": {
+    "title": "Reservation",
+    "deliveryFrom": "Delivery time",
+    "daysShort": "days",
+    "weeksShort": "weeks",
+    "deliveryRegion": "Delivery across Germany",
+    "berlin": "Berlin: white-glove delivery",
+    "questions": "Questions before inquiring?",
+    "callUs": "Ask via WhatsApp"
+  },
+  "newsletter": {
+    "title": "Stay in the loop",
+    "subtitle": "About once a month: new pieces, wood characters, and workshop notes. No marketing.",
+    "placeholder": "Your email",
+    "submit": "Subscribe",
+    "thanks": "Thanks! We'll be in touch."
+  },
+  "cookies": {
+    "message": "We only use one essential cookie to remember your language preference. No tracking cookies.",
+    "accept": "Got it",
+    "more": "Learn more"
+  },
   "inspiration": {
     "eyebrow": "Inspiration",
     "title": "Pieces already living with customers.",

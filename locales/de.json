@@ -53,6 +53,28 @@
       "desc": "Tische für gewerbliche Räume: passende Serien, robuste Oberflächen und klare Abstimmung vor der Fertigung."
     }
   },
+  "reservation": {
+    "title": "Reservierung",
+    "deliveryFrom": "Lieferzeit",
+    "daysShort": "Tage",
+    "weeksShort": "Wochen",
+    "deliveryRegion": "Lieferung deutschlandweit",
+    "berlin": "Berlin: Premium-Lieferung",
+    "questions": "Fragen vor der Anfrage?",
+    "callUs": "Per WhatsApp fragen"
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "subtitle": "Etwa einmal im Monat: neue Stücke, Holzcharaktere und Werkstattnotizen. Keine Werbung.",
+    "placeholder": "Ihre E-Mail",
+    "submit": "Abonnieren",
+    "thanks": "Danke! Wir melden uns."
+  },
+  "cookies": {
+    "message": "Wir verwenden nur einen technisch notwendigen Cookie, um Ihre Sprachpräferenz zu speichern. Keine Tracking-Cookies.",
+    "accept": "Verstanden",
+    "more": "Mehr erfahren"
+  },
   "inspiration": {
     "eyebrow": "Inspiration",
     "title": "Stücke, die schon bei Kunden stehen.",

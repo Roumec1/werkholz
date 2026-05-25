@@ -2,6 +2,7 @@ import Link from "next/link";
 import { localePath, type Locale } from "@/lib/routes";
 import LanguageSwitcher from "./LanguageSwitcher";
 import type { Dictionary } from "@/lib/i18n";
+import Newsletter from "./Newsletter";
 
 interface Props {
   locale: Locale;
@@ -24,7 +25,10 @@ export default function Footer({ locale, dict }: Props) {
 
   return (
     <footer role="contentinfo" className="bg-ink text-bone mt-32">
-      <div className="container-w py-20 sm:py-24">
+      <div className="container-w pt-16 sm:pt-20">
+        <Newsletter dict={dict} />
+      </div>
+      <div className="container-w py-16 sm:py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
           <div className="md:col-span-5">
             <Link href={localePath(locale, "home")} className="font-display text-3xl tracking-tight inline-block">

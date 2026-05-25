@@ -111,13 +111,46 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                   )}
                 </dl>
 
-                <p className="mt-8 text-sm text-stone-500">
-                  {locale === "de"
-                    ? "Lieferung nach Berlin und deutschlandweit. Preis auf Anfrage je nach Region."
-                    : locale === "en"
-                      ? "Delivery to Berlin and across Germany. Shipping cost on request, based on region."
-                      : "Doručení do Berlína i po celém Německu. Cena dopravy na poptávku podle regionu."}
-                </p>
+                {/* Delivery info widget */}
+                <div className="mt-10 p-5 rounded-2xl bg-cream border border-stone-200/60">
+                  <div className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-oak-500 shrink-0">
+                      <path d="M1 5h9v6H1zM10 7h3l2 2v2h-5M3 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM12 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" strokeLinecap="round" />
+                    </svg>
+                    <span className="eyebrow">{dict.reservation.deliveryFrom}</span>
+                  </div>
+                  <p className="mt-3 font-display text-xl text-ink">
+                    {item.status === "available"
+                      ? `3–7 ${dict.reservation.daysShort}`
+                      : item.status === "in_production"
+                        ? `2–4 ${dict.reservation.weeksShort}`
+                        : `2–4 ${dict.reservation.weeksShort}`}
+                  </p>
+                  <div className="mt-3 space-y-1 text-xs text-stone-600">
+                    <p className="flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-oak-500" />
+                      {dict.reservation.berlin}
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-stone-400" />
+                      {dict.reservation.deliveryRegion}
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-stone-200">
+                    <p className="text-xs text-stone-500">{dict.reservation.questions}</p>
+                    <a
+                      href="https://wa.me/491700000000"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex items-center gap-2 text-sm text-ink hover:text-oak-600 transition-colors"
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />
+                      </svg>
+                      {dict.reservation.callUs}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
