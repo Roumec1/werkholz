@@ -61,14 +61,10 @@ export default function B2BSection({ locale, dict }: Props) {
               {/* Floating spec card */}
               <div className="absolute bottom-8 left-8 right-8 sm:left-10 sm:right-10 bg-bone rounded-2xl p-6 shadow-xl">
                 <p className="eyebrow">
-                  {locale === "de" ? "Serien & Mehrfachbestellung" : locale === "en" ? "Batches & multiple orders" : "Série & vícenásobné objednávky"}
+                  {dict.b2b.batchTitle}
                 </p>
                 <p className="mt-3 font-display text-xl text-ink leading-tight">
-                  {locale === "de"
-                    ? "Bis zu 30 passende Tische in einer Serie."
-                    : locale === "en"
-                      ? "Up to 30 matching tables in a single batch."
-                      : "Až 30 sjednocených stolů v jedné sérii."}
+                  {dict.b2b.batchText}
                 </p>
               </div>
             </div>

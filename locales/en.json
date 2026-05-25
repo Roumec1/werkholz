@@ -21,7 +21,10 @@
     "cta2": "View current pieces",
     "trust1": "Solid wood",
     "trust2": "Made to order",
-    "trust3": "Delivered across Germany"
+    "trust3": "Delivered across Germany",
+    "workshopLabel": "In the workshop",
+    "liveCountText": "tables available or in production",
+    "currentlyLabel": "Currently"
   },
   "featured": {
     "eyebrow": "Currently in the workshop",
@@ -84,10 +87,22 @@
   },
   "stats": {
     "items": [
-      { "value": "200+", "label": "tables built" },
-      { "value": "12", "label": "years of craft" },
-      { "value": "2–4", "label": "weeks production" },
-      { "value": "100%", "label": "solid wood" }
+      {
+        "value": "200+",
+        "label": "tables built"
+      },
+      {
+        "value": "12",
+        "label": "years of craft"
+      },
+      {
+        "value": "2–4",
+        "label": "weeks production"
+      },
+      {
+        "value": "100%",
+        "label": "solid wood"
+      }
     ]
   },
   "care": {
@@ -95,9 +110,18 @@
     "title": "How to keep your table for a lifetime.",
     "subtitle": "Solid wood lives and moves. It wants to be cared for — not sealed. Here's everything you need to know.",
     "items": [
-      { "title": "Daily", "desc": "Wipe with a soft, slightly damp cloth. Dry-wipe afterwards. No harsh cleaners." },
-      { "title": "Monthly", "desc": "Apply a thin coat of care oil. Rub in circular motions, let absorb, wipe off." },
-      { "title": "If needed", "desc": "Lightly sand scratches, apply oil. We're happy to send a care kit with your order." }
+      {
+        "title": "Daily",
+        "desc": "Wipe with a soft, slightly damp cloth. Dry-wipe afterwards. No harsh cleaners."
+      },
+      {
+        "title": "Monthly",
+        "desc": "Apply a thin coat of care oil. Rub in circular motions, let absorb, wipe off."
+      },
+      {
+        "title": "If needed",
+        "desc": "Lightly sand scratches, apply oil. We're happy to send a care kit with your order."
+      }
     ]
   },
   "filters": {
@@ -113,27 +137,72 @@
     "eyebrow": "What customers say",
     "title": "Delivered. Installed. Loved.",
     "items": [
-      { "quote": "The table turned out exactly how we imagined it — and looks even better in the space than in the photos.", "name": "Anna K.", "role": "Oak dining table · Berlin Kreuzberg" },
-      { "quote": "Clear communication, quick delivery, perfect craft. We ordered 12 tables for our café and couldn't be happier.", "name": "Café Felix", "role": "Hospitality · Berlin Mitte" },
-      { "quote": "Every detail of the custom order was considered. The table fits our kitchen to the millimeter.", "name": "Brandt family", "role": "Beech kitchen table · Potsdam" }
+      {
+        "quote": "The table turned out exactly how we imagined it — and looks even better in the space than in the photos.",
+        "name": "Anna K.",
+        "role": "Oak dining table · Berlin Kreuzberg"
+      },
+      {
+        "quote": "Clear communication, quick delivery, perfect craft. We ordered 12 tables for our café and couldn't be happier.",
+        "name": "Café Felix",
+        "role": "Hospitality · Berlin Mitte"
+      },
+      {
+        "quote": "Every detail of the custom order was considered. The table fits our kitchen to the millimeter.",
+        "name": "Brandt family",
+        "role": "Beech kitchen table · Potsdam"
+      }
     ]
   },
   "workshop": {
     "eyebrow": "In the workshop",
     "title": "This is where your table is made.",
     "subtitle": "No mass production, no franchise chain. Every table is planned, cut, sanded and finished in our workshop — by hand.",
-    "labels": ["Planning", "Cutting", "Gluing", "Sanding", "Finishing", "Final check"]
+    "labels": [
+      "Planning",
+      "Cutting",
+      "Gluing",
+      "Sanding",
+      "Finishing",
+      "Final check"
+    ]
   },
   "materials": {
     "eyebrow": "Material",
     "title": "Woods we work with",
     "subtitle": "We pick every piece of wood with intent — from where it grew to how it's sanded. Here's a quick look at the woods we use most often.",
     "items": [
-      { "name": "Oak", "origin": "Europe", "character": "Robust, warm-light, classic. The all-rounder for dining and conference tables." },
-      { "name": "Walnut", "origin": "America", "character": "Deep chocolate-brown with lively grain. Premium look, ideal for living and coffee tables." },
-      { "name": "Ash", "origin": "Europe", "character": "Light, clear, pronounced grain. Modern, airy, desk-friendly." },
-      { "name": "Beech", "origin": "Europe", "character": "Creamy-pink tone, calm grain. Very stable, ideal for kitchen tables." }
-    ]
+      {
+        "name": "Oak",
+        "origin": "Europe",
+        "character": "Robust, warm-light, classic. The all-rounder for dining and conference tables.",
+        "bestFor": "Dining tables",
+        "hardness": "★★★★"
+      },
+      {
+        "name": "Walnut",
+        "origin": "America",
+        "character": "Deep chocolate-brown with lively grain. Premium look, ideal for living and coffee tables.",
+        "bestFor": "Living rooms",
+        "hardness": "★★★★★"
+      },
+      {
+        "name": "Ash",
+        "origin": "Europe",
+        "character": "Light, clear, pronounced grain. Modern, airy, desk-friendly.",
+        "bestFor": "Desks",
+        "hardness": "★★★"
+      },
+      {
+        "name": "Beech",
+        "origin": "Europe",
+        "character": "Creamy-pink tone, calm grain. Very stable, ideal for kitchen tables.",
+        "bestFor": "Kitchens",
+        "hardness": "★★★★"
+      }
+    ],
+    "hardnessLabel": "Hardness",
+    "bestForLabel": "Best for"
   },
   "process": {
     "eyebrow": "How we work",
@@ -163,14 +232,44 @@
     "available": "Available now",
     "production": "In production",
     "soldInspiration": "Sold / Inspiration",
-    "viewAll": "View all pieces"
+    "viewAll": "View all pieces",
+    "piece": "piece",
+    "pieces": "pieces"
   },
   "b2b": {
     "eyebrow": "For businesses",
     "title": "Tables for cafés, offices and restaurants.",
     "subtitle": "Matching batches, durable matte surfaces, predictable production. We work with hospitality, interior designers and companies across Germany.",
     "cta": "Send B2B inquiry",
-    "useCases": ["Cafés & bistros", "Restaurants & bars", "Offices & coworking", "Boutique hotels", "Interior design"]
+    "useCases": [
+      "Cafés & bistros",
+      "Restaurants & bars",
+      "Offices & coworking",
+      "Boutique hotels",
+      "Interior design"
+    ],
+    "batchTitle": "Batches & multiple orders",
+    "batchText": "Up to 30 matching tables in a single batch.",
+    "differenceEyebrow": "What we do differently",
+    "differenceTitle": "Four things that make the difference for businesses.",
+    "benefits": [
+      {
+        "title": "Matching batches",
+        "desc": "Multiple tables from the same wood batch, consistent dimensions and identical finish."
+      },
+      {
+        "title": "Durable matte surfaces",
+        "desc": "Hard wax oil finish: built for daily use, easy to repair, no high-gloss."
+      },
+      {
+        "title": "Predictable production",
+        "desc": "Clear deadlines, coordinated delivery, planned around renovation or opening."
+      },
+      {
+        "title": "Direct contact",
+        "desc": "You speak directly with the workshop. No middlemen, no franchise."
+      }
+    ]
   },
   "faq": {
     "eyebrow": "Questions & answers",
@@ -216,7 +315,9 @@
     "imprint": "Imprint",
     "privacy": "Privacy",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "germany": "Germany",
+    "workshopTagline": "Made in our workshop."
   },
   "status": {
     "available": "Available now",
@@ -254,6 +355,92 @@
     "timing": "Desired timing",
     "message": "Message",
     "submit": "Send inquiry",
-    "whatsapp": "Prefer WhatsApp? Write us directly with dimensions and reference photo."
+    "whatsapp": "Prefer WhatsApp? Write us directly with dimensions and reference photo.",
+    "successTitle": "Thank you for your inquiry!",
+    "successSubtitle": "We'll reply within one business day.",
+    "inquiryAbout": "Inquiry about",
+    "dimensionsPlaceholder": "e.g. 220 × 95 cm",
+    "sending": "Sending..."
+  },
+  "floatingContact": {
+    "title": "Plan your table?",
+    "subtitle": "Write to us — we usually reply within one business day."
+  },
+  "contact": {
+    "directTitle": "Direct contact",
+    "directSubtitle": "Replies usually within one business day.",
+    "workshopLabel": "Workshop",
+    "workshopText": "Made in our workshop. Delivered to Berlin and across Germany."
+  },
+  "tableDetail": {
+    "backLink": "All pieces",
+    "estimatedCompletion": "Estimated completion",
+    "careTitle": "Care kit included",
+    "careDesc": "Care oil, soft cloth, and sandpaper — everything you need for the years ahead.",
+    "specDimensions": "Dimensions",
+    "specThickness": "thickness",
+    "specWood": "Wood",
+    "specEdge": "Edge",
+    "specBase": "Base",
+    "specFinish": "Finish",
+    "specResin": "Resin",
+    "edgeStraight": "Straight edge",
+    "edgeLive": "Live edge",
+    "edgeRounded": "Softly rounded",
+    "similarPieces": "Similar pieces"
+  },
+  "sizeVisualizer": {
+    "title": "Size comparison",
+    "personLabel": "Person ~175 cm",
+    "tableLabel": "Your table"
+  },
+  "currentPieces": {
+    "title": "All current pieces"
+  },
+  "customTables": {
+    "title": "Every table starts with a conversation.",
+    "subtitle": "Tell us about your space, your preferred wood, and how you'll use it. We'll suggest fitting proportions, wood, and base — then build your table in our workshop."
+  },
+  "gallery": {
+    "expand": "Expand image",
+    "hint": "Full screen",
+    "close": "Close fullscreen",
+    "prev": "Previous image",
+    "next": "Next image",
+    "thumbLabel": "View image {n}"
+  },
+  "sectionMeta": {
+    "currentPieces": {
+      "title": "Current pieces",
+      "desc": "Our current solid wood tables — available, in production, or sold pieces for inspiration."
+    },
+    "customTables": {
+      "title": "Custom tables",
+      "desc": "Solid wood tables made to your specifications. Dimensions, wood, edge and base tailored individually."
+    },
+    "forBusinesses": {
+      "title": "For businesses",
+      "desc": "Tables in batches for cafés, offices and restaurants. Predictable production, durable surfaces, direct contact."
+    },
+    "process": {
+      "title": "Process",
+      "desc": "From inquiry to delivery — how we build your table in our workshop."
+    },
+    "contact": {
+      "title": "Contact & inquiry",
+      "desc": "Questions, inquiries, or just say hello. We usually reply within one business day."
+    },
+    "materials": {
+      "title": "Materials",
+      "desc": "Oak, walnut, ash, beech — the solid woods we love working with most."
+    },
+    "impressum": {
+      "title": "Imprint",
+      "desc": "Legal information about WERKHOLZ."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "desc": "Privacy policy for werkholz.de."
+    }
   }
 }

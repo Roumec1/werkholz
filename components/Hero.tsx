@@ -79,16 +79,12 @@ export default function Hero({ locale, dict }: Props) {
               <div className="flex items-center gap-2 text-status-available">
                 <span className="pulse-dot" />
                 <span className="text-xs uppercase tracking-widest font-medium">
-                  {locale === "de" ? "In der Werkstatt" : locale === "en" ? "In the workshop" : "V dílně"}
+                  {dict.hero.workshopLabel}
                 </span>
               </div>
               <p className="mt-3 font-display text-lg leading-tight text-ink">
                 {liveCount}{" "}
-                {locale === "de"
-                  ? "Tische gerade verfügbar oder in Fertigung"
-                  : locale === "en"
-                    ? "tables available or in production"
-                    : "stolů dostupných nebo ve výrobě"}
+                {dict.hero.liveCountText}
               </p>
             </div>
 
@@ -96,7 +92,7 @@ export default function Hero({ locale, dict }: Props) {
             {featured && (
               <div className="absolute -top-3 -right-3 sm:-right-6 bg-ink text-bone rounded-2xl px-5 py-4 shadow-xl shadow-ink/20 hidden sm:block">
                 <p className="text-[10px] uppercase tracking-widest text-stone-400">
-                  {locale === "de" ? "Aktuell" : locale === "en" ? "Currently" : "Aktuálně"}
+                  {dict.hero.currentlyLabel}
                 </p>
                 <p className="mt-1 font-display text-lg">{featured.woodType[locale]}</p>
               </div>

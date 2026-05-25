@@ -87,6 +87,8 @@ export default function Header({ locale, dict }: Props) {
                 onClick={() => setMenuOpen(true)}
                 className="lg:hidden flex flex-col gap-1.5 p-2 -mr-2"
                 aria-label={dict.nav.menu}
+                aria-expanded={menuOpen}
+                aria-controls="mobile-menu"
               >
                 <span className="block w-5 h-px bg-ink" />
                 <span className="block w-5 h-px bg-ink" />
@@ -98,7 +100,13 @@ export default function Header({ locale, dict }: Props) {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-bone animate-fade-in lg:hidden">
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label={dict.nav.menu}
+          className="fixed inset-0 z-50 bg-bone animate-fade-in lg:hidden"
+        >
           <div className="container-w h-full flex flex-col">
             <div className="flex items-center justify-between h-16 sm:h-20">
               <Link

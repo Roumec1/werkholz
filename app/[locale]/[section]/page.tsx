@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, normalizeLocale } from "@/lib/i18n";
 import { ROUTES, type Locale, type RouteKey, LOCALES } from "@/lib/routes";
@@ -25,6 +26,41 @@ function resolveRoute(locale: Locale, segment: string): RouteKey | null {
     if (ROUTES[key][locale] === segment) return key;
   }
   return null;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; section: string }>;
+}): Promise<Metadata> {
+  const { locale, section } = await params;
+  const loc = normalizeLocale(locale);
+  const dict = getDictionary(loc);
+  const routeKey = resolveRoute(loc, section);
+  if (!routeKey) return {};
+
+  const meta = dict.sectionMeta[routeKey as keyof typeof dict.sectionMeta];
+  const canonical = `/${loc}/${section}`;
+
+  return {
+    title: meta.title,
+    description: meta.desc,
+    alternates: {
+      canonical,
+      languages: {
+        de: `/de/${ROUTES[routeKey].de}`,
+        en: `/en/${ROUTES[routeKey].en}`,
+        cs: `/cs/${ROUTES[routeKey].cs}`,
+        "x-default": `/de/${ROUTES[routeKey].de}`,
+      },
+    },
+    openGraph: {
+      title: `${meta.title} | WERKHOLZ`,
+      description: meta.desc,
+      locale: loc,
+      type: "website",
+    },
+  };
 }
 
 export async function generateStaticParams() {

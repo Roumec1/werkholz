@@ -39,14 +39,14 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M11 7H3m0 0l3.5 3.5M3 7l3.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            {locale === "de" ? "Alle Stücke" : locale === "en" ? "All pieces" : "Všechny kusy"}
+            {dict.tableDetail.backLink}
           </Link>
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-7">
-              <TableGallery item={item} />
+              <TableGallery item={item} dict={dict} />
               <div className="mt-6">
-                <SizeVisualizer item={item} locale={locale} />
+                <SizeVisualizer item={item} dict={dict} />
               </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                 {item.status === "in_production" && item.estimatedCompletionDate && (
                   <div className="mt-6 p-4 rounded-xl bg-status-production/10 text-status-production">
                     <p className="text-xs uppercase tracking-widest font-medium">
-                      {locale === "de" ? "Voraussichtlich fertig" : locale === "en" ? "Estimated completion" : "Předpokládané dokončení"}
+                      {dict.tableDetail.estimatedCompletion}
                     </p>
                     <p className="mt-1 font-medium text-base">
                       {new Date(item.estimatedCompletionDate).toLocaleDateString(
@@ -97,44 +97,36 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                   </div>
                   <div className="text-xs leading-relaxed">
                     <p className="text-ink font-medium">
-                      {locale === "de"
-                        ? "Pflegeset gratis dabei"
-                        : locale === "en"
-                          ? "Care kit included"
-                          : "Pečující sada zdarma"}
+                      {dict.tableDetail.careTitle}
                     </p>
                     <p className="text-stone-600 mt-0.5">
-                      {locale === "de"
-                        ? "Pflegeöl, weiches Tuch und Schleifpapier — alles, was Sie für die nächsten Jahre brauchen."
-                        : locale === "en"
-                          ? "Care oil, soft cloth, and sandpaper — everything you need for the years ahead."
-                          : "Pečující olej, hadřík a brusný papír — vše, co budete potřebovat na další roky."}
+                      {dict.tableDetail.careDesc}
                     </p>
                   </div>
                 </div>
 
                 {/* Spec list */}
                 <dl className="mt-12 divide-y divide-stone-200 border-y border-stone-200">
-                  <SpecRow label={locale === "de" ? "Maße" : locale === "en" ? "Dimensions" : "Rozměry"}>
+                  <SpecRow label={dict.tableDetail.specDimensions}>
                     {formatDimensions(item)}
                     {item.dimensions.thicknessCm && (
-                      <span className="text-stone-500"> · {locale === "de" ? "Stärke" : locale === "en" ? "thickness" : "tloušťka"} {item.dimensions.thicknessCm} cm</span>
+                      <span className="text-stone-500"> · {dict.tableDetail.specThickness} {item.dimensions.thicknessCm} cm</span>
                     )}
                   </SpecRow>
-                  <SpecRow label={locale === "de" ? "Holz" : locale === "en" ? "Wood" : "Dřevo"}>
+                  <SpecRow label={dict.tableDetail.specWood}>
                     {item.woodType[locale]}
                   </SpecRow>
-                  <SpecRow label={locale === "de" ? "Kante" : locale === "en" ? "Edge" : "Hrana"}>
-                    {edgeLabel(item.edgeType, locale)}
+                  <SpecRow label={dict.tableDetail.specEdge}>
+                    {edgeLabel(item.edgeType, dict)}
                   </SpecRow>
-                  <SpecRow label={locale === "de" ? "Gestell" : locale === "en" ? "Base" : "Podnož"}>
+                  <SpecRow label={dict.tableDetail.specBase}>
                     {item.legBaseType[locale]}
                   </SpecRow>
-                  <SpecRow label={locale === "de" ? "Oberfläche" : locale === "en" ? "Finish" : "Povrch"}>
+                  <SpecRow label={dict.tableDetail.specFinish}>
                     {item.finish[locale]}
                   </SpecRow>
                   {item.resinDetail !== "none" && (
-                    <SpecRow label={locale === "de" ? "Harzdetail" : locale === "en" ? "Resin" : "Pryskyřice"}>
+                    <SpecRow label={dict.tableDetail.specResin}>
                       {item.resinDetail}
                     </SpecRow>
                   )}
@@ -190,7 +182,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
         <section className="py-24 sm:py-32 mt-16">
           <div className="container-w">
             <h2 className="font-display font-light text-display-md text-ink mb-10">
-              {locale === "de" ? "Ähnliche Stücke" : locale === "en" ? "Similar pieces" : "Podobné kusy"}
+              {dict.tableDetail.similarPieces}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {related.map((t) => (
@@ -213,11 +205,11 @@ function SpecRow({ label, children }: { label: string; children: React.ReactNode
   );
 }
 
-function edgeLabel(edge: TableItem["edgeType"], locale: Locale): string {
-  const labels = {
-    straight_edge: { de: "Gerade Kante", en: "Straight edge", cs: "Rovná hrana" },
-    live_edge: { de: "Baumkante", en: "Live edge", cs: "Přírodní hrana" },
-    soft_rounded: { de: "Weich gerundet", en: "Softly rounded", cs: "Jemně zaoblená" },
-  } as const;
-  return labels[edge as keyof typeof labels][locale];
+function edgeLabel(edge: TableItem["edgeType"], dict: Dictionary): string {
+  const labels: Record<string, string> = {
+    straight_edge: dict.tableDetail.edgeStraight,
+    live_edge: dict.tableDetail.edgeLive,
+    soft_rounded: dict.tableDetail.edgeRounded,
+  };
+  return labels[edge] ?? edge;
 }

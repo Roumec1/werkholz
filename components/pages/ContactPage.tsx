@@ -28,14 +28,10 @@ export default function ContactPage({ locale, dict }: Props) {
               <div className="sticky top-28 space-y-6">
                 <div className="rounded-2xl bg-cream p-8 border border-stone-200/60">
                   <h3 className="font-display text-2xl text-ink">
-                    {locale === "de" ? "Direkter Kontakt" : locale === "en" ? "Direct contact" : "Přímý kontakt"}
+                    {dict.contact.directTitle}
                   </h3>
                   <p className="mt-3 text-stone-600 leading-relaxed text-sm">
-                    {locale === "de"
-                      ? "Antworten meist innerhalb eines Werktags."
-                      : locale === "en"
-                        ? "Replies usually within one business day."
-                        : "Odpovědi obvykle do jednoho pracovního dne."}
+                    {dict.contact.directSubtitle}
                   </p>
 
                   <div className="mt-6 space-y-3 text-sm">
@@ -69,14 +65,10 @@ export default function ContactPage({ locale, dict }: Props) {
 
                 <div className="rounded-2xl bg-ink text-bone p-8">
                   <p className="eyebrow text-stone-400">
-                    {locale === "de" ? "Werkstatt" : locale === "en" ? "Workshop" : "Dílna"}
+                    {dict.contact.workshopLabel}
                   </p>
                   <p className="mt-3 font-display text-xl leading-snug">
-                    {locale === "de"
-                      ? "In unserer Werkstatt gefertigt. Geliefert nach Berlin und deutschlandweit."
-                      : locale === "en"
-                        ? "Made in our workshop. Delivered to Berlin and across Germany."
-                        : "Vyrobeno v naší dílně. Doručeno do Berlína i po celém Německu."}
+                    {dict.contact.workshopText}
                   </p>
                 </div>
               </div>

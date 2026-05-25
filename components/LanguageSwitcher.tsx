@@ -48,18 +48,20 @@ export default function LanguageSwitcher({ currentLocale, variant = "header" }: 
 
   if (variant === "footer") {
     return (
-      <div className="flex gap-2 text-xs uppercase tracking-widest">
+      <div role="group" aria-label="Language" className="flex gap-2 text-xs uppercase tracking-widest">
         {LOCALES.map((loc, i) => (
           <span key={loc} className="flex items-center gap-2">
             <button
               onClick={() => switchTo(loc)}
+              lang={loc}
+              aria-pressed={loc === currentLocale}
               className={`transition-colors ${
                 loc === currentLocale ? "text-bone" : "text-stone-400 hover:text-bone"
               }`}
             >
               {LABELS[loc]}
             </button>
-            {i < LOCALES.length - 1 && <span className="text-stone-600">·</span>}
+            {i < LOCALES.length - 1 && <span className="text-stone-600" aria-hidden="true">·</span>}
           </span>
         ))}
       </div>
@@ -71,7 +73,8 @@ export default function LanguageSwitcher({ currentLocale, variant = "header" }: 
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1.5 text-xs uppercase tracking-widest font-medium text-ink hover:text-graphite transition-colors py-2"
-        aria-haspopup="true"
+        aria-label={`Language: ${FULL[currentLocale]}`}
+        aria-haspopup="menu"
         aria-expanded={open}
       >
         {LABELS[currentLocale]}
@@ -80,16 +83,20 @@ export default function LanguageSwitcher({ currentLocale, variant = "header" }: 
           height="10"
           viewBox="0 0 10 10"
           fill="none"
+          aria-hidden="true"
           className={`transition-transform ${open ? "rotate-180" : ""}`}
         >
           <path d="M2 4l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
       {open && (
-        <div className="absolute right-0 mt-2 min-w-[140px] bg-cream border border-stone-200 rounded-xl shadow-lg py-1 animate-slide-down z-50">
+        <div role="menu" className="absolute right-0 mt-2 min-w-[140px] bg-cream border border-stone-200 rounded-xl shadow-lg py-1 animate-slide-down z-50">
           {LOCALES.map((loc) => (
             <button
               key={loc}
+              role="menuitemradio"
+              aria-checked={loc === currentLocale}
+              lang={loc}
               onClick={() => switchTo(loc)}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-stone-100 transition-colors flex items-center justify-between ${
                 loc === currentLocale ? "text-ink font-medium" : "text-stone-600"
@@ -97,7 +104,7 @@ export default function LanguageSwitcher({ currentLocale, variant = "header" }: 
             >
               <span>{FULL[loc]}</span>
               {loc === currentLocale && (
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                   <path d="M3 7l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               )}

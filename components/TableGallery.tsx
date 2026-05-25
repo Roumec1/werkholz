@@ -2,17 +2,16 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { TableItem } from "@/lib/tables";
+import type { Dictionary } from "@/lib/i18n";
 import TableIllustration from "./TableIllustration";
 
 interface Props {
   item: TableItem;
+  dict: Dictionary;
 }
 
-/**
- * Image gallery with thumbnails, prev/next nav, keyboard nav, and lightbox.
- * When Sanity is wired, the same component swaps illustrations for real photos.
- */
-export default function TableGallery({ item }: Props) {
+export default function TableGallery({ item, dict }: Props) {
+  const g = dict.gallery;
   const [index, setIndex] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const total = 4;
@@ -60,14 +59,14 @@ export default function TableGallery({ item }: Props) {
           {/* Tap-to-expand */}
           <button
             onClick={() => setLightbox(true)}
-            aria-label="Expand image"
+            aria-label={g.expand}
             className="absolute inset-0 cursor-zoom-in"
           />
 
           {/* Navigation arrows */}
           <button
             onClick={(e) => { e.stopPropagation(); prev(); }}
-            aria-label="Previous image"
+            aria-label={g.prev}
             className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-bone/85 backdrop-blur hover:bg-bone flex items-center justify-center text-ink shadow-md transition-all"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -76,7 +75,7 @@ export default function TableGallery({ item }: Props) {
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); next(); }}
-            aria-label="Next image"
+            aria-label={g.next}
             className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-bone/85 backdrop-blur hover:bg-bone flex items-center justify-center text-ink shadow-md transition-all"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -91,10 +90,10 @@ export default function TableGallery({ item }: Props) {
 
           {/* Expand hint */}
           <div className="absolute bottom-4 left-4 px-3 py-1 rounded-full bg-ink/70 backdrop-blur text-bone text-xs flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M2 5V2h3M10 5V2H7M2 7v3h3M10 7v3H7" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            Vollbild
+            {g.hint}
           </div>
         </div>
 
@@ -104,8 +103,8 @@ export default function TableGallery({ item }: Props) {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              aria-label={`View image ${i + 1}`}
-              aria-current={i === index}
+              aria-label={g.thumbLabel.replace("{n}", String(i + 1))}
+              aria-pressed={i === index}
               className={`aspect-square rounded-xl overflow-hidden border-2 transition-all duration-300 relative ${
                 i === index ? "border-ink" : "border-transparent opacity-70 hover:opacity-100"
               }`}
@@ -131,27 +130,27 @@ export default function TableGallery({ item }: Props) {
         >
           <button
             onClick={() => setLightbox(false)}
-            aria-label="Close fullscreen"
+            aria-label={g.close}
             className="absolute top-4 right-4 w-11 h-11 rounded-full bg-bone/10 hover:bg-bone/20 backdrop-blur text-bone flex items-center justify-center transition-colors"
           >
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M5 5l8 8M13 5l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </button>
 
           <button
             onClick={(e) => { e.stopPropagation(); prev(); }}
-            aria-label="Previous image"
+            aria-label={g.prev}
             className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-bone/10 hover:bg-bone/20 backdrop-blur text-bone flex items-center justify-center transition-colors"
           >
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M12 4L6 9l6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
 
           <button
             onClick={(e) => { e.stopPropagation(); next(); }}
-            aria-label="Next image"
+            aria-label={g.next}
             className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-bone/10 hover:bg-bone/20 backdrop-blur text-bone flex items-center justify-center transition-colors"
           >
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">

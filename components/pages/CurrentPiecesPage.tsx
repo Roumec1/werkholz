@@ -22,13 +22,7 @@ export default function CurrentPiecesPage({ locale, dict }: Props) {
     <>
       <PageHeader
         eyebrow={dict.featured.eyebrow}
-        title={
-          locale === "de"
-            ? "Alle aktuellen Stücke"
-            : locale === "en"
-              ? "All current pieces"
-              : "Všechny aktuální kusy"
-        }
+        title={dict.currentPieces.title}
         subtitle={dict.featured.subtitle}
       />
 

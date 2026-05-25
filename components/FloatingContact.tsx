@@ -32,18 +32,10 @@ export default function FloatingContact({ locale, dict }: Props) {
       {open && (
         <div className="mb-3 w-72 sm:w-80 rounded-2xl bg-bone border border-stone-200 shadow-2xl shadow-ink/15 p-5 animate-slide-down">
           <p className="font-display text-lg text-ink leading-tight">
-            {locale === "de"
-              ? "Tisch planen?"
-              : locale === "en"
-                ? "Plan your table?"
-                : "Naplánovat stůl?"}
+            {dict.floatingContact.title}
           </p>
           <p className="mt-2 text-sm text-stone-600 leading-relaxed">
-            {locale === "de"
-              ? "Schreiben Sie uns. Wir antworten meist innerhalb eines Werktags."
-              : locale === "en"
-                ? "Write to us — we usually reply within one business day."
-                : "Napište nám — obvykle odpovídáme do jednoho pracovního dne."}
+            {dict.floatingContact.subtitle}
           </p>
           <div className="mt-4 flex flex-col gap-2">
             <Link

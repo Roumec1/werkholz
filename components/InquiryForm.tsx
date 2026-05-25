@@ -38,18 +38,10 @@ function FormInner({ locale, dict }: Props) {
           </svg>
         </div>
         <h3 className="mt-6 font-display text-2xl text-ink">
-          {locale === "de"
-            ? "Danke für Ihre Anfrage!"
-            : locale === "en"
-              ? "Thank you for your inquiry!"
-              : "Děkujeme za vaši poptávku!"}
+          {dict.form.successTitle}
         </h3>
         <p className="mt-3 text-stone-600 leading-relaxed">
-          {locale === "de"
-            ? "Wir melden uns meist innerhalb eines Werktags zurück."
-            : locale === "en"
-              ? "We'll reply within one business day."
-              : "Ozveme se obvykle do jednoho pracovního dne."}
+          {dict.form.successSubtitle}
         </p>
       </div>
     );
@@ -65,7 +57,7 @@ function FormInner({ locale, dict }: Props) {
           />
           <div className="min-w-0">
             <p className="eyebrow text-stone-500">
-              {locale === "de" ? "Anfrage zu" : locale === "en" ? "Inquiry about" : "Poptávka na"}
+              {dict.form.inquiryAbout}
             </p>
             <p className="mt-1 font-display text-lg text-ink truncate">
               {referencedItem.title[locale]}
@@ -94,7 +86,7 @@ function FormInner({ locale, dict }: Props) {
         { value: "business", label: dict.categories.business.title },
       ]} />
 
-      <Field id="dimensions" label={dict.form.dimensions} placeholder={locale === "de" ? "z.B. 220 × 95 cm" : locale === "en" ? "e.g. 220 × 95 cm" : "např. 220 × 95 cm"} />
+      <Field id="dimensions" label={dict.form.dimensions} placeholder={dict.form.dimensionsPlaceholder} />
 
       <div className="grid sm:grid-cols-2 gap-5">
         <Select id="edge" label={dict.form.edge} options={[
@@ -123,9 +115,7 @@ function FormInner({ locale, dict }: Props) {
         disabled={submitting}
         className="btn-primary w-full justify-center disabled:opacity-60"
       >
-        {submitting
-          ? (locale === "de" ? "Sende..." : locale === "en" ? "Sending..." : "Odesílám...")
-          : dict.form.submit}
+        {submitting ? dict.form.sending : dict.form.submit}
       </button>
 
       <p className="text-xs text-stone-500 leading-relaxed">

@@ -21,7 +21,10 @@
     "cta2": "Zobrazit aktuální kusy",
     "trust1": "Masivní dřevo",
     "trust2": "Vyrobeno na míru",
-    "trust3": "Doručení po celém Německu"
+    "trust3": "Doručení po celém Německu",
+    "workshopLabel": "V dílně",
+    "liveCountText": "stolů dostupných nebo ve výrobě",
+    "currentlyLabel": "Aktuálně"
   },
   "featured": {
     "eyebrow": "Aktuálně v dílně",
@@ -84,10 +87,22 @@
   },
   "stats": {
     "items": [
-      { "value": "200+", "label": "vyrobených stolů" },
-      { "value": "12", "label": "let zkušeností" },
-      { "value": "2–4", "label": "týdny výroby" },
-      { "value": "100%", "label": "masivní dřevo" }
+      {
+        "value": "200+",
+        "label": "vyrobených stolů"
+      },
+      {
+        "value": "12",
+        "label": "let zkušeností"
+      },
+      {
+        "value": "2–4",
+        "label": "týdny výroby"
+      },
+      {
+        "value": "100%",
+        "label": "masivní dřevo"
+      }
     ]
   },
   "care": {
@@ -95,9 +110,18 @@
     "title": "Jak si stůl udržet celý život.",
     "subtitle": "Masivní dřevo žije a pracuje. Chce být ošetřováno — ne zatěsněno. Tady je vše, co potřebujete vědět.",
     "items": [
-      { "title": "Denně", "desc": "Otřete měkkým, lehce vlhkým hadříkem. Vysušte. Žádné agresivní čističe." },
-      { "title": "Měsíčně", "desc": "Naneste tenkou vrstvu pečujícího oleje. Vetřete krouživým pohybem, nechte vsáknout, otřete." },
-      { "title": "Dle potřeby", "desc": "Lehce přebrouste škrábance, naneste olej. Rádi pošleme s objednávkou pečující sadu." }
+      {
+        "title": "Denně",
+        "desc": "Otřete měkkým, lehce vlhkým hadříkem. Vysušte. Žádné agresivní čističe."
+      },
+      {
+        "title": "Měsíčně",
+        "desc": "Naneste tenkou vrstvu pečujícího oleje. Vetřete krouživým pohybem, nechte vsáknout, otřete."
+      },
+      {
+        "title": "Dle potřeby",
+        "desc": "Lehce přebrouste škrábance, naneste olej. Rádi pošleme s objednávkou pečující sadu."
+      }
     ]
   },
   "filters": {
@@ -113,27 +137,72 @@
     "eyebrow": "Co říkají zákazníci",
     "title": "Doručeno. Postaveno. Milováno.",
     "items": [
-      { "quote": "Stůl vypadá přesně tak, jak jsme si představovali — a v prostoru ještě lépe než na fotkách.", "name": "Anna K.", "role": "Jídelní stůl dub · Berlin Kreuzberg" },
-      { "quote": "Jasná komunikace, rychlé doručení, perfektní řemeslo. Pro naši kavárnu jsme objednali 12 stolů a jsme nadšeni.", "name": "Café Felix", "role": "Gastronomie · Berlin Mitte" },
-      { "quote": "Při výrobě na míru se opravdu mysleli na každý detail. Stůl pasuje do naší kuchyně na milimetr.", "name": "Rodina Brandtových", "role": "Kuchyňský stůl buk · Postupim" }
+      {
+        "quote": "Stůl vypadá přesně tak, jak jsme si představovali — a v prostoru ještě lépe než na fotkách.",
+        "name": "Anna K.",
+        "role": "Jídelní stůl dub · Berlin Kreuzberg"
+      },
+      {
+        "quote": "Jasná komunikace, rychlé doručení, perfektní řemeslo. Pro naši kavárnu jsme objednali 12 stolů a jsme nadšeni.",
+        "name": "Café Felix",
+        "role": "Gastronomie · Berlin Mitte"
+      },
+      {
+        "quote": "Při výrobě na míru se opravdu mysleli na každý detail. Stůl pasuje do naší kuchyně na milimetr.",
+        "name": "Rodina Brandtových",
+        "role": "Kuchyňský stůl buk · Postupim"
+      }
     ]
   },
   "workshop": {
     "eyebrow": "V dílně",
     "title": "Tady vzniká váš stůl.",
     "subtitle": "Žádná masová výroba, žádný franšízový řetězec. Každý stůl je v naší dílně plánován, řezán, broušen a dokončen — ručně.",
-    "labels": ["Plánování", "Řezání", "Lepení", "Broušení", "Povrch", "Kontrola"]
+    "labels": [
+      "Plánování",
+      "Řezání",
+      "Lepení",
+      "Broušení",
+      "Povrch",
+      "Kontrola"
+    ]
   },
   "materials": {
     "eyebrow": "Materiál",
     "title": "Dřeva, se kterými pracujeme",
     "subtitle": "Každý kus dřeva vybíráme s rozmyslem — od původu po broušení. Stručný přehled dřevin, které používáme nejčastěji.",
     "items": [
-      { "name": "Dub", "origin": "Evropa", "character": "Robustní, teple světlý, klasický. Univerzál pro jídelní a konferenční stoly." },
-      { "name": "Ořech", "origin": "Amerika", "character": "Hluboce čokoládově hnědý, živá kresba. Prémiový vzhled, ideální pro obývací a konferenční stolky." },
-      { "name": "Jasan", "origin": "Evropa", "character": "Světlý, čistý, výrazná kresba. Moderní, vzdušný, ideální pro psací stoly." },
-      { "name": "Buk", "origin": "Evropa", "character": "Krémově růžový tón, klidná kresba. Velmi stabilní, ideální pro kuchyňské stoly." }
-    ]
+      {
+        "name": "Dub",
+        "origin": "Evropa",
+        "character": "Robustní, teple světlý, klasický. Univerzál pro jídelní a konferenční stoly.",
+        "bestFor": "Jídelní stoly",
+        "hardness": "★★★★"
+      },
+      {
+        "name": "Ořech",
+        "origin": "Amerika",
+        "character": "Hluboce čokoládově hnědý, živá kresba. Prémiový vzhled, ideální pro obývací a konferenční stolky.",
+        "bestFor": "Obývací pokoje",
+        "hardness": "★★★★★"
+      },
+      {
+        "name": "Jasan",
+        "origin": "Evropa",
+        "character": "Světlý, čistý, výrazná kresba. Moderní, vzdušný, ideální pro psací stoly.",
+        "bestFor": "Psací stoly",
+        "hardness": "★★★"
+      },
+      {
+        "name": "Buk",
+        "origin": "Evropa",
+        "character": "Krémově růžový tón, klidná kresba. Velmi stabilní, ideální pro kuchyňské stoly.",
+        "bestFor": "Kuchyně",
+        "hardness": "★★★★"
+      }
+    ],
+    "hardnessLabel": "Tvrdost",
+    "bestForLabel": "Nejlépe pro"
   },
   "process": {
     "eyebrow": "Jak pracujeme",
@@ -163,14 +232,44 @@
     "available": "Ihned k dispozici",
     "production": "Ve výrobě",
     "soldInspiration": "Prodáno / Inspirace",
-    "viewAll": "Zobrazit všechny kusy"
+    "viewAll": "Zobrazit všechny kusy",
+    "piece": "kus",
+    "pieces": "kusů"
   },
   "b2b": {
     "eyebrow": "Pro firmy",
     "title": "Stoly pro kavárny, kanceláře a restaurace.",
     "subtitle": "Sjednocené série, odolné matné povrchy, plánovatelná výroba. Spolupracujeme s gastronomií, interiérovými architekty a firmami v celém Německu.",
     "cta": "Poslat B2B poptávku",
-    "useCases": ["Kavárny & bistra", "Restaurace & bary", "Kanceláře & coworking", "Butikové hotely", "Interiérový design"]
+    "useCases": [
+      "Kavárny & bistra",
+      "Restaurace & bary",
+      "Kanceláře & coworking",
+      "Butikové hotely",
+      "Interiérový design"
+    ],
+    "batchTitle": "Série & vícenásobné objednávky",
+    "batchText": "Až 30 sjednocených stolů v jedné sérii.",
+    "differenceEyebrow": "Co děláme jinak",
+    "differenceTitle": "Čtyři věci, které pro firmy dělají rozdíl.",
+    "benefits": [
+      {
+        "title": "Sjednocené série",
+        "desc": "Více stolů ze stejné šarže dřeva, konzistentní rozměry a stejný povrch."
+      },
+      {
+        "title": "Odolné matné povrchy",
+        "desc": "Tvrdý voskový olej: pro každodenní použití, snadno opravitelný, bez vysokého lesku."
+      },
+      {
+        "title": "Plánovatelná výroba",
+        "desc": "Jasné termíny, koordinované doručení, plánovatelné kolem renovace nebo otevření."
+      },
+      {
+        "title": "Přímý kontakt",
+        "desc": "Mluvíte přímo s dílnou. Žádní prostředníci, žádný řetězec."
+      }
+    ]
   },
   "faq": {
     "eyebrow": "Otázky & odpovědi",
@@ -216,7 +315,9 @@
     "imprint": "Výtisk",
     "privacy": "Ochrana dat",
     "contact": "Kontakt",
-    "rights": "Všechna práva vyhrazena."
+    "rights": "Všechna práva vyhrazena.",
+    "germany": "Německo",
+    "workshopTagline": "Vyrobeno v naší dílně."
   },
   "status": {
     "available": "Ihned k dispozici",
@@ -254,6 +355,92 @@
     "timing": "Požadovaný termín",
     "message": "Zpráva",
     "submit": "Odeslat poptávku",
-    "whatsapp": "Raději WhatsApp? Napište nám přímo s rozměry a referenční fotkou."
+    "whatsapp": "Raději WhatsApp? Napište nám přímo s rozměry a referenční fotkou.",
+    "successTitle": "Děkujeme za vaši poptávku!",
+    "successSubtitle": "Ozveme se obvykle do jednoho pracovního dne.",
+    "inquiryAbout": "Poptávka na",
+    "dimensionsPlaceholder": "např. 220 × 95 cm",
+    "sending": "Odesílám..."
+  },
+  "floatingContact": {
+    "title": "Naplánovat stůl?",
+    "subtitle": "Napište nám — obvykle odpovídáme do jednoho pracovního dne."
+  },
+  "contact": {
+    "directTitle": "Přímý kontakt",
+    "directSubtitle": "Odpovědi obvykle do jednoho pracovního dne.",
+    "workshopLabel": "Dílna",
+    "workshopText": "Vyrobeno v naší dílně. Doručeno do Berlína i po celém Německu."
+  },
+  "tableDetail": {
+    "backLink": "Všechny kusy",
+    "estimatedCompletion": "Předpokládané dokončení",
+    "careTitle": "Pečující sada zdarma",
+    "careDesc": "Pečující olej, hadřík a brusný papír — vše, co budete potřebovat na další roky.",
+    "specDimensions": "Rozměry",
+    "specThickness": "tloušťka",
+    "specWood": "Dřevo",
+    "specEdge": "Hrana",
+    "specBase": "Podnož",
+    "specFinish": "Povrch",
+    "specResin": "Pryskyřice",
+    "edgeStraight": "Rovná hrana",
+    "edgeLive": "Přírodní hrana",
+    "edgeRounded": "Jemně zaoblená",
+    "similarPieces": "Podobné kusy"
+  },
+  "sizeVisualizer": {
+    "title": "Velikost",
+    "personLabel": "Osoba ~175 cm",
+    "tableLabel": "Váš stůl"
+  },
+  "currentPieces": {
+    "title": "Všechny aktuální kusy"
+  },
+  "customTables": {
+    "title": "Každý stůl začíná rozhovorem.",
+    "subtitle": "Řekněte nám o svém prostoru, preferovaném dřevě a způsobu použití. Navrhneme vhodné proporce, dřevo a podnož — a poté vyrobíme váš stůl v naší dílně."
+  },
+  "gallery": {
+    "expand": "Zvětšit",
+    "hint": "Celá obrazovka",
+    "close": "Zavřít",
+    "prev": "Předchozí obrázek",
+    "next": "Další obrázek",
+    "thumbLabel": "Zobrazit obrázek {n}"
+  },
+  "sectionMeta": {
+    "currentPieces": {
+      "title": "Aktuální kusy",
+      "desc": "Naše aktuální stoly z masivního dřeva — dostupné, ve výrobě nebo prodané jako inspirace."
+    },
+    "customTables": {
+      "title": "Stoly na míru",
+      "desc": "Stoly z masivního dřeva vyrobené podle vašich přání. Rozměry, dřevo, hrana a podnož individuálně."
+    },
+    "forBusinesses": {
+      "title": "Pro firmy",
+      "desc": "Stoly v sériích pro kavárny, kanceláře a restaurace. Plánovatelná výroba, odolné povrchy, přímý kontakt."
+    },
+    "process": {
+      "title": "Postup",
+      "desc": "Od poptávky po doručení — jak vyrábíme váš stůl v naší dílně."
+    },
+    "contact": {
+      "title": "Kontakt & poptávka",
+      "desc": "Dotazy, poptávky nebo jen pozdrav. Obvykle odpovídáme do jednoho pracovního dne."
+    },
+    "materials": {
+      "title": "Dřevo",
+      "desc": "Dub, ořech, jasan, buk — masivní dřeva, se kterými nejraději pracujeme."
+    },
+    "impressum": {
+      "title": "Vytisk",
+      "desc": "Právní informace o WERKHOLZ."
+    },
+    "privacy": {
+      "title": "Ochrana dat",
+      "desc": "Zásady ochrany osobních údajů pro werkholz.de."
+    }
   }
 }

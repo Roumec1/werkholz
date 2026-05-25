@@ -1,16 +1,16 @@
 import type { TableItem } from "@/lib/tables";
-import type { Locale } from "@/lib/routes";
+import type { Dictionary } from "@/lib/i18n";
 
 interface Props {
   item: TableItem;
-  locale: Locale;
+  dict: Dictionary;
 }
 
 /**
  * Side-view scale comparison of the table to a standing person (avg 175cm).
  * Helps customers visualize the actual size of the table in a room.
  */
-export default function SizeVisualizer({ item, locale }: Props) {
+export default function SizeVisualizer({ item, dict }: Props) {
   const heightCm = item.dimensions.heightCm;
   const lengthCm =
     item.dimensions.lengthCm ?? item.dimensions.diameterCm ?? 100;
@@ -24,12 +24,7 @@ export default function SizeVisualizer({ item, locale }: Props) {
   const personHeightPx = personHeightCm * cmToPx;
   const groundY = 220;
 
-  const title =
-    locale === "de" ? "Größenvergleich" : locale === "en" ? "Size comparison" : "Velikost";
-  const personLabel =
-    locale === "de" ? "Person ~175 cm" : locale === "en" ? "Person ~175 cm" : "Osoba ~175 cm";
-  const tableLabel =
-    locale === "de" ? "Ihr Tisch" : locale === "en" ? "Your table" : "Váš stůl";
+  const { title, personLabel, tableLabel } = dict.sizeVisualizer;
 
   // Center the composition, leaving room for the height-label on the left
   const labelGutter = 38;

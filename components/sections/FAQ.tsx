@@ -26,9 +26,11 @@ export default function FAQ({ dict }: Props) {
                 return (
                   <li key={i} className="border-t border-stone-200 first:border-t-0">
                     <button
+                      id={`faq-btn-${i}`}
                       onClick={() => setOpen(isOpen ? null : i)}
                       className="w-full flex items-start justify-between gap-6 py-6 sm:py-7 text-left group"
                       aria-expanded={isOpen}
+                      aria-controls={`faq-answer-${i}`}
                     >
                       <span className="font-display text-xl sm:text-2xl text-ink leading-snug">
                         {item.q}
@@ -44,6 +46,9 @@ export default function FAQ({ dict }: Props) {
                       </span>
                     </button>
                     <div
+                      id={`faq-answer-${i}`}
+                      role="region"
+                      aria-labelledby={`faq-btn-${i}`}
                       className={`grid transition-all duration-500 ease-out ${
                         isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                       }`}

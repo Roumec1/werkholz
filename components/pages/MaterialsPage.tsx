@@ -75,8 +75,8 @@ export default function MaterialsPage({ locale, dict }: Props) {
                   {/* Quick attribute pills */}
                   <div className="mt-8 flex flex-wrap gap-2">
                     {[
-                      { label: locale === "de" ? "Härte" : locale === "en" ? "Hardness" : "Tvrdost", value: i === 0 ? "★★★★" : i === 1 ? "★★★★★" : i === 2 ? "★★★" : "★★★★" },
-                      { label: locale === "de" ? "Lieblings für" : locale === "en" ? "Best for" : "Nejlépe pro", value: i === 0 ? (locale === "de" ? "Esstische" : locale === "en" ? "Dining tables" : "Jídelní stoly") : i === 1 ? (locale === "de" ? "Wohntische" : locale === "en" ? "Living rooms" : "Obývací pokoje") : i === 2 ? (locale === "de" ? "Schreibtische" : locale === "en" ? "Desks" : "Psací stoly") : (locale === "de" ? "Küchen" : locale === "en" ? "Kitchens" : "Kuchyně") },
+                      { label: dict.materials.hardnessLabel, value: item.hardness },
+                      { label: dict.materials.bestForLabel, value: item.bestFor },
                     ].map((attr) => (
                       <span
                         key={attr.label}

@@ -60,14 +60,19 @@ export default function CountUp({ value, duration = 1400 }: Props) {
     if (!started || !isAnimatable) return;
     const target = parseInt(endStr, 10);
     const range = match?.[3] ? `${startStr}–` : "";
-    const start = performance.now();
+    const startTime = performance.now();
     let raf = 0;
+    let lastInt = -1;
 
     function tick(now: number) {
-      const t = Math.min(1, (now - start) / duration);
+      const t = Math.min(1, (now - startTime) / duration);
       const eased = 1 - Math.pow(1 - t, 3);
-      const current = Math.round(eased * target);
-      setDisplayed(`${prefix}${range}${current}${suffix}`);
+      // Snap to exact target at end to prevent floating-point oscillation
+      const current = t >= 1 ? target : Math.floor(eased * target);
+      if (current !== lastInt) {
+        lastInt = current;
+        setDisplayed(`${prefix}${range}${current}${suffix}`);
+      }
       if (t < 1) raf = requestAnimationFrame(tick);
     }
     raf = requestAnimationFrame(tick);
@@ -78,10 +83,12 @@ export default function CountUp({ value, duration = 1400 }: Props) {
     return <span ref={ref}>{value}</span>;
   }
 
-  // Render initial state showing the start of the range or 0
+  // Grid-stack trick: hidden final value reserves full width; animated value overlays it.
+  // This prevents layout shifts as digit count grows (e.g. "1+" → "200+").
   return (
-    <span ref={ref} className="tabular-nums">
-      {displayed}
+    <span ref={ref} className="tabular-nums" style={{ display: 'inline-grid' }}>
+      <span style={{ gridArea: '1/1', visibility: 'hidden' }} aria-hidden>{value}</span>
+      <span style={{ gridArea: '1/1' }}>{displayed}</span>
     </span>
   );
 }

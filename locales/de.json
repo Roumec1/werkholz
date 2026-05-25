@@ -21,7 +21,10 @@
     "cta2": "Aktuelle Stücke ansehen",
     "trust1": "Massivholz",
     "trust2": "Nach Maß gefertigt",
-    "trust3": "Lieferung deutschlandweit"
+    "trust3": "Lieferung deutschlandweit",
+    "workshopLabel": "In der Werkstatt",
+    "liveCountText": "Tische gerade verfügbar oder in Fertigung",
+    "currentlyLabel": "Aktuell"
   },
   "featured": {
     "eyebrow": "Aktuell in der Werkstatt",
@@ -84,10 +87,22 @@
   },
   "stats": {
     "items": [
-      { "value": "200+", "label": "gefertigte Tische" },
-      { "value": "12", "label": "Jahre Erfahrung" },
-      { "value": "2–4", "label": "Wochen Fertigung" },
-      { "value": "100%", "label": "Massivholz" }
+      {
+        "value": "200+",
+        "label": "gefertigte Tische"
+      },
+      {
+        "value": "12",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "2–4",
+        "label": "Wochen Fertigung"
+      },
+      {
+        "value": "100%",
+        "label": "Massivholz"
+      }
     ]
   },
   "care": {
@@ -95,9 +110,18 @@
     "title": "Wie Sie Ihren Tisch ein Leben lang behalten.",
     "subtitle": "Massivholz arbeitet. Es will gepflegt — nicht versiegelt — werden. Hier ist alles, was Sie wissen müssen.",
     "items": [
-      { "title": "Täglich", "desc": "Mit weichem, leicht feuchtem Tuch abwischen. Trockenwischen. Keine scharfen Reiniger." },
-      { "title": "Monatlich", "desc": "Eine dünne Schicht Pflegeöl auftragen. Kreisförmig einreiben, einziehen lassen, abwischen." },
-      { "title": "Bei Bedarf", "desc": "Kratzer leicht anschleifen, Öl auftragen. Wir senden gerne ein Pflegeset zur Bestellung." }
+      {
+        "title": "Täglich",
+        "desc": "Mit weichem, leicht feuchtem Tuch abwischen. Trockenwischen. Keine scharfen Reiniger."
+      },
+      {
+        "title": "Monatlich",
+        "desc": "Eine dünne Schicht Pflegeöl auftragen. Kreisförmig einreiben, einziehen lassen, abwischen."
+      },
+      {
+        "title": "Bei Bedarf",
+        "desc": "Kratzer leicht anschleifen, Öl auftragen. Wir senden gerne ein Pflegeset zur Bestellung."
+      }
     ]
   },
   "filters": {
@@ -113,27 +137,72 @@
     "eyebrow": "Was Kunden sagen",
     "title": "Geliefert. Eingerichtet. Geliebt.",
     "items": [
-      { "quote": "Der Tisch ist genau so geworden, wie wir ihn uns vorgestellt haben — und sieht im Raum noch besser aus als auf den Fotos.", "name": "Anna K.", "role": "Esstisch Eiche · Berlin Kreuzberg" },
-      { "quote": "Klare Kommunikation, schnelle Lieferung, perfekte Verarbeitung. Wir haben für unser Café 12 Tische bestellt und sind begeistert.", "name": "Café Felix", "role": "Gastronomie · Berlin Mitte" },
-      { "quote": "Bei der Maßanfertigung wurde wirklich auf jedes Detail eingegangen. Der Tisch passt millimetergenau in unsere Küche.", "name": "Familie Brandt", "role": "Küchentisch Buche · Potsdam" }
+      {
+        "quote": "Der Tisch ist genau so geworden, wie wir ihn uns vorgestellt haben — und sieht im Raum noch besser aus als auf den Fotos.",
+        "name": "Anna K.",
+        "role": "Esstisch Eiche · Berlin Kreuzberg"
+      },
+      {
+        "quote": "Klare Kommunikation, schnelle Lieferung, perfekte Verarbeitung. Wir haben für unser Café 12 Tische bestellt und sind begeistert.",
+        "name": "Café Felix",
+        "role": "Gastronomie · Berlin Mitte"
+      },
+      {
+        "quote": "Bei der Maßanfertigung wurde wirklich auf jedes Detail eingegangen. Der Tisch passt millimetergenau in unsere Küche.",
+        "name": "Familie Brandt",
+        "role": "Küchentisch Buche · Potsdam"
+      }
     ]
   },
   "workshop": {
     "eyebrow": "In der Werkstatt",
     "title": "Hier entstehen Ihre Tische.",
     "subtitle": "Keine Massenfertigung, keine Filialkette. Jeder Tisch wird in unserer Werkstatt geplant, zugeschnitten, geschliffen und veredelt — von Hand.",
-    "labels": ["Planung", "Zuschnitt", "Verleimung", "Schliff", "Veredelung", "Endkontrolle"]
+    "labels": [
+      "Planung",
+      "Zuschnitt",
+      "Verleimung",
+      "Schliff",
+      "Veredelung",
+      "Endkontrolle"
+    ]
   },
   "materials": {
     "eyebrow": "Material",
     "title": "Hölzer, mit denen wir arbeiten",
     "subtitle": "Wir wählen jedes Holz mit Bedacht — von der Lokalität bis zum Schliff. Hier eine Übersicht der Hölzer, die wir am häufigsten verwenden.",
     "items": [
-      { "name": "Eiche", "origin": "Europa", "character": "Robust, hell-warm, klassisch. Der Allrounder für Esstische und Konferenztische." },
-      { "name": "Nussbaum", "origin": "Amerika", "character": "Tief schokoladenbraun, lebendige Maserung. Premium-Optik, ideal für Wohn- und Couchtische." },
-      { "name": "Esche", "origin": "Europa", "character": "Hell, klar, betonte Maserung. Modern, leicht, schreibtisch-freundlich." },
-      { "name": "Buche", "origin": "Europa", "character": "Cremig-rosa Ton, ruhige Zeichnung. Sehr stabil, ideal für Küchentische." }
-    ]
+      {
+        "name": "Eiche",
+        "origin": "Europa",
+        "character": "Robust, hell-warm, klassisch. Der Allrounder für Esstische und Konferenztische.",
+        "bestFor": "Esstische",
+        "hardness": "★★★★"
+      },
+      {
+        "name": "Nussbaum",
+        "origin": "Amerika",
+        "character": "Tief schokoladenbraun, lebendige Maserung. Premium-Optik, ideal für Wohn- und Couchtische.",
+        "bestFor": "Wohntische",
+        "hardness": "★★★★★"
+      },
+      {
+        "name": "Esche",
+        "origin": "Europa",
+        "character": "Hell, klar, betonte Maserung. Modern, leicht, schreibtisch-freundlich.",
+        "bestFor": "Schreibtische",
+        "hardness": "★★★"
+      },
+      {
+        "name": "Buche",
+        "origin": "Europa",
+        "character": "Cremig-rosa Ton, ruhige Zeichnung. Sehr stabil, ideal für Küchentische.",
+        "bestFor": "Küchen",
+        "hardness": "★★★★"
+      }
+    ],
+    "hardnessLabel": "Härte",
+    "bestForLabel": "Lieblings für"
   },
   "process": {
     "eyebrow": "So arbeiten wir",
@@ -163,14 +232,44 @@
     "available": "Sofort verfügbar",
     "production": "In Fertigung",
     "soldInspiration": "Verkauft / Inspiration",
-    "viewAll": "Alle Stücke ansehen"
+    "viewAll": "Alle Stücke ansehen",
+    "piece": "Stück",
+    "pieces": "Stücke"
   },
   "b2b": {
     "eyebrow": "Für Firmen",
     "title": "Tische für Cafés, Büros und Restaurants.",
     "subtitle": "Passende Serien, robuste matte Oberflächen, planbare Fertigung. Wir arbeiten mit Gastronomie, Innenarchitekten und Unternehmen in ganz Deutschland.",
     "cta": "B2B-Anfrage senden",
-    "useCases": ["Cafés & Bistros", "Restaurants & Bars", "Büros & Coworking", "Boutique-Hotels", "Innenarchitektur"]
+    "useCases": [
+      "Cafés & Bistros",
+      "Restaurants & Bars",
+      "Büros & Coworking",
+      "Boutique-Hotels",
+      "Innenarchitektur"
+    ],
+    "batchTitle": "Serien & Mehrfachbestellung",
+    "batchText": "Bis zu 30 passende Tische in einer Serie.",
+    "differenceEyebrow": "Was wir anders machen",
+    "differenceTitle": "Vier Punkte, die für Firmen den Unterschied machen.",
+    "benefits": [
+      {
+        "title": "Passende Serien",
+        "desc": "Mehrere Tische aus derselben Holzcharge, konsistente Maße und gleiches Finish."
+      },
+      {
+        "title": "Robuste matte Oberflächen",
+        "desc": "Hartwachsöl-Finish: alltagstauglich, reparierbar, ohne Hochglanz."
+      },
+      {
+        "title": "Planbare Fertigung",
+        "desc": "Klare Termine, abgestimmte Lieferung, planbar für Renovierung oder Eröffnung."
+      },
+      {
+        "title": "Direkter Kontakt",
+        "desc": "Sie sprechen direkt mit der Werkstatt. Kein Zwischenhandel, keine Filialkette."
+      }
+    ]
   },
   "faq": {
     "eyebrow": "Fragen & Antworten",
@@ -216,7 +315,9 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "contact": "Kontakt",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "germany": "Deutschland",
+    "workshopTagline": "In unserer Werkstatt gefertigt."
   },
   "status": {
     "available": "Sofort verfügbar",
@@ -254,6 +355,92 @@
     "timing": "Wunschzeitpunkt",
     "message": "Nachricht",
     "submit": "Anfrage senden",
-    "whatsapp": "Lieber per WhatsApp? Schreiben Sie uns direkt mit Maßen und Referenzfoto."
+    "whatsapp": "Lieber per WhatsApp? Schreiben Sie uns direkt mit Maßen und Referenzfoto.",
+    "successTitle": "Danke für Ihre Anfrage!",
+    "successSubtitle": "Wir melden uns meist innerhalb eines Werktags zurück.",
+    "inquiryAbout": "Anfrage zu",
+    "dimensionsPlaceholder": "z.B. 220 × 95 cm",
+    "sending": "Sende..."
+  },
+  "floatingContact": {
+    "title": "Tisch planen?",
+    "subtitle": "Schreiben Sie uns. Wir antworten meist innerhalb eines Werktags."
+  },
+  "contact": {
+    "directTitle": "Direkter Kontakt",
+    "directSubtitle": "Antworten meist innerhalb eines Werktags.",
+    "workshopLabel": "Werkstatt",
+    "workshopText": "In unserer Werkstatt gefertigt. Geliefert nach Berlin und deutschlandweit."
+  },
+  "tableDetail": {
+    "backLink": "Alle Stücke",
+    "estimatedCompletion": "Voraussichtlich fertig",
+    "careTitle": "Pflegeset gratis dabei",
+    "careDesc": "Pflegeöl, weiches Tuch und Schleifpapier — alles, was Sie für die nächsten Jahre brauchen.",
+    "specDimensions": "Maße",
+    "specThickness": "Stärke",
+    "specWood": "Holz",
+    "specEdge": "Kante",
+    "specBase": "Gestell",
+    "specFinish": "Oberfläche",
+    "specResin": "Harzdetail",
+    "edgeStraight": "Gerade Kante",
+    "edgeLive": "Baumkante",
+    "edgeRounded": "Weich gerundet",
+    "similarPieces": "Ähnliche Stücke"
+  },
+  "sizeVisualizer": {
+    "title": "Größenvergleich",
+    "personLabel": "Person ~175 cm",
+    "tableLabel": "Ihr Tisch"
+  },
+  "currentPieces": {
+    "title": "Alle aktuellen Stücke"
+  },
+  "customTables": {
+    "title": "Jeder Tisch beginnt mit einem Gespräch.",
+    "subtitle": "Erzählen Sie uns von Ihrem Raum, Ihrem Wunschholz und Ihrer Nutzung. Wir schlagen passende Proportionen, Holz und Gestell vor und fertigen anschließend Ihren Tisch in unserer Werkstatt."
+  },
+  "gallery": {
+    "expand": "Vergrößern",
+    "hint": "Vollbild",
+    "close": "Vollbild schließen",
+    "prev": "Vorheriges Bild",
+    "next": "Nächstes Bild",
+    "thumbLabel": "Bild {n} ansehen"
+  },
+  "sectionMeta": {
+    "currentPieces": {
+      "title": "Aktuelle Stücke",
+      "desc": "Unsere aktuellen Massivholztische — verfügbar, in Fertigung oder bereits verkauft als Inspiration."
+    },
+    "customTables": {
+      "title": "Tische nach Maß",
+      "desc": "Massivholztische nach Ihren Wünschen gefertigt. Maß, Holz, Kante und Gestell werden individuell abgestimmt."
+    },
+    "forBusinesses": {
+      "title": "Für Firmen",
+      "desc": "Tische in Serien für Cafés, Büros und Restaurants. Planbare Fertigung, robuste Oberflächen, direkter Kontakt."
+    },
+    "process": {
+      "title": "Ablauf",
+      "desc": "Von der Anfrage bis zur Lieferung — wie wir Ihren Tisch in unserer Werkstatt fertigen."
+    },
+    "contact": {
+      "title": "Kontakt & Anfrage",
+      "desc": "Fragen, Anfragen oder einfach Hallo sagen. Wir antworten meist innerhalb eines Werktags."
+    },
+    "materials": {
+      "title": "Hölzer",
+      "desc": "Eiche, Nussbaum, Esche, Buche — die Massivhölzer, mit denen wir am liebsten arbeiten."
+    },
+    "impressum": {
+      "title": "Impressum",
+      "desc": "Impressum und rechtliche Angaben zu WERKHOLZ."
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "desc": "Datenschutzerklärung für werkholz.de."
+    }
   }
 }

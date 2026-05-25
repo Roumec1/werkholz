@@ -73,7 +73,7 @@ export default function CurrentPiecesGrid({ items, locale, dict }: Props) {
       <div className="container-w">
         {/* Filter bar */}
         <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-wrap gap-2">
+          <div role="group" aria-label={dict.filters.filterBy} className="flex flex-wrap gap-2">
             {STATUSES.map((s) => {
               const label = s.key === "all" ? dict.filters.all : dict.status[s.key];
               const active = status === s.key;
@@ -81,6 +81,7 @@ export default function CurrentPiecesGrid({ items, locale, dict }: Props) {
                 <button
                   key={s.key}
                   onClick={() => setStatus(s.key)}
+                  aria-pressed={active}
                   className={`px-4 py-2 rounded-full text-sm border transition-all duration-200 ${
                     active
                       ? "bg-ink text-bone border-ink"
@@ -125,6 +126,10 @@ export default function CurrentPiecesGrid({ items, locale, dict }: Props) {
             </label>
           </div>
         </div>
+
+        <p className="sr-only" aria-live="polite" aria-atomic="true">
+          {filtered.length} {filtered.length === 1 ? dict.currentPreview.piece : dict.currentPreview.pieces}
+        </p>
 
         {/* Results */}
         {filtered.length === 0 ? (

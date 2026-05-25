@@ -83,7 +83,7 @@ export default function Footer({ locale, dict }: Props) {
                   hello@werkholz.de
                 </a>
               </li>
-              <li className="text-stone-400">Berlin · {locale === "de" ? "Deutschland" : locale === "en" ? "Germany" : "Německo"}</li>
+              <li className="text-stone-400">Berlin · {dict.footer.germany}</li>
             </ul>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Footer({ locale, dict }: Props) {
             &copy; {new Date().getFullYear()} WERKHOLZ. {dict.footer.rights}
           </p>
           <p className="text-xs text-stone-500">
-            {locale === "de" ? "In unserer Werkstatt gefertigt." : locale === "en" ? "Made in our workshop." : "Vyrobeno v naší dílně."}
+            {dict.footer.workshopTagline}
           </p>
         </div>
       </div>

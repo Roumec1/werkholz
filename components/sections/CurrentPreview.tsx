@@ -61,9 +61,7 @@ export default function CurrentPreview({ locale, dict }: Props) {
                   {block.count}
                 </span>
                 <span className="text-stone-400 text-sm">
-                  {block.count === 1
-                    ? locale === "de" ? "Stück" : locale === "en" ? "piece" : "kus"
-                    : locale === "de" ? "Stücke" : locale === "en" ? "pieces" : "kusů"}
+                  {block.count === 1 ? dict.currentPreview.piece : dict.currentPreview.pieces}
                 </span>
               </div>
 
