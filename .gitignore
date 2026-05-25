@@ -9,6 +9,10 @@
 # next.js
 /.next/
 /out/
+tsconfig.tsbuildinfo
+
+# raw product photo sources (originals are heavy PNGs; optimized JPGs in public/photos/ are committed)
+/photos/
 
 # production
 /build

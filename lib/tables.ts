@@ -37,6 +37,12 @@ export interface TableItem {
   estimatedCompletionDate?: string;
   /** Soft, warm gradient placeholder. Real photos replace later. */
   placeholderGradient: string;
+  /**
+   * Optional list of real product photo paths (relative to /public).
+   * When present, components prefer these over the SVG illustration.
+   * First image is treated as the hero / card preview.
+   */
+  images?: string[];
   sortOrder: number;
 }
 
@@ -427,6 +433,47 @@ export const SAMPLE_TABLES: TableItem[] = [
     placeholderGradient:
       "linear-gradient(135deg, #EBD9B8 0%, #C7A26A 60%, #8B6A3A 100%)",
     sortOrder: 12,
+  },
+  {
+    id: "13",
+    slug: {
+      de: "kuechentisch-eiche-rund-88-epoxy",
+      en: "oak-round-kitchen-table-88-epoxy",
+      cs: "kuchynsky-stul-dub-kulaty-88-epoxy",
+    },
+    title: {
+      de: "Küchentisch Eiche rund Ø88, Epoxy",
+      en: "Round Oak Kitchen Table Ø88, Epoxy",
+      cs: "Kuchyňský stůl dub kulatý Ø88, epoxy",
+    },
+    description: {
+      de: "Runder Massivholz-Küchentisch aus europäischer Eiche, Ø 88 cm. Zwei schwarze Epoxy-Streifen ziehen sich quer über die Platte und setzen einen ruhigen grafischen Akzent. Schwarzes X-Stahlgestell. Für 2–4 Personen, ideal für kleine Esszimmer und offene Küchen.",
+      en: "Round solid-wood kitchen table in European oak, Ø 88 cm. Two black epoxy stripes run across the top — a quiet graphic accent against the warm grain. Black X-frame steel base. Seats 2–4 — at home in small dining rooms and open kitchens.",
+      cs: "Kulatý masivní kuchyňský stůl z evropského dubu, Ø 88 cm. Dva černé epoxidové pruhy procházejí napříč deskou a tvoří klidný grafický akcent. Černá X-podnož z oceli. Pro 2–4 osoby, ideální pro malé jídelny a otevřené kuchyně.",
+    },
+    status: "available",
+    productType: "kitchen_table",
+    price: 1390,
+    currency: "EUR",
+    dimensions: { diameterCm: 88, heightCm: 75, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "soft_rounded",
+    resinDetail: "black",
+    legBaseType: { de: "Schwarzes X-Stahlgestell", en: "Black X-frame steel base", cs: "Černá X-podnož z oceli" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+      "/photos/table-1/01-lifestyle.jpg",
+      "/photos/table-1/02-perspective.jpg",
+      "/photos/table-1/03-perspective-angle.jpg",
+      "/photos/table-1/04-perspective-detail.jpg",
+      "/photos/table-1/05-top-detail.jpg",
+      "/photos/table-1/06-side.jpg",
+      "/photos/table-1/07-base.jpg",
+    ],
+    sortOrder: 0,
   },
 ];
 

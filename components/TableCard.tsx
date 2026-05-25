@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { TableItem } from "@/lib/tables";
 import { localePath, type Locale } from "@/lib/routes";
@@ -29,7 +30,17 @@ export default function TableCard({ item, locale, dict }: Props) {
   return (
     <Link href={href} className="group block card-hover">
       <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md shadow-stone-900/5 bg-bone">
-        <TableIllustration item={item} className="absolute inset-0" />
+        {item.images && item.images.length > 0 ? (
+          <Image
+            src={item.images[0]}
+            alt={item.title[locale]}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover"
+          />
+        ) : (
+          <TableIllustration item={item} className="absolute inset-0" />
+        )}
 
         <div className="absolute top-4 left-4 z-10">
           <StatusBadge status={item.status} dict={dict} />
