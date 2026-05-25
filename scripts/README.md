@@ -23,7 +23,7 @@ node scripts/add-table.js photos/table-2 --dry
 The script will:
 
 1. **Read** `definition.txt` (loose text + optional `key: value` overrides)
-2. **Optimize** every image (.png / .jpg / .webp) to `public/photos/<folder>/01.jpg`, `02.jpg`, … (sharp + mozjpeg, q82, max 1800w). Files are taken in **natural sort order** — rename source files with `01-`, `02-` prefixes to control the gallery order (first file becomes the hero).
+2. **Optimize** every image (.png / .jpg / .webp / **.heic** / .heif) to `public/photos/<folder>/01.jpg`, `02.jpg`, … (sharp + mozjpeg, q82, max 1800w). HEIC files (iPhone-default format) are decoded via `heic-convert` before re-encoding — drop iPhone exports as-is, no conversion needed first. Files are taken in **natural sort order** — rename source files with `01-`, `02-` prefixes to control the gallery order (first file becomes the hero).
 3. **Generate** a TableItem entry with localized DE / EN / CS title + description, dimensions, wood, base, edge, resin, finish, status, price.
 4. **Insert** the entry into `lib/tables.ts` (the next sequential `id`).
 

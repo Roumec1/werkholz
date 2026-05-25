@@ -44,6 +44,21 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
+// HEIC support (iPhone photos). Loaded lazily so the script still runs if the
+// package isn't installed and no HEIC files are present.
+let heicConvert = null;
+function loadHeicConvert() {
+  if (heicConvert) return heicConvert;
+  try {
+    heicConvert = require("heic-convert");
+    return heicConvert;
+  } catch {
+    console.error("HEIC file detected but `heic-convert` is not installed.");
+    console.error("Install with:  npm install heic-convert");
+    process.exit(1);
+  }
+}
+
 // ---------- args ----------
 const args = process.argv.slice(2);
 const dry = args.includes("--dry");
@@ -318,10 +333,25 @@ const description = { de: buildDescription("de"), en: buildDescription("en"), cs
 // ---------- image processing ----------
 const folderName = path.basename(srcDir).replace(/[^\w-]+/g, "-").toLowerCase();
 const dstDir = path.join(ROOT, "public", "photos", folderName);
-const imageExts = /\.(png|jpe?g|webp)$/i;
+const imageExts = /\.(png|jpe?g|webp|heic|heif)$/i;
 const sources = fs.readdirSync(srcDir)
   .filter((n) => imageExts.test(n))
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+/**
+ * Read a single image file as a sharp-ready buffer. HEIC/HEIF go through
+ * heic-convert first (sharp's npm build doesn't decode them on Windows/Linux).
+ */
+async function readAsBuffer(filePath) {
+  if (/\.(heic|heif)$/i.test(filePath)) {
+    const convert = loadHeicConvert();
+    const inputBuffer = fs.readFileSync(filePath);
+    // heic-convert returns a JPEG buffer at the given quality (0-1). Use 0.95
+    // here so the only quality loss is sharp's final mozjpeg pass.
+    return await convert({ buffer: inputBuffer, format: "JPEG", quality: 0.95 });
+  }
+  return fs.readFileSync(filePath);
+}
 
 if (sources.length === 0) {
   console.error("No images found in " + srcDir);
@@ -340,15 +370,18 @@ if (sources.length === 0) {
     const beforeBytes = fs.statSync(src).size;
     totalBefore += beforeBytes;
     if (!dry) {
-      const meta = await sharp(src).metadata();
-      let pipeline = sharp(src);
+      const buf = await readAsBuffer(src);
+      const meta = await sharp(buf).metadata();
+      let pipeline = sharp(buf);
       if (meta.width > 1800) pipeline = pipeline.resize({ width: 1800, withoutEnlargement: true });
       await pipeline.jpeg({ quality: 82, mozjpeg: true, progressive: true }).toFile(dst);
       const afterBytes = fs.statSync(dst).size;
       totalAfter += afterBytes;
-      console.log(`  ${dstName.padEnd(8)} ${(beforeBytes/1024).toFixed(0).padStart(5)} KB → ${(afterBytes/1024).toFixed(0).padStart(4)} KB`);
+      const heicTag = /\.(heic|heif)$/i.test(sources[i]) ? " (heic)" : "";
+      console.log(`  ${dstName.padEnd(8)} ${(beforeBytes/1024).toFixed(0).padStart(5)} KB → ${(afterBytes/1024).toFixed(0).padStart(4)} KB${heicTag}`);
     } else {
-      console.log(`  [dry] would write ${dstName} from ${sources[i]}`);
+      const heicTag = /\.(heic|heif)$/i.test(sources[i]) ? " [will decode HEIC]" : "";
+      console.log(`  [dry] would write ${dstName} from ${sources[i]}${heicTag}`);
     }
     imagePaths.push(`/photos/${folderName}/${dstName}`);
   }
