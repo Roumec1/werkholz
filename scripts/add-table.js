@@ -395,9 +395,11 @@ if (sources.length === 0) {
   // and rely on insertion order for ties. Keep it 0 for now.
   const sortOrder = 0;
 
+  // Build dimensions object — only include fields that are known so the output
+  // is always syntactically valid TypeScript (no /* TODO */ placeholders).
   const dims = isRound
-    ? `{ diameterCm: ${diameter || "/* TODO */"}, heightCm: ${height}, thicknessCm: ${thickness} }`
-    : `{ lengthCm: ${length || "/* TODO */"}, widthCm: ${width || "/* TODO */"}, heightCm: ${height}, thicknessCm: ${thickness} }`;
+    ? `{ ${diameter ? `diameterCm: ${diameter}, ` : ""}heightCm: ${height}, thicknessCm: ${thickness} }`
+    : `{ ${length ? `lengthCm: ${length}, ` : ""}${width ? `widthCm: ${width}, ` : ""}heightCm: ${height}, thicknessCm: ${thickness} }`;
 
   const gradient = (() => {
     // soft warm gradient driven by wood

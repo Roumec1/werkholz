@@ -517,6 +517,151 @@ export const SAMPLE_TABLES: TableItem[] = [
     ],
     sortOrder: 0,
   },
+  {
+    id: "15",
+    slug: {
+      de: "esstisch-eiche",
+      en: "oak-dining-table",
+      cs: "jidelni-stul-dub",
+    },
+    title: {
+      de: "Esstisch Eiche",
+      en: "Oak Dining Table",
+      cs: "Jídelní stůl dub",
+    },
+    description: {
+      de: "Massivholz-Esstisch aus europäischer Eiche, ? × ? cm. Mit natürlicher Baumkante. Schwarzes X-Stahlgestell. Hartwachsöl, seidenmatt.",
+      en: "Solid-wood dining table in European oak, ? × ? cm. With natural live edge. Black X-frame steel base. Hard wax oil, satin.",
+      cs: "Masivní jídelní stůl z evropského dubu, ? × ? cm. S přírodní hranou. Černá X-podnož z oceli. Tvrdý voskový olej, polomat.",
+    },
+    status: "in_production",
+    productType: "dining_table",
+    price: null,
+    currency: "EUR",
+    dimensions: { heightCm: 75, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "live_edge",
+    resinDetail: "none",
+    legBaseType: { de: "Schwarzes X-Stahlgestell", en: "Black X-frame steel base", cs: "Černá X-podnož z oceli" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+        "/photos/table-3/01.jpg",
+        "/photos/table-3/02.jpg"
+      ],
+    sortOrder: 0,
+  },
+  {
+    id: "16",
+    slug: {
+      de: "esstisch-eiche-epoxy",
+      en: "oak-dining-table-epoxy",
+      cs: "jidelni-stul-dub-epoxy",
+    },
+    title: {
+      de: "Esstisch Eiche, Epoxy",
+      en: "Oak Dining Table, Epoxy",
+      cs: "Jídelní stůl dub, epoxy",
+    },
+    description: {
+      de: "Massivholz-Esstisch aus europäischer Eiche, ? × ? cm. Mit natürlicher Baumkante. Schwarzes Harz füllt die natürlichen Risse und Astlöcher. Schwarzes X-Stahlgestell. Hartwachsöl, seidenmatt.",
+      en: "Solid-wood dining table in European oak, ? × ? cm. With natural live edge. Black resin fills the natural cracks and knot holes. Black X-frame steel base. Hard wax oil, satin.",
+      cs: "Masivní jídelní stůl z evropského dubu, ? × ? cm. S přírodní hranou. Černá pryskyřice vyplňuje přirozené praskliny a suky. Černá X-podnož z oceli. Tvrdý voskový olej, polomat.",
+    },
+    status: "in_production",
+    productType: "dining_table",
+    price: null,
+    currency: "EUR",
+    dimensions: { heightCm: 75, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "live_edge",
+    resinDetail: "black",
+    legBaseType: { de: "Schwarzes X-Stahlgestell", en: "Black X-frame steel base", cs: "Černá X-podnož z oceli" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+        "/photos/table-4/01.jpg",
+        "/photos/table-4/02.jpg",
+        "/photos/table-4/03.jpg",
+        "/photos/table-4/04.jpg",
+        "/photos/table-4/05.jpg"
+      ],
+    sortOrder: 0,
+  },
+  {
+    id: "17",
+    slug: {
+      de: "schreibtisch-eiche",
+      en: "oak-desk",
+      cs: "psaci-stul-dub",
+    },
+    title: {
+      de: "Schreibtisch Eiche",
+      en: "Oak Desk",
+      cs: "Psací stůl dub",
+    },
+    description: {
+      de: "Massivholz-Schreibtisch aus europäischer Eiche, ? × ? cm. Mit natürlicher Baumkante. Schwarzes X-Stahlgestell. Hartwachsöl, seidenmatt.",
+      en: "Solid-wood desk in European oak, ? × ? cm. With natural live edge. Black X-frame steel base. Hard wax oil, satin.",
+      cs: "Masivní psací stůl z evropského dubu, ? × ? cm. S přírodní hranou. Černá X-podnož z oceli. Tvrdý voskový olej, polomat.",
+    },
+    status: "in_production",
+    productType: "desk",
+    price: null,
+    currency: "EUR",
+    dimensions: { heightCm: 75, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "live_edge",
+    resinDetail: "none",
+    legBaseType: { de: "Schwarzes X-Stahlgestell", en: "Black X-frame steel base", cs: "Černá X-podnož z oceli" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+        "/photos/table-5/01.jpg"
+      ],
+    sortOrder: 0,
+  },
+  {
+    id: "18",
+    slug: {
+      de: "esstisch-eiche-river-epoxy",
+      en: "oak-river-dining-table-epoxy",
+      cs: "jidelni-stul-dub-river-epoxy",
+    },
+    title: {
+      de: "Esstisch Eiche River, Epoxy",
+      en: "Oak River Dining Table, Epoxy",
+      cs: "Jídelní stůl dub river, epoxy",
+    },
+    description: {
+      de: "Massivholz-Esstisch aus europäischer Eiche, ? × ? cm. Schwarze Epoxy-Streifen setzen einen ruhigen grafischen Akzent. Schwarzes X-Stahlgestell. Hartwachsöl, seidenmatt.",
+      en: "Solid-wood dining table in European oak, ? × ? cm. Black epoxy stripes add a quiet graphic accent. Black X-frame steel base. Hard wax oil, satin.",
+      cs: "Masivní jídelní stůl z evropského dubu, ? × ? cm. Černé epoxidové pruhy tvoří klidný grafický akcent. Černá X-podnož z oceli. Tvrdý voskový olej, polomat.",
+    },
+    status: "in_production",
+    productType: "dining_table",
+    price: null,
+    currency: "EUR",
+    dimensions: { heightCm: 75, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "straight_edge",
+    resinDetail: "black",
+    legBaseType: { de: "Schwarzes X-Stahlgestell", en: "Black X-frame steel base", cs: "Černá X-podnož z oceli" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+        "/photos/table-6/01.jpg"
+      ],
+    sortOrder: 0,
+  },
 ];
 
 export function getTableBySlug(
