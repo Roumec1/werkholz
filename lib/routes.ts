@@ -40,6 +40,11 @@ export const ROUTES = {
     en: "privacy",
     cs: "ochrana-dat",
   },
+  materials: {
+    de: "hoelzer",
+    en: "materials",
+    cs: "drevo",
+  },
 } as const;
 
 export type RouteKey = keyof typeof ROUTES;

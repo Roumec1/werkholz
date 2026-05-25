@@ -8,6 +8,7 @@ import ProcessPage from "@/components/pages/ProcessPage";
 import ContactPage from "@/components/pages/ContactPage";
 import ImpressumPage from "@/components/pages/ImpressumPage";
 import PrivacyPage from "@/components/pages/PrivacyPage";
+import MaterialsPage from "@/components/pages/MaterialsPage";
 
 function resolveRoute(locale: Locale, segment: string): RouteKey | null {
   const keys: RouteKey[] = [
@@ -18,6 +19,7 @@ function resolveRoute(locale: Locale, segment: string): RouteKey | null {
     "contact",
     "impressum",
     "privacy",
+    "materials",
   ];
   for (const key of keys) {
     if (ROUTES[key][locale] === segment) return key;
@@ -36,6 +38,7 @@ export async function generateStaticParams() {
       ROUTES.contact[locale],
       ROUTES.impressum[locale],
       ROUTES.privacy[locale],
+      ROUTES.materials[locale],
     ];
     for (const section of segments) {
       params.push({ locale, section });
@@ -70,6 +73,8 @@ export default async function SectionPage({
       return <ImpressumPage locale={loc} dict={dict} />;
     case "privacy":
       return <PrivacyPage locale={loc} dict={dict} />;
+    case "materials":
+      return <MaterialsPage locale={loc} dict={dict} />;
     default:
       notFound();
   }

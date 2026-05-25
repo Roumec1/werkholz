@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "contact",
       "impressum",
       "privacy",
+      "materials",
     ] as const;
 
     for (const key of sectionKeys) {

@@ -5,6 +5,7 @@ import { type TableItem, SAMPLE_TABLES } from "@/lib/tables";
 import StatusBadge from "../StatusBadge";
 import TableCard from "../TableCard";
 import TableGallery from "../TableGallery";
+import SizeVisualizer from "../SizeVisualizer";
 
 interface Props {
   item: TableItem;
@@ -44,6 +45,9 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-7">
               <TableGallery item={item} />
+              <div className="mt-6">
+                <SizeVisualizer item={item} locale={locale} />
+              </div>
             </div>
 
             {/* Details */}
@@ -82,6 +86,31 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                       <path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
+                </div>
+
+                {/* Care kit bonus */}
+                <div className="mt-4 flex items-start gap-3 p-4 rounded-xl bg-oak-50 border border-oak-100">
+                  <div className="w-8 h-8 rounded-full bg-oak-200/60 flex items-center justify-center text-oak-700 shrink-0">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M5 1.5h4M6 1.5v2.5M5 4h4M3.5 8v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8L9 4H5L3.5 8z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                  <div className="text-xs leading-relaxed">
+                    <p className="text-ink font-medium">
+                      {locale === "de"
+                        ? "Pflegeset gratis dabei"
+                        : locale === "en"
+                          ? "Care kit included"
+                          : "Pečující sada zdarma"}
+                    </p>
+                    <p className="text-stone-600 mt-0.5">
+                      {locale === "de"
+                        ? "Pflegeöl, weiches Tuch und Schleifpapier — alles, was Sie für die nächsten Jahre brauchen."
+                        : locale === "en"
+                          ? "Care oil, soft cloth, and sandpaper — everything you need for the years ahead."
+                          : "Pečující olej, hadřík a brusný papír — vše, co budete potřebovat na další roky."}
+                    </p>
+                  </div>
                 </div>
 
                 {/* Spec list */}
