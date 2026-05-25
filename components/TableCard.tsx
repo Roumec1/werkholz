@@ -36,7 +36,7 @@ export default function TableCard({ item, locale, dict }: Props) {
             alt={item.title[locale]}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover"
+            className="object-contain p-4 sm:p-6 transition-transform duration-500 group-hover:scale-[1.03]"
           />
         ) : (
           <TableIllustration item={item} className="absolute inset-0" />

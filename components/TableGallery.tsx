@@ -58,7 +58,7 @@ export default function TableGallery({ item, dict }: Props) {
           alt={altFor(i)}
           fill
           sizes={isLightbox ? "100vw" : "(min-width: 1024px) 50vw, 100vw"}
-          className="object-cover"
+          className="object-contain"
           priority={i === 0 && !isLightbox}
         />
       );
@@ -160,7 +160,7 @@ export default function TableGallery({ item, dict }: Props) {
                   alt=""
                   fill
                   sizes="120px"
-                  className="object-cover"
+                  className="object-contain"
                 />
               ) : (
                 <div
