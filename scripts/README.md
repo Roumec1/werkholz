@@ -35,7 +35,7 @@ Then run `npm run build` to verify and commit `public/photos/<folder>/` + `lib/t
 
 Mix free-form text and explicit `key: value` lines as needed. **Explicit values always win** over heuristics — useful when you want to override a description or supply localized titles.
 
-#### Minimal (heuristic — what was used for table-1)
+#### Recommended minimal — always include `status`
 
 ```
 Round oak kitchen table with metal legs
@@ -43,9 +43,20 @@ Round oak kitchen table with metal legs
 diameter 88cm
 height 75cm
 thickness 4cm
+status: available
+price: 1390
 ```
 
-This is parsed as: `kitchen_table`, `oak`, round, Ø88, h75, t4, resin: black, base: x-frame (from "metal legs"), edge: soft_rounded.
+**`status`** is the one field the script cannot guess — always include it explicitly:
+
+| value | meaning |
+|---|---|
+| `available` | Ready to buy / ship |
+| `in_production` | Currently being made |
+| `reserved` | Sold pending payment |
+| `sold` | Gone |
+
+This is parsed as: `kitchen_table`, `oak`, round, Ø88, h75, t4, resin: black, base: x-frame (from "metal legs"), edge: soft_rounded, status: available, price: 1390.
 
 #### Maximal (explicit — total control)
 
