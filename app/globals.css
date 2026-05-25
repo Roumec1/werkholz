@@ -144,23 +144,23 @@
 
   /* Status badge styles */
   .badge {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide backdrop-blur-sm;
   }
 
   .badge-available {
-    @apply bg-status-available/10 text-status-available;
+    @apply bg-status-available/80 text-white;
   }
 
   .badge-production {
-    @apply bg-status-production/15 text-status-production;
+    @apply bg-status-production/85 text-white;
   }
 
   .badge-reserved {
-    @apply bg-status-reserved/15 text-status-reserved;
+    @apply bg-status-reserved/85 text-white;
   }
 
   .badge-sold {
-    @apply bg-stone-200 text-stone-600;
+    @apply bg-stone-600/75 text-white;
   }
 
   /* Pulse dot for available */
