@@ -506,15 +506,15 @@ export const SAMPLE_TABLES: TableItem[] = [
     placeholderGradient:
       "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
     images: [
-        "/photos/table-2/01.jpg",
-        "/photos/table-2/02.jpg",
-        "/photos/table-2/03.jpg",
-        "/photos/table-2/04.jpg",
-        "/photos/table-2/05.jpg",
-        "/photos/table-2/06.jpg",
-        "/photos/table-2/07.jpg",
-        "/photos/table-2/08.jpg"
-      ],
+      "/photos/table-2/06.jpg",
+      "/photos/table-2/02.jpg",
+      "/photos/table-2/04.jpg",
+      "/photos/table-2/03.jpg",
+      "/photos/table-2/05.jpg",
+      "/photos/table-2/08.jpg",
+      "/photos/table-2/01.jpg",
+      "/photos/table-2/07.jpg",
+    ],
     sortOrder: 0,
   },
 ];
