@@ -475,6 +475,48 @@ export const SAMPLE_TABLES: TableItem[] = [
     ],
     sortOrder: 0,
   },
+  {
+    id: "14",
+    slug: {
+      de: "couchtisch-eiche-98-epoxy",
+      en: "oak-coffee-table-98-epoxy",
+      cs: "konferencni-stolek-dub-98-epoxy",
+    },
+    title: {
+      de: "Couchtisch Eiche 98, Epoxy",
+      en: "Oak Coffee Table 98, Epoxy",
+      cs: "Konferenční stolek dub 98, epoxy",
+    },
+    description: {
+      de: "Massivholz-Couchtisch aus europäischer Eiche, 98 × 48 cm. Natürliche Baumkante, schwarzes Harz füllt die Risse und Astlöcher — ein ruhiger, organischer Akzent. Schwarze Hairpin-Beine. Für 2–4 Personen. Hartwachsöl, seidenmatt.",
+      en: "Solid-wood coffee table in European oak, 98 × 48 cm. Natural live edge with black resin filling the cracks and knot holes — a quiet, organic accent. Black hairpin legs. Seats 2–4. Hard wax oil, satin.",
+      cs: "Masivní konferenční stolek z evropského dubu, 98 × 48 cm. Přírodní hrana s černou pryskyřicí, která vyplňuje praskliny a suky — tichý, organický akcent. Černé hairpin nohy. Pro 2–4 osoby. Tvrdý voskový olej, polomat.",
+    },
+    status: "available",
+    productType: "coffee_table",
+    price: 1190,
+    currency: "EUR",
+    dimensions: { lengthCm: 98, widthCm: 48, heightCm: 45, thicknessCm: 4 },
+    woodType: { de: "Europäische Eiche", en: "European oak", cs: "Evropský dub" },
+    edgeType: "live_edge",
+    resinDetail: "black",
+    legBaseType: { de: "Schwarze Hairpin-Beine", en: "Black hairpin legs", cs: "Černé hairpin nohy" },
+    finish: { de: "Hartwachsöl, seidenmatt", en: "Hard wax oil, satin", cs: "Tvrdý voskový olej, polomat" },
+    featured: true,
+    placeholderGradient:
+      "linear-gradient(135deg, #D9B97A 0%, #8B6A3A 55%, #2A2620 100%)",
+    images: [
+        "/photos/table-2/01.jpg",
+        "/photos/table-2/02.jpg",
+        "/photos/table-2/03.jpg",
+        "/photos/table-2/04.jpg",
+        "/photos/table-2/05.jpg",
+        "/photos/table-2/06.jpg",
+        "/photos/table-2/07.jpg",
+        "/photos/table-2/08.jpg"
+      ],
+    sortOrder: 0,
+  },
 ];
 
 export function getTableBySlug(

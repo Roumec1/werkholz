@@ -159,8 +159,10 @@ const BASE = {
   "column":       { de: "Schwarze Stahlsäule",          en: "Black steel column",         cs: "Černá ocelová noha" },
   "tapered-wood": { de: "Holzbeine, konisch",           en: "Tapered wooden legs",        cs: "Dřevěné nohy, konické" },
   "slim-steel":   { de: "Schlanke schwarze Stahlbeine", en: "Slim black steel legs",      cs: "Štíhlé černé ocelové nohy" },
+  "hairpin":      { de: "Schwarze Hairpin-Beine",       en: "Black hairpin legs",         cs: "Černé hairpin nohy" },
 };
 const base = BASE[baseKey] || (
+  has("hairpin", "hair pin", "hair-pin") ? BASE["hairpin"] :
   has("x-frame", "x frame", "x form", "x tvar") ? BASE["x-frame"] :
   has("cross", "kreuz", "kříž") ? BASE["cross"] :
   has("a-frame", "a-form", "a-podnož") ? BASE["a-frame"] :
@@ -273,11 +275,20 @@ function csPersons(seats) {
 }
 function buildDescription(locale) {
   if (explicit[`description.${locale}`]) return explicit[`description.${locale}`];
-  const epoxyNote = resinKey === "black" ? {
-    de: "Schwarze Epoxy-Streifen setzen einen ruhigen grafischen Akzent. ",
-    en: "Black epoxy stripes add a quiet graphic accent. ",
-    cs: "Černé epoxidové pruhy tvoří klidný grafický akcent. ",
-  }[locale] : "";
+  // Phrasing depends on whether resin fills natural voids (live edge) or sits as deliberate stripes
+  const epoxyNote = resinKey === "black"
+    ? (edgeKey === "live_edge"
+        ? {
+            de: "Schwarzes Harz füllt die natürlichen Risse und Astlöcher. ",
+            en: "Black resin fills the natural cracks and knot holes. ",
+            cs: "Černá pryskyřice vyplňuje přirozené praskliny a suky. ",
+          }[locale]
+        : {
+            de: "Schwarze Epoxy-Streifen setzen einen ruhigen grafischen Akzent. ",
+            en: "Black epoxy stripes add a quiet graphic accent. ",
+            cs: "Černé epoxidové pruhy tvoří klidný grafický akcent. ",
+          }[locale])
+    : "";
   const liveEdgeNote = edgeKey === "live_edge" ? {
     de: "Mit natürlicher Baumkante. ",
     en: "With natural live edge. ",
@@ -294,10 +305,13 @@ function buildDescription(locale) {
   const productNoun = PT[ptKey][locale];
   const TEMPL = {
     de: `${isRound ? "Runder " : ""}Massivholz-${productNoun} ${woodOf.de}, ${dimStr}. ${liveEdgeNote}${epoxyNote}${base.de}. ${seatsStr}${finish.de}.`,
-    en: `${isRound ? "Round " : ""}solid-wood ${productNoun.toLowerCase()} ${woodOf.en}, ${dimStr}. ${liveEdgeNote}${epoxyNote}${base.en}. ${seatsStr}${finish.en}.`,
-    cs: `${isRound ? "Kulatý " : ""}masivní ${productNoun.toLowerCase()} ${woodOf.cs}, ${dimStr}. ${liveEdgeNote}${epoxyNote}${base.cs}. ${seatsStr}${finish.cs}.`,
+    en: `${isRound ? "Round " : "Solid-wood "}${isRound ? "solid-wood " : ""}${productNoun.toLowerCase()} ${woodOf.en}, ${dimStr}. ${liveEdgeNote}${epoxyNote}${base.en}. ${seatsStr}${finish.en}.`,
+    cs: `${isRound ? "Kulatý " : "Masivní "}${isRound ? "masivní " : ""}${productNoun.toLowerCase()} ${woodOf.cs}, ${dimStr}. ${liveEdgeNote}${epoxyNote}${base.cs}. ${seatsStr}${finish.cs}.`,
   };
-  return TEMPL[locale].replace(/\s+/g, " ").trim();
+  // Capitalize first letter and clean whitespace
+  let out = TEMPL[locale].replace(/\s+/g, " ").trim();
+  out = out.charAt(0).toUpperCase() + out.slice(1);
+  return out;
 }
 const description = { de: buildDescription("de"), en: buildDescription("en"), cs: buildDescription("cs") };
 
