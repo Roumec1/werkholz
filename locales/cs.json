@@ -104,20 +104,20 @@
   "stats": {
     "items": [
       {
-        "value": "200+",
-        "label": "vyrobených stolů"
+        "value": "~20",
+        "label": "stolů ročně, ručně"
       },
       {
-        "value": "12",
-        "label": "let zkušeností"
+        "value": "2",
+        "label": "řemeslníci, žádní zaměstnanci"
       },
       {
-        "value": "2–4",
-        "label": "týdny výroby"
+        "value": "0",
+        "label": "subdodavatelé"
       },
       {
         "value": "100%",
-        "label": "masivní dřevo"
+        "label": "masivní dřevo, nikdy dýha"
       }
     ]
   },
@@ -150,37 +150,34 @@
     "noResults": "Žádné kusy nenalezeny. Zkuste jiný filtr."
   },
   "reviews": {
-    "eyebrow": "Co říkají zákazníci",
-    "title": "Doručeno. Postaveno. Milováno.",
+    "eyebrow": "Z domovů našich zákazníků",
+    "title": "Stoly, které teď někomu patří.",
     "items": [
       {
-        "quote": "Stůl vypadá přesně tak, jak jsme si představovali — a v prostoru ještě lépe než na fotkách.",
-        "name": "Anna K.",
-        "role": "Jídelní stůl dub · Berlin Kreuzberg"
+        "quote": "Potřebovali jsme jídelní stůl do úzkého bytu v Altbau — Tomas navrhl, ať přírodní hrana jde po diagonále, aby stůl vypadal v prostoru širší. Přesně tak.",
+        "name": "Anna a Michael Krügerovi",
+        "role": "Jídelní stůl dub · Berlín Kreuzberg · jaro 2024"
       },
       {
-        "quote": "Jasná komunikace, rychlé doručení, perfektní řemeslo. Pro naši kavárnu jsme objednali 12 stolů a jsme nadšeni.",
+        "quote": "Dvanáct bistro stolů pro kavárnu, všechny ze stejné várky dubu. Tři roky a vypadají pořád stejně. Denně přes ně projde tři sta káv.",
         "name": "Café Felix",
-        "role": "Gastronomie · Berlin Mitte"
+        "role": "12 bistro stolů z dubu · Berlín Mitte · 2023"
       },
       {
-        "quote": "Při výrobě na míru se opravdu mysleli na každý detail. Stůl pasuje do naší kuchyně na milimetr.",
-        "name": "Rodina Brandtových",
-        "role": "Kuchyňský stůl buk · Postupim"
+        "quote": "Stůl sedí na milimetr přesně mezi dvě skříňky. Zespodu iniciály řemeslníků a datum — malý detail, ale přesně to dělá rozdíl.",
+        "name": "Lukas a Sophie Brandtovi",
+        "role": "Kuchyňský stůl z buku · Postupim · podzim 2023"
       }
     ]
   },
   "workshop": {
-    "eyebrow": "V dílně",
-    "title": "Tady vzniká váš stůl.",
-    "subtitle": "Žádná masová výroba, žádný franšízový řetězec. Každý stůl je v naší dílně plánován, řezán, broušen a dokončen — ručně.",
-    "labels": [
-      "Plánování",
-      "Řezání",
-      "Lepení",
-      "Broušení",
-      "Povrch",
-      "Kontrola"
+    "eyebrow": "Z dílny",
+    "title": "Tři momenty z ponku.",
+    "subtitle": "Skutečné fotky ze skutečných dnů v dílně — neinscenované. Dřevo, prach, čas.",
+    "entries": [
+      { "caption": "Středeční odpoledne. Černá pryskyřice do jedné dubové fošny. Deset dní tvrdne, než se jí zase dotkneme." },
+      { "caption": "Dubová fošna s přírodní hranou, která jde skoro po celé délce. Tomas hranu po stroji ručně dobrousí." },
+      { "caption": "Tři prkna z jednoho stromu, před lepením naskládaná. Před sezónou pokácený, od té doby suší na vzduchu." }
     ]
   },
   "materials": {
@@ -286,6 +283,17 @@
         "desc": "Mluvíte přímo s dílnou. Žádní prostředníci, žádný řetězec."
       }
     ]
+  },
+  "letter": {
+    "eyebrow": "Z deníku dílny",
+    "title": "Proč naše stoly trvají tři týdny.",
+    "paragraphs": [
+      "Tuhle otázku slýcháváme. Tři týdny zní na nábytek dlouho. Většinu té doby se ale dřeva ani nedotýkáme — dřevo si dělá svou vlastní práci. Po nalití pryskyřice deset dní tvrdne. Po prvním nátěru oleje dva dny schne, než přijde druhý. Po druhém další dva. Nemáme horkou lakovací linku, která to stlačí do jednoho odpoledne. Ani ji nechceme.",
+      "Masivní dřevo navíc pracuje. Prkno, které v pondělí hoblujete, nemá v pátek úplně stejnou šířku. Takže nelepíme desky ten den, kdy je hoblujeme. Necháme je odpočinout, zkontrolujeme, dohoblujeme, pak slepíme. Kdo tenhle krok obejde, dělá stoly, které ve třetím roce na spojích prasknou.",
+      "Když nás požádáte o spěch, většinou řekneme ne. Ale stůl uvidíte od začátku. Fotky z ponku jak postupujeme, dvě tři týdně. Když je hotový a posíláme ho, není to překvapení."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLocation": "z dílny"
   },
   "faq": {
     "eyebrow": "Otázky & odpovědi",

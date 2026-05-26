@@ -11,6 +11,7 @@ import Inspiration from "@/components/sections/Inspiration";
 import Reviews from "@/components/sections/Reviews";
 import Care from "@/components/sections/Care";
 import B2BSection from "@/components/sections/B2BSection";
+import Letter from "@/components/sections/Letter";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 import { getDictionary, normalizeLocale } from "@/lib/i18n";
@@ -39,6 +40,7 @@ export default async function Home({
       <Reviews locale={loc} dict={dict} />
       <Care dict={dict} />
       <B2BSection locale={loc} dict={dict} />
+      <Letter dict={dict} />
       <FAQ dict={dict} />
       <FinalCTA locale={loc} dict={dict} />
     </>

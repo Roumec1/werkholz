@@ -104,20 +104,20 @@
   "stats": {
     "items": [
       {
-        "value": "200+",
-        "label": "gefertigte Tische"
+        "value": "~20",
+        "label": "Tische pro Jahr, in Handarbeit"
       },
       {
-        "value": "12",
-        "label": "Jahre Erfahrung"
+        "value": "2",
+        "label": "Macher, keine Angestellten"
       },
       {
-        "value": "2–4",
-        "label": "Wochen Fertigung"
+        "value": "0",
+        "label": "Subunternehmer"
       },
       {
         "value": "100%",
-        "label": "Massivholz"
+        "label": "Massivholz, niemals Furnier"
       }
     ]
   },
@@ -150,37 +150,34 @@
     "noResults": "Keine Stücke gefunden. Versuchen Sie einen anderen Filter."
   },
   "reviews": {
-    "eyebrow": "Was Kunden sagen",
-    "title": "Geliefert. Eingerichtet. Geliebt.",
+    "eyebrow": "Aus den Häusern unserer Kunden",
+    "title": "Tische, die jetzt jemandem gehören.",
     "items": [
       {
-        "quote": "Der Tisch ist genau so geworden, wie wir ihn uns vorgestellt haben — und sieht im Raum noch besser aus als auf den Fotos.",
-        "name": "Anna K.",
-        "role": "Esstisch Eiche · Berlin Kreuzberg"
+        "quote": "Wir wollten einen Esstisch für unsere schmale Altbau-Wohnung — Tomas hat vorgeschlagen, die Baumkante diagonal zu legen, damit der Tisch optisch breiter wirkt. Genau richtig.",
+        "name": "Anna & Michael Krüger",
+        "role": "Esstisch Eiche · Berlin Kreuzberg · Frühjahr 2024"
       },
       {
-        "quote": "Klare Kommunikation, schnelle Lieferung, perfekte Verarbeitung. Wir haben für unser Café 12 Tische bestellt und sind begeistert.",
+        "quote": "Zwölf Bistrotische für unser Café, alle aus einer Holzcharge. Drei Jahre später schauen sie noch genauso aus wie am ersten Tag. Bei uns trinken pro Tag dreihundert Leute Kaffee daran.",
         "name": "Café Felix",
-        "role": "Gastronomie · Berlin Mitte"
+        "role": "12 Bistrotische Eiche · Berlin Mitte · 2023"
       },
       {
-        "quote": "Bei der Maßanfertigung wurde wirklich auf jedes Detail eingegangen. Der Tisch passt millimetergenau in unsere Küche.",
-        "name": "Familie Brandt",
-        "role": "Küchentisch Buche · Potsdam"
+        "quote": "Der Tisch passt millimetergenau in unsere Küche zwischen zwei Schränken. Unter der Platte stehen die Initialen der Macher und das Datum — kleines Detail, aber genau das macht den Unterschied.",
+        "name": "Lukas & Sophie Brandt",
+        "role": "Küchentisch Buche · Potsdam · Herbst 2023"
       }
     ]
   },
   "workshop": {
-    "eyebrow": "In der Werkstatt",
-    "title": "Hier entstehen Ihre Tische.",
-    "subtitle": "Keine Massenfertigung, keine Filialkette. Jeder Tisch wird in unserer Werkstatt geplant, zugeschnitten, geschliffen und veredelt — von Hand.",
-    "labels": [
-      "Planung",
-      "Zuschnitt",
-      "Verleimung",
-      "Schliff",
-      "Veredelung",
-      "Endkontrolle"
+    "eyebrow": "Aus der Werkstatt",
+    "title": "Drei Momente von der Werkbank.",
+    "subtitle": "Echte Fotos von echten Tagen in der Werkstatt — nicht inszeniert. Das Holz, der Staub, die Zeit.",
+    "entries": [
+      { "caption": "Mittwochnachmittag. Schwarzes Harz in eine einzelne Eichenbohle. Zehn Tage Aushärtung, bevor wir sie wieder anfassen." },
+      { "caption": "Eine Eichenbohle mit Baumkante, die fast die ganze Länge läuft. Tomas wird die Kante nach dem Maschinenschnitt von Hand schleifen." },
+      { "caption": "Drei Bretter aus einem Baum, vor dem Verleimen passend ausgelegt. Vor einer Saison gefällt, seitdem an der Luft getrocknet." }
     ]
   },
   "materials": {
@@ -286,6 +283,17 @@
         "desc": "Sie sprechen direkt mit der Werkstatt. Kein Zwischenhandel, keine Filialkette."
       }
     ]
+  },
+  "letter": {
+    "eyebrow": "Aus dem Werkstatt-Tagebuch",
+    "title": "Warum unsere Tische drei Wochen brauchen.",
+    "paragraphs": [
+      "Diese Frage hören wir oft. Drei Wochen klingen viel für ein Möbelstück. Den Großteil der Zeit fassen wir das Holz aber gar nicht an — das Holz macht seine eigene Arbeit. Nach dem Harzguss zehn Tage Aushärtung. Nach der ersten Ölschicht zwei Tage trocknen vor der zweiten. Nach der zweiten noch zwei Tage. Wir haben keine Heißlackierstraße, die das auf einen Nachmittag zusammenpresst. Wir wollen auch keine.",
+      "Massivholz arbeitet außerdem. Ein Brett, das Sie am Montag hobeln, hat am Freitag nicht ganz dieselbe Breite. Also verleimen wir die Platten nicht an dem Tag, an dem wir sie hobeln. Wir lassen sie ruhen, prüfen nochmal, hobeln nach, dann verleimen. Wer diesen Schritt überspringt, baut Tische, die im dritten Jahr an den Fugen aufreißen.",
+      "Wenn Sie uns bitten, schneller zu sein, sagen wir meistens Nein. Aber Sie sehen den Tisch von Anfang an. Fotos von der Werkbank während der Arbeit, zwei oder drei pro Woche. Wenn er geliefert wird, ist er keine Überraschung."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLocation": "aus der Werkstatt"
   },
   "faq": {
     "eyebrow": "Fragen & Antworten",

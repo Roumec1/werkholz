@@ -104,20 +104,20 @@
   "stats": {
     "items": [
       {
-        "value": "200+",
-        "label": "tables built"
+        "value": "~20",
+        "label": "tables a year, by hand"
       },
       {
-        "value": "12",
-        "label": "years of craft"
+        "value": "2",
+        "label": "makers, no employees"
       },
       {
-        "value": "2–4",
-        "label": "weeks production"
+        "value": "0",
+        "label": "subcontractors"
       },
       {
         "value": "100%",
-        "label": "solid wood"
+        "label": "solid wood, never veneer"
       }
     ]
   },
@@ -150,37 +150,34 @@
     "noResults": "No pieces found. Try a different filter."
   },
   "reviews": {
-    "eyebrow": "What customers say",
-    "title": "Delivered. Installed. Loved.",
+    "eyebrow": "From our customers' homes",
+    "title": "Tables that belong to someone now.",
     "items": [
       {
-        "quote": "The table turned out exactly how we imagined it — and looks even better in the space than in the photos.",
-        "name": "Anna K.",
-        "role": "Oak dining table · Berlin Kreuzberg"
+        "quote": "We needed a dining table for a narrow Altbau apartment — Tomas suggested running the live edge diagonally so it would read wider in the room. Exactly right.",
+        "name": "Anna & Michael Krüger",
+        "role": "Oak dining table · Kreuzberg, Berlin · Spring 2024"
       },
       {
-        "quote": "Clear communication, quick delivery, perfect craft. We ordered 12 tables for our café and couldn't be happier.",
+        "quote": "Twelve bistro tables for the café, all from one batch of oak. Three years on they still look the same. Three hundred coffees a day pass over them.",
         "name": "Café Felix",
-        "role": "Hospitality · Berlin Mitte"
+        "role": "12 oak bistro tables · Mitte, Berlin · 2023"
       },
       {
-        "quote": "Every detail of the custom order was considered. The table fits our kitchen to the millimeter.",
-        "name": "Brandt family",
-        "role": "Beech kitchen table · Potsdam"
+        "quote": "The table fits to the millimeter between two cabinets. Underneath, the makers' initials and the date — a small thing, but exactly what makes the difference.",
+        "name": "Lukas & Sophie Brandt",
+        "role": "Beech kitchen table · Potsdam · Autumn 2023"
       }
     ]
   },
   "workshop": {
-    "eyebrow": "In the workshop",
-    "title": "This is where your table is made.",
-    "subtitle": "No mass production, no franchise chain. Every table is planned, cut, sanded and finished in our workshop — by hand.",
-    "labels": [
-      "Planning",
-      "Cutting",
-      "Gluing",
-      "Sanding",
-      "Finishing",
-      "Final check"
+    "eyebrow": "From the workshop",
+    "title": "Three moments from the bench.",
+    "subtitle": "Real photos from real days in the shop — not staged. The wood, the dust, the time.",
+    "entries": [
+      { "caption": "Wednesday afternoon. Pouring black resin into a single oak slab. Ten days of curing before we touch it again." },
+      { "caption": "An oak slab with a live edge that runs nearly the full length. Tomas will hand-sand the edge after the machine cut." },
+      { "caption": "Three boards from one tree, dry-fitted before glue. Felled a season ago, air-dried since." }
     ]
   },
   "materials": {
@@ -286,6 +283,17 @@
         "desc": "You speak directly with the workshop. No middlemen, no franchise."
       }
     ]
+  },
+  "letter": {
+    "eyebrow": "From the workshop journal",
+    "title": "Why our tables take three weeks.",
+    "paragraphs": [
+      "We get asked this. Three weeks feels long for a piece of furniture. Most of those weeks aren't us touching the wood — they're the wood doing its own work. After the resin pours, ten days of curing. After the first oil coat, two days to dry before the second. After the second, two more days. We don't have a hot lacquer line that collapses this into an afternoon. We don't want one.",
+      "Solid wood also moves. A board you joint on Monday isn't quite the same width on Friday. So we don't glue panels the day we plane them — we rest them, recheck, re-plane, then glue. Cheating that step is how you get tables that crack at the joints in year three.",
+      "If you ask us to rush, we'll usually say no. But you'll also see the table from the start. Photos from the bench as we go, two or three a week. By the time it ships, it isn't a surprise."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLocation": "from the workshop"
   },
   "faq": {
     "eyebrow": "Questions & answers",
