@@ -79,8 +79,13 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        /*
+         * sans:    DM Sans — geometric humanist, slightly warmer than Inter
+         * display: Spectral — sharper transitional serif, less indie-craft
+         *          than Fraunces, more printed-book
+         */
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
       },
       fontSize: {
         "display-xl": ["clamp(3rem, 8vw, 6rem)", { lineHeight: "0.95", letterSpacing: "-0.03em" }],
