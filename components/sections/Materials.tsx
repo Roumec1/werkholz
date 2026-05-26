@@ -54,7 +54,7 @@ export default function Materials({ dict }: Props) {
             return (
               <Reveal key={item.name} delay={i * 70}>
                 <article className="group">
-                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+                  <div className="relative aspect-[4/5] rounded-md overflow-hidden">
                     <div
                       className="absolute inset-0"
                       style={{

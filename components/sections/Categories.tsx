@@ -57,7 +57,7 @@ export default function Categories({ locale, dict }: Props) {
               >
               <Link
                 href={localePath(locale, "currentPieces")}
-                className={`group relative overflow-hidden rounded-2xl card-hover block ${
+                className={`group relative overflow-hidden rounded-md card-hover block ${
                   card.big ? "aspect-square lg:aspect-auto lg:h-full" : "aspect-[4/5]"
                 }`}
               >

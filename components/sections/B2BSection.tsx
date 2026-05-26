@@ -11,7 +11,7 @@ export default function B2BSection({ locale, dict }: Props) {
   return (
     <section className="py-24 sm:py-32">
       <div className="container-w">
-        <div className="rounded-3xl bg-cream overflow-hidden border border-stone-200/60">
+        <div className="rounded-md bg-cream overflow-hidden border border-stone-200/60">
           <div className="grid lg:grid-cols-2 gap-0">
             <div className="p-10 sm:p-14 lg:p-16">
               <p className="eyebrow">{dict.b2b.eyebrow}</p>
@@ -59,7 +59,7 @@ export default function B2BSection({ locale, dict }: Props) {
               </svg>
 
               {/* Floating spec card */}
-              <div className="absolute bottom-8 left-8 right-8 sm:left-10 sm:right-10 bg-bone rounded-2xl p-6 shadow-xl">
+              <div className="absolute bottom-8 left-8 right-8 sm:left-10 sm:right-10 bg-bone rounded-md p-6 shadow-xl">
                 <p className="eyebrow">
                   {dict.b2b.batchTitle}
                 </p>

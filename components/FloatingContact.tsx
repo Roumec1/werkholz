@@ -30,7 +30,7 @@ export default function FloatingContact({ locale, dict }: Props) {
       }`}
     >
       {open && (
-        <div className="mb-3 w-72 sm:w-80 rounded-2xl bg-bone border border-stone-200 shadow-2xl shadow-ink/15 p-5 animate-slide-down">
+        <div className="mb-3 w-72 sm:w-80 rounded-md bg-bone border border-stone-200 shadow-2xl shadow-ink/15 p-5 animate-slide-down">
           <p className="font-display text-lg text-ink leading-tight">
             {dict.floatingContact.title}
           </p>
@@ -41,7 +41,7 @@ export default function FloatingContact({ locale, dict }: Props) {
             <Link
               href={localePath(locale, "contact")}
               onClick={() => setOpen(false)}
-              className="flex items-center justify-between w-full px-4 py-2.5 bg-ink text-bone rounded-xl text-sm hover:bg-graphite transition-colors"
+              className="flex items-center justify-between w-full px-4 py-2.5 bg-ink text-bone rounded-md text-sm hover:bg-graphite transition-colors"
             >
               {dict.nav.inquiry}
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -52,7 +52,7 @@ export default function FloatingContact({ locale, dict }: Props) {
               href="https://wa.me/491700000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between w-full px-4 py-2.5 border border-stone-300 text-ink rounded-xl text-sm hover:border-ink transition-colors"
+              className="flex items-center justify-between w-full px-4 py-2.5 border border-stone-300 text-ink rounded-md text-sm hover:border-ink transition-colors"
             >
               WhatsApp
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

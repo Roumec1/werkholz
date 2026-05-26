@@ -11,7 +11,7 @@ export default function FinalCTA({ locale, dict }: Props) {
   return (
     <section className="py-24 sm:py-32">
       <div className="container-w">
-        <div className="relative rounded-3xl overflow-hidden">
+        <div className="relative rounded-md overflow-hidden">
           <div
             className="absolute inset-0"
             style={{

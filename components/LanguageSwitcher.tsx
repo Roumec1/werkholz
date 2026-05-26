@@ -90,7 +90,7 @@ export default function LanguageSwitcher({ currentLocale, variant = "header" }: 
         </svg>
       </button>
       {open && (
-        <div role="menu" className="absolute right-0 mt-2 min-w-[140px] bg-cream border border-stone-200 rounded-xl shadow-lg py-1 animate-slide-down z-50">
+        <div role="menu" className="absolute right-0 mt-2 min-w-[140px] bg-cream border border-stone-200 rounded-md shadow-lg py-1 animate-slide-down z-50">
           {LOCALES.map((loc) => (
             <button
               key={loc}

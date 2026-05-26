@@ -109,20 +109,40 @@
     @apply max-w-8xl mx-auto px-6 sm:px-8 lg:px-12;
   }
 
+  /*
+   * Buttons: sharp rectangles (rounded-sm only). Pill buttons read e-commerce
+   * — we want editorial. Status badges keep their pill shape (those are
+   * intentional indicator chips), but command-buttons are crisp.
+   */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-ink text-bone rounded-full text-sm font-medium tracking-wide hover:bg-graphite transition-all duration-300 hover:gap-3;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-ink text-bone rounded-sm text-sm font-medium tracking-wide hover:bg-graphite transition-all duration-300 hover:gap-3;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-ink/20 text-ink rounded-full text-sm font-medium tracking-wide hover:border-ink hover:gap-3 transition-all duration-300;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-ink/25 text-ink rounded-sm text-sm font-medium tracking-wide hover:border-ink hover:gap-3 transition-all duration-300;
   }
 
   .btn-ghost {
     @apply inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:gap-3 transition-all duration-300;
   }
 
+  /*
+   * Section eyebrow — now a chapter-marker style. A thin oak-tone rule
+   * precedes the text, making every section heading feel like a numbered
+   * chapter in a small monograph. Works with text-center on parents
+   * because the whole flex container centers as one block.
+   */
   .eyebrow {
-    @apply inline-block text-xs uppercase tracking-widest text-stone-500 font-medium;
+    @apply inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.32em] text-oak-700 font-medium;
+  }
+  .eyebrow::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0.55;
+    flex-shrink: 0;
   }
 
   .section-title {

@@ -31,7 +31,7 @@ function FormInner({ locale, dict }: Props) {
 
   if (submitted) {
     return (
-      <div className="rounded-2xl bg-status-available/10 p-10 border border-status-available/20">
+      <div className="rounded-md bg-status-available/10 p-10 border border-status-available/20">
         <div className="w-12 h-12 rounded-full bg-status-available text-bone flex items-center justify-center">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M5 10l3 3 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -50,9 +50,9 @@ function FormInner({ locale, dict }: Props) {
   return (
     <form onSubmit={onSubmit} className="space-y-6">
       {referencedItem && (
-        <div className="rounded-2xl bg-cream border border-stone-200 p-5 flex items-center gap-4">
+        <div className="rounded-md bg-cream border border-stone-200 p-5 flex items-center gap-4">
           <div
-            className="w-14 h-14 rounded-xl shrink-0"
+            className="w-14 h-14 rounded-md shrink-0"
             style={{ background: referencedItem.placeholderGradient }}
           />
           <div className="min-w-0">
@@ -149,7 +149,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-xl text-ink placeholder:text-stone-400 focus:outline-none focus:border-ink transition-colors"
+        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-md text-ink placeholder:text-stone-400 focus:outline-none focus:border-ink transition-colors"
       />
     </div>
   );
@@ -165,7 +165,7 @@ function Textarea({ id, label, rows = 4 }: { id: string; label: string; rows?: n
         id={id}
         name={id}
         rows={rows}
-        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-xl text-ink placeholder:text-stone-400 focus:outline-none focus:border-ink transition-colors resize-y"
+        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-md text-ink placeholder:text-stone-400 focus:outline-none focus:border-ink transition-colors resize-y"
       />
     </div>
   );
@@ -188,7 +188,7 @@ function Select({
       <select
         id={id}
         name={id}
-        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-xl text-ink focus:outline-none focus:border-ink transition-colors appearance-none"
+        className="w-full px-4 py-3 bg-cream border border-stone-200 rounded-md text-ink focus:outline-none focus:border-ink transition-colors appearance-none"
       >
         <option value="">—</option>
         {options.map((opt) => (
@@ -203,7 +203,7 @@ function Select({
 
 export default function InquiryForm(props: Props) {
   return (
-    <Suspense fallback={<div className="h-96 rounded-2xl bg-cream animate-pulse" />}>
+    <Suspense fallback={<div className="h-96 rounded-md bg-cream animate-pulse" />}>
       <FormInner {...props} />
     </Suspense>
   );

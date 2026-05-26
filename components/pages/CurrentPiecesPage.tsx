@@ -57,7 +57,7 @@ function Stat({
 }) {
   return (
     <div
-      className={`p-5 rounded-2xl border ${
+      className={`p-5 rounded-md border ${
         muted ? "bg-stone-100 border-stone-200" : "bg-cream border-stone-200/60"
       }`}
     >

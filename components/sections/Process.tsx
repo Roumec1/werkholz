@@ -19,7 +19,7 @@ export default function Process({ dict }: Props) {
             <h2 className="mt-4 section-title">{dict.process.title}</h2>
             <p className="mt-5 section-subtitle">{dict.process.subtitle}</p>
 
-            <div className="mt-10 p-5 rounded-2xl bg-cream border border-stone-200">
+            <div className="mt-10 p-5 rounded-md bg-cream border border-stone-200">
               <p className="text-xs uppercase tracking-widest text-stone-500 mb-2">
                 {dict.process.eyebrow}
               </p>

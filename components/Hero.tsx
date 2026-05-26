@@ -101,7 +101,7 @@ export default function Hero({ locale, dict }: Props) {
             className="lg:col-span-5 relative animate-fade-up"
             style={{ animationDelay: "400ms", opacity: 0 }}
           >
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-3xl overflow-hidden shadow-2xl shadow-stone-900/20 bg-bone">
+            <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-md overflow-hidden border border-stone-300/60 bg-bone">
               {heroPhoto ? (
                 <Image
                   src={heroPhoto}

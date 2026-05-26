@@ -35,7 +35,7 @@ export default function MaterialsPage({ locale, dict }: Props) {
             return (
               <div
                 key={item.name}
-                className={`grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-stone-200/60 bg-cream ${
+                className={`grid grid-cols-1 md:grid-cols-2 gap-0 rounded-md overflow-hidden border border-stone-200/60 bg-cream ${
                   reverse ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >

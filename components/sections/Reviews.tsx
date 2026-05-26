@@ -19,7 +19,7 @@ export default function Reviews({ dict }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {dict.reviews.items.map((review, i) => (
             <Reveal key={i} delay={i * 80}>
-              <figure className="h-full p-8 sm:p-10 rounded-2xl bg-cream border border-stone-200/60 flex flex-col">
+              <figure className="h-full p-8 sm:p-10 rounded-md bg-cream border border-stone-200/60 flex flex-col">
                 <svg width="28" height="22" viewBox="0 0 28 22" fill="none" className="text-oak-400 mb-6">
                   <path
                     d="M0 22V12C0 5.4 4.2 0.8 10.5 0L12 2.5C7.6 4.2 5 7.5 5 12H10V22H0ZM16 22V12C16 5.4 20.2 0.8 26.5 0L28 2.5C23.6 4.2 21 7.5 21 12H26V22H16Z"

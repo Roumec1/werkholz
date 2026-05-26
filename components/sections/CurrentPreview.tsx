@@ -49,7 +49,7 @@ export default function CurrentPreview({ locale, dict }: Props) {
             <Link
               key={block.key}
               href={localePath(locale, "currentPieces")}
-              className="group relative bg-stone-900 rounded-2xl p-8 sm:p-10 hover:bg-stone-800 transition-colors duration-500 border border-stone-800"
+              className="group relative bg-stone-900 rounded-md p-8 sm:p-10 hover:bg-stone-800 transition-colors duration-500 border border-stone-800"
             >
               <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium tracking-wide ${block.colorClass}`}>
                 {block.indicator && <span className="pulse-dot" />}

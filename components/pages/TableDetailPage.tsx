@@ -66,7 +66,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                 </p>
 
                 {item.status === "in_production" && item.estimatedCompletionDate && (
-                  <div className="mt-6 p-4 rounded-xl bg-status-production/10 text-status-production">
+                  <div className="mt-6 p-4 rounded-md bg-status-production/10 text-status-production">
                     <p className="text-xs uppercase tracking-widest font-medium">
                       {dict.tableDetail.estimatedCompletion}
                     </p>
@@ -89,7 +89,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                 </div>
 
                 {/* Care kit bonus */}
-                <div className="mt-4 flex items-start gap-3 p-4 rounded-xl bg-oak-50 border border-oak-100">
+                <div className="mt-4 flex items-start gap-3 p-4 rounded-md bg-oak-50 border border-oak-100">
                   <div className="w-8 h-8 rounded-full bg-oak-200/60 flex items-center justify-center text-oak-700 shrink-0">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                       <path d="M5 1.5h4M6 1.5v2.5M5 4h4M3.5 8v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8L9 4H5L3.5 8z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" strokeLinecap="round" />
@@ -133,7 +133,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                 </dl>
 
                 {/* Delivery info widget */}
-                <div className="mt-10 p-5 rounded-2xl bg-cream border border-stone-200/60">
+                <div className="mt-10 p-5 rounded-md bg-cream border border-stone-200/60">
                   <div className="flex items-center gap-2">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-oak-500 shrink-0">
                       <path d="M1 5h9v6H1zM10 7h3l2 2v2h-5M3 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM12 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" strokeLinecap="round" />

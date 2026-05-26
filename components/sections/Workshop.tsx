@@ -50,7 +50,7 @@ export default function Workshop({ dict }: Props) {
               <Reveal key={i} delay={i * 100} className={e.span}>
                 <figure className="h-full flex flex-col">
                   <div
-                    className={`relative ${e.aspect} rounded-2xl overflow-hidden shadow-lg shadow-stone-900/10 bg-bone`}
+                    className={`relative ${e.aspect} rounded-md overflow-hidden border border-stone-300/60 bg-bone`}
                   >
                     <Image
                       src={e.src}

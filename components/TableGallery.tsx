@@ -82,7 +82,7 @@ export default function TableGallery({ item, dict, locale }: Props) {
     <>
       <div>
         {/* Main image */}
-        <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl shadow-stone-900/10 bg-bone group">
+        <div className="relative aspect-[4/5] rounded-md overflow-hidden border border-stone-300/60 bg-bone group">
           {Array.from({ length: total }).map((_, i) => (
             <div
               key={i}
@@ -156,7 +156,7 @@ export default function TableGallery({ item, dict, locale }: Props) {
               onClick={() => setIndex(i)}
               aria-label={g.thumbLabel.replace("{n}", String(i + 1))}
               aria-pressed={i === safeIndex}
-              className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all duration-300 ${
+              className={`relative aspect-square rounded-md overflow-hidden border-2 transition-all duration-300 ${
                 i === safeIndex ? "border-ink" : "border-transparent opacity-70 hover:opacity-100"
               }`}
             >
@@ -224,7 +224,7 @@ export default function TableGallery({ item, dict, locale }: Props) {
           )}
 
           <div
-            className="relative w-full max-w-4xl aspect-[4/5] rounded-2xl overflow-hidden"
+            className="relative w-full max-w-4xl aspect-[4/5] rounded-md overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {Array.from({ length: total }).map((_, i) => (

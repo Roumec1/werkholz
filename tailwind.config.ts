@@ -8,12 +8,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm off-white background
-        bone: "#F7F4EE",
-        cream: "#FBF8F2",
-        // Text colors
-        ink: "#1A1814",
-        graphite: "#2B2722",
+        // Warm off-white background — pushed amber/paper for a heritage feel
+        bone: "#F2EAD6",
+        cream: "#F8F1DE",
+        // Text colors — warmer near-black, deep umber not pure black
+        ink: "#1B130C",
+        graphite: "#2D2419",
         // Wood tones
         oak: {
           50: "#F5EFE4",

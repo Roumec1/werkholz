@@ -26,7 +26,7 @@ export default function ForBusinessesPage({ locale, dict }: Props) {
             {dict.b2b.useCases.map((useCase, i) => (
               <div
                 key={useCase}
-                className="p-8 rounded-2xl bg-cream border border-stone-200/60 hover:border-stone-300 transition-colors"
+                className="p-8 rounded-md bg-cream border border-stone-200/60 hover:border-stone-300 transition-colors"
               >
                 <span className="font-display text-4xl text-oak-400 tabular-nums">
                   {String(i + 1).padStart(2, "0")}
@@ -47,7 +47,7 @@ export default function ForBusinessesPage({ locale, dict }: Props) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((b) => (
-              <div key={b.title} className="p-8 sm:p-10 rounded-2xl border border-stone-200">
+              <div key={b.title} className="p-8 sm:p-10 rounded-md border border-stone-200">
                 <h3 className="font-display text-2xl text-ink">{b.title}</h3>
                 <p className="mt-3 text-stone-600 leading-relaxed">{b.desc}</p>
               </div>

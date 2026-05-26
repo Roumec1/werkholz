@@ -26,7 +26,7 @@ export default function ContactPage({ locale, dict }: Props) {
 
             <aside className="lg:col-span-5">
               <div className="sticky top-28 space-y-6">
-                <div className="rounded-2xl bg-cream p-8 border border-stone-200/60">
+                <div className="rounded-md bg-cream p-8 border border-stone-200/60">
                   <h3 className="font-display text-2xl text-ink">
                     {dict.contact.directTitle}
                   </h3>
@@ -63,7 +63,7 @@ export default function ContactPage({ locale, dict }: Props) {
                   </div>
                 </div>
 
-                <div className="rounded-2xl bg-ink text-bone p-8">
+                <div className="rounded-md bg-ink text-bone p-8">
                   <p className="eyebrow text-stone-400">
                     {dict.contact.workshopLabel}
                   </p>

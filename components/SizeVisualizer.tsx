@@ -36,7 +36,7 @@ export default function SizeVisualizer({ item, dict }: Props) {
   const personX = startX + tableWidthPx + gap;
 
   return (
-    <div className="rounded-2xl bg-cream border border-stone-200/60 p-6">
+    <div className="rounded-md bg-cream border border-stone-200/60 p-6">
       <p className="eyebrow mb-4">{title}</p>
       <svg viewBox="0 0 400 240" className="w-full h-auto">
         {/* Ground line */}

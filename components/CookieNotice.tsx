@@ -36,7 +36,7 @@ export default function CookieNotice({ locale, dict }: Props) {
       role="region"
       aria-label="Cookie notice"
     >
-      <div className="max-w-3xl mx-auto pointer-events-auto bg-ink text-bone rounded-2xl shadow-2xl shadow-ink/30 p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-slide-down">
+      <div className="max-w-3xl mx-auto pointer-events-auto bg-ink text-bone rounded-md shadow-2xl shadow-ink/30 p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-slide-down">
         <p className="text-sm leading-relaxed text-stone-300 flex-1">
           {dict.cookies.message}{" "}
           <Link

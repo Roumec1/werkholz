@@ -29,7 +29,7 @@ export default function TableCard({ item, locale, dict }: Props) {
 
   return (
     <Link href={href} className="group block card-hover">
-      <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md shadow-stone-900/5 bg-bone">
+      <div className="relative aspect-[4/5] rounded-md overflow-hidden border border-stone-300/60 bg-bone">
         {item.images && item.images.length > 0 ? (
           <Image
             src={item.images[0]}

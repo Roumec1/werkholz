@@ -74,7 +74,7 @@ function Tile({
   return (
     <Link
       href={localePath(locale, "currentPieces", item.slug[locale])}
-      className={`group relative block w-full h-full overflow-hidden rounded-2xl card-hover bg-bone`}
+      className={`group relative block w-full h-full overflow-hidden rounded-md card-hover bg-bone`}
     >
       <div className={`relative w-full h-full ${big ? "" : aspectClass}`}>
         {big && <div className="aspect-square sm:aspect-auto sm:h-full" />}
