@@ -9,31 +9,33 @@ const config: Config = {
     extend: {
       colors: {
         /*
-         * Surface palette: architectural cool, warm-leaning gray. Concrete +
-         * paper, not amber. Lets the warm wood photography read as luxe
-         * material against a neutral wall — instead of competing with it.
-         * References: COS, Aesop, Vitra, e15 showrooms.
+         * Surface palette: Japanese restraint. Pure off-white with the
+         * faintest breath of warmth, near-black text. NO accent color.
+         * The wood photographs are the only color on the page — every
+         * other element is monochrome. References: Karimoku Case Study,
+         * Ariake, Time & Style.
          */
-        bone: "#E8E6E0",       // primary surface — warm-leaning gray, like fine concrete
-        cream: "#F4F2EC",      // card/raised surface — off-white with a breath of warmth
-        ink: "#1A1A18",        // text — charcoal with a hint of warmth, not pure black
-        graphite: "#2E2E2C",   // softer text / nav
+        bone: "#F7F5F0",       // primary surface — very subtle warm off-white, almost paper
+        cream: "#FBFAF6",      // raised surfaces — softer still, when needed
+        ink: "#161513",        // text — warm near-black, not pure
+        graphite: "#3A3936",   // secondary text / nav
         /*
-         * Moss — the brand accent. Used sparingly: italic title accents,
-         * eyebrow rules, hairlines that need to "show up", the drop-cap in
-         * the letter. The single signature color you'd associate with werkholz.
+         * Moss palette retained in config so existing class refs don't break
+         * during the transition, but mapped to NEUTRAL grays so all "moss"
+         * usages quietly become hairline grays. Next sweep will remove the
+         * references entirely.
          */
         moss: {
-          50:  "#EEF2EB",
-          100: "#DCE3D6",
-          200: "#B7C5B0",
-          300: "#92A589",
-          400: "#6E8164",
-          500: "#54684C",
-          600: "#41523A",
-          700: "#3A4A3F",   // anchor — used for italic accents
-          800: "#2A3530",
-          900: "#1B2421",
+          50:  "#F4F3F0",
+          100: "#E8E6E1",
+          200: "#D0CDC6",
+          300: "#A8A49C",
+          400: "#7E7B73",
+          500: "#5E5B55",
+          600: "#454340",
+          700: "#3A3936",
+          800: "#262624",
+          900: "#161513",
         },
         /*
          * Oak — retained as a SEMANTIC palette (wood-tone backgrounds in the

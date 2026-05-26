@@ -17,14 +17,14 @@
   }
 
   body {
-    background-color: #E8E6E0;
-    color: #1A1A18;
+    background-color: #F7F5F0;
+    color: #161513;
     font-feature-settings: "kern", "liga", "calt";
   }
 
   ::selection {
-    background-color: #1A1A18;
-    color: #E8E6E0;
+    background-color: #161513;
+    color: #F7F5F0;
   }
 
   /* Visible focus only for keyboard users */
@@ -33,14 +33,14 @@
   }
 
   *:focus-visible {
-    outline: 2px solid #1A1A18;
+    outline: 1px solid #161513;
     outline-offset: 3px;
-    border-radius: 4px;
+    border-radius: 0;
   }
 
   button:focus-visible,
   a:focus-visible {
-    outline: 2px solid #1A1A18;
+    outline: 1px solid #161513;
     outline-offset: 3px;
   }
 
@@ -127,22 +127,12 @@
   }
 
   /*
-   * Section eyebrow — now a chapter-marker style. A thin oak-tone rule
-   * precedes the text, making every section heading feel like a numbered
-   * chapter in a small monograph. Works with text-center on parents
-   * because the whole flex container centers as one block.
+   * Section eyebrow — Karimoku/Ariake style. Bare tiny uppercase, very
+   * wide tracking, neutral gray. No rule, no decoration. The type itself
+   * is the whole signal.
    */
   .eyebrow {
-    @apply inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.32em] text-moss-700 font-medium;
-  }
-  .eyebrow::before {
-    content: "";
-    display: block;
-    width: 1.5rem;
-    height: 1px;
-    background-color: currentColor;
-    opacity: 0.55;
-    flex-shrink: 0;
+    @apply inline-block text-[10px] uppercase tracking-[0.42em] text-graphite font-medium;
   }
 
   .section-title {
