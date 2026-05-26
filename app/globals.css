@@ -17,14 +17,14 @@
   }
 
   body {
-    background-color: #F7F5F0;
-    color: #161513;
+    background-color: #F1F2F3;
+    color: #15181C;
     font-feature-settings: "kern", "liga", "calt";
   }
 
   ::selection {
-    background-color: #161513;
-    color: #F7F5F0;
+    background-color: #15181C;
+    color: #F1F2F3;
   }
 
   /* Visible focus only for keyboard users */
@@ -33,14 +33,14 @@
   }
 
   *:focus-visible {
-    outline: 1px solid #161513;
+    outline: 1px solid #15181C;
     outline-offset: 3px;
     border-radius: 0;
   }
 
   button:focus-visible,
   a:focus-visible {
-    outline: 1px solid #161513;
+    outline: 1px solid #15181C;
     outline-offset: 3px;
   }
 

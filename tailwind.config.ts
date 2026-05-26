@@ -9,33 +9,33 @@ const config: Config = {
     extend: {
       colors: {
         /*
-         * Surface palette: Japanese restraint. Pure off-white with the
-         * faintest breath of warmth, near-black text. NO accent color.
-         * The wood photographs are the only color on the page — every
-         * other element is monochrome. References: Karimoku Case Study,
-         * Ariake, Time & Style.
+         * Surface palette: cool gallery wall. A hint of blue-gray undertone,
+         * NOT paper. The wood photographs are the only warmth — the room is
+         * cold. Pure neutrals still read as "off-white paper" against warm
+         * wood; cool neutrals create the contrast that says "gallery, not
+         * farmhouse." References: Karimoku Case Study, Ariake, Aesop.
          */
-        bone: "#F7F5F0",       // primary surface — very subtle warm off-white, almost paper
-        cream: "#FBFAF6",      // raised surfaces — softer still, when needed
-        ink: "#161513",        // text — warm near-black, not pure
-        graphite: "#3A3936",   // secondary text / nav
+        bone: "#F1F2F3",       // primary surface — cool light gray, gallery wall
+        cream: "#F7F8F9",      // raised surfaces — softer cool white
+        ink: "#15181C",        // text — cool near-black, hint of blue undertone
+        graphite: "#3B3F44",   // secondary text — cool charcoal
         /*
-         * Moss palette retained in config so existing class refs don't break
-         * during the transition, but mapped to NEUTRAL grays so all "moss"
-         * usages quietly become hairline grays. Next sweep will remove the
-         * references entirely.
+         * Moss palette retargeted to COOL neutral grays so all existing
+         * class refs become quiet hairline strokes that match the cool
+         * surface. There is no accent color on this site anymore — the
+         * wood photographs are the entire color story.
          */
         moss: {
-          50:  "#F4F3F0",
-          100: "#E8E6E1",
-          200: "#D0CDC6",
-          300: "#A8A49C",
-          400: "#7E7B73",
-          500: "#5E5B55",
-          600: "#454340",
-          700: "#3A3936",
-          800: "#262624",
-          900: "#161513",
+          50:  "#EEF0F1",
+          100: "#E0E3E5",
+          200: "#C5C9CC",
+          300: "#A2A7AB",
+          400: "#7B8087",
+          500: "#5C6168",
+          600: "#43474C",
+          700: "#3B3F44",
+          800: "#23262A",
+          900: "#15181C",
         },
         /*
          * Oak — retained as a SEMANTIC palette (wood-tone backgrounds in the
@@ -55,20 +55,20 @@ const config: Config = {
           900: "#1F170E",
         },
         /*
-         * Stone neutrals retuned cooler to match the new bone surface.
-         * Used for hairline borders, subtle text, dividers.
+         * Stone neutrals: now genuinely cool gray (no warm undertone left).
+         * Used for body text, secondary text, hairline borders.
          */
         stone: {
-          50: "#F7F6F2",
-          100: "#ECEAE3",
-          200: "#D5D2C9",
-          300: "#B6B2A8",
-          400: "#8E8B82",
-          500: "#6E6C66",
-          600: "#52514C",
-          700: "#3A3937",
-          800: "#262524",
-          900: "#141413",
+          50: "#F6F7F8",
+          100: "#E9EBED",
+          200: "#CDD0D3",
+          300: "#ABAFB4",
+          400: "#82868C",
+          500: "#62666B",
+          600: "#46494E",
+          700: "#33363A",
+          800: "#212427",
+          900: "#13151A",
         },
         // Status colors (subtle, not neon)
         status: {
