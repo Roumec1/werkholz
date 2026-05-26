@@ -50,7 +50,7 @@ export default function Hero({ locale, dict }: Props) {
               style={{ animationDelay: "200ms", opacity: 0 }}
             >
               {dict.hero.headline}{" "}
-              <em className="italic text-oak-700 font-normal">
+              <em className="italic text-moss-700 font-normal">
                 {dict.hero.headlineAccent}
               </em>
             </h1>
@@ -83,8 +83,8 @@ export default function Hero({ locale, dict }: Props) {
               className="mt-12 flex items-center gap-3 text-sm text-stone-500 animate-fade-up"
               style={{ animationDelay: "650ms", opacity: 0 }}
             >
-              <span className="block w-8 h-px bg-oak-500/70" />
-              <span className="uppercase tracking-[0.18em] text-[11px] text-oak-700">
+              <span className="block w-8 h-px bg-moss-600/70" />
+              <span className="uppercase tracking-[0.18em] text-[11px] text-moss-700">
                 {dict.hero.workshopLabel}
               </span>
               <Link

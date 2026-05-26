@@ -22,7 +22,7 @@ export default function Standards({ dict }: Props) {
           <p className="eyebrow">{s.eyebrow}</p>
           <h2 className="mt-5 font-display font-light text-display-lg sm:text-display-xl text-ink leading-[1.02] text-balance">
             {s.title}{" "}
-            <em className="italic text-oak-700 font-normal">{s.titleAccent}</em>
+            <em className="italic text-moss-700 font-normal">{s.titleAccent}</em>
           </h2>
         </Reveal>
 
@@ -30,7 +30,7 @@ export default function Standards({ dict }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 xl:gap-x-24 gap-y-16 max-w-6xl mx-auto">
           {/* ALWAYS */}
           <Reveal>
-            <p className="text-[10px] uppercase tracking-[0.32em] text-oak-700 font-medium mb-3">
+            <p className="text-[10px] uppercase tracking-[0.32em] text-moss-700 font-medium mb-3">
               {s.doLabel}
             </p>
             <div className="border-t border-stone-300/70 pt-10 space-y-12">
@@ -72,7 +72,7 @@ function Item({
     <div className="flex items-baseline gap-5">
       <span
         className={`font-display italic text-2xl shrink-0 tabular-nums leading-none mt-1 ${
-          muted ? "text-stone-400" : "text-oak-600"
+          muted ? "text-stone-400" : "text-moss-600"
         }`}
       >
         {String(index).padStart(2, "0")}

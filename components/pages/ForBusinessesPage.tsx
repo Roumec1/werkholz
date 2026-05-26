@@ -28,7 +28,7 @@ export default function ForBusinessesPage({ locale, dict }: Props) {
                 key={useCase}
                 className="p-8 rounded-md bg-cream border border-stone-200/60 hover:border-stone-300 transition-colors"
               >
-                <span className="font-display text-4xl text-oak-400 tabular-nums">
+                <span className="font-display text-4xl text-moss-500 tabular-nums">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="mt-4 font-display text-xl text-ink">{useCase}</p>

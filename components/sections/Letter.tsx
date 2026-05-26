@@ -33,14 +33,14 @@ export default function Letter({ dict }: Props) {
 
             {/* Decorative rule under the title */}
             <div className="mt-8 flex items-center justify-center">
-              <span className="block w-12 h-px bg-oak-500/60" />
-              <span className="mx-3 text-oak-600 text-sm">✦</span>
-              <span className="block w-12 h-px bg-oak-500/60" />
+              <span className="block w-12 h-px bg-moss-600/60" />
+              <span className="mx-3 text-moss-600 text-sm">✦</span>
+              <span className="block w-12 h-px bg-moss-600/60" />
             </div>
 
             <div className="mt-10 space-y-6 font-display text-lg sm:text-[19px] text-stone-800 leading-[1.7] sm:leading-[1.75]">
               {l.paragraphs.map((p, i) => (
-                <p key={i} className={i === 0 ? "first-letter:font-display first-letter:text-5xl first-letter:font-medium first-letter:text-oak-700 first-letter:float-left first-letter:mr-2 first-letter:mt-1 first-letter:leading-none" : undefined}>
+                <p key={i} className={i === 0 ? "first-letter:font-display first-letter:text-5xl first-letter:font-medium first-letter:text-moss-700 first-letter:float-left first-letter:mr-2 first-letter:mt-1 first-letter:leading-none" : undefined}>
                   {p}
                 </p>
               ))}

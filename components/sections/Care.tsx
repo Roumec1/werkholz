@@ -36,7 +36,7 @@ export default function Care({ dict }: Props) {
             {dict.care.items.map((item, i) => (
               <Reveal key={i} delay={i * 80}>
                 <div className="h-full p-7 rounded-md bg-bone border border-stone-200">
-                  <div className="w-11 h-11 rounded-full bg-oak-100 text-oak-600 flex items-center justify-center">
+                  <div className="w-11 h-11 rounded-full bg-oak-100 text-moss-600 flex items-center justify-center">
                     {ICONS[i]}
                   </div>
                   <h3 className="mt-6 font-display text-xl text-ink">{item.title}</h3>

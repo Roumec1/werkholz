@@ -37,7 +37,7 @@ export default function ContactPage({ locale, dict }: Props) {
                   <div className="mt-6 space-y-3 text-sm">
                     <a
                       href="mailto:hello@werkholz.de"
-                      className="flex items-center gap-3 text-ink hover:text-oak-500 transition-colors"
+                      className="flex items-center gap-3 text-ink hover:text-moss-600 transition-colors"
                     >
                       <span className="w-9 h-9 rounded-full bg-bone flex items-center justify-center">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -51,7 +51,7 @@ export default function ContactPage({ locale, dict }: Props) {
                       href="https://wa.me/491700000000"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-ink hover:text-oak-500 transition-colors"
+                      className="flex items-center gap-3 text-ink hover:text-moss-600 transition-colors"
                     >
                       <span className="w-9 h-9 rounded-full bg-bone flex items-center justify-center">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">

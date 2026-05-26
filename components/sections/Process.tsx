@@ -38,7 +38,7 @@ export default function Process({ dict }: Props) {
                   as="li"
                   className="group relative grid grid-cols-[auto_1fr] gap-6 sm:gap-10 py-8 border-t border-stone-200 first:border-t-0"
                 >
-                  <div className="font-display text-5xl sm:text-6xl text-stone-300 leading-none w-16 sm:w-20 tabular-nums group-hover:text-oak-400 transition-colors duration-500">
+                  <div className="font-display text-5xl sm:text-6xl text-stone-300 leading-none w-16 sm:w-20 tabular-nums group-hover:text-moss-500 transition-colors duration-500">
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div>

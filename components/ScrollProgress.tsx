@@ -23,7 +23,7 @@ export default function ScrollProgress() {
       className="fixed top-0 inset-x-0 z-50 h-0.5 bg-transparent pointer-events-none"
     >
       <div
-        className="h-full bg-oak-500/70 origin-left transition-transform duration-150"
+        className="h-full bg-moss-600/70 origin-left transition-transform duration-150"
         style={{ transform: `scaleX(${progress / 100})` }}
       />
     </div>

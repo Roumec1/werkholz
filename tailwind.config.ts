@@ -8,13 +8,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm off-white background — pushed amber/paper for a heritage feel
-        bone: "#F2EAD6",
-        cream: "#F8F1DE",
-        // Text colors — warmer near-black, deep umber not pure black
-        ink: "#1B130C",
-        graphite: "#2D2419",
-        // Wood tones
+        /*
+         * Surface palette: architectural cool, warm-leaning gray. Concrete +
+         * paper, not amber. Lets the warm wood photography read as luxe
+         * material against a neutral wall — instead of competing with it.
+         * References: COS, Aesop, Vitra, e15 showrooms.
+         */
+        bone: "#E8E6E0",       // primary surface — warm-leaning gray, like fine concrete
+        cream: "#F4F2EC",      // card/raised surface — off-white with a breath of warmth
+        ink: "#1A1A18",        // text — charcoal with a hint of warmth, not pure black
+        graphite: "#2E2E2C",   // softer text / nav
+        /*
+         * Moss — the brand accent. Used sparingly: italic title accents,
+         * eyebrow rules, hairlines that need to "show up", the drop-cap in
+         * the letter. The single signature color you'd associate with werkholz.
+         */
+        moss: {
+          50:  "#EEF2EB",
+          100: "#DCE3D6",
+          200: "#B7C5B0",
+          300: "#92A589",
+          400: "#6E8164",
+          500: "#54684C",
+          600: "#41523A",
+          700: "#3A4A3F",   // anchor — used for italic accents
+          800: "#2A3530",
+          900: "#1B2421",
+        },
+        /*
+         * Oak — retained as a SEMANTIC palette (wood-tone backgrounds in the
+         * care-kit card, etc.), no longer the UI accent. The accent role now
+         * belongs to moss.
+         */
         oak: {
           50: "#F5EFE4",
           100: "#EBE0CC",
@@ -27,18 +52,21 @@ const config: Config = {
           800: "#3A2C1A",
           900: "#1F170E",
         },
-        // Stone neutrals
+        /*
+         * Stone neutrals retuned cooler to match the new bone surface.
+         * Used for hairline borders, subtle text, dividers.
+         */
         stone: {
-          50: "#FAF8F4",
-          100: "#F0EDE6",
-          200: "#DDD7CC",
-          300: "#BFB6A7",
-          400: "#9A8F7E",
-          500: "#7A6F5E",
-          600: "#5C5447",
-          700: "#423C32",
-          800: "#2A2620",
-          900: "#161410",
+          50: "#F7F6F2",
+          100: "#ECEAE3",
+          200: "#D5D2C9",
+          300: "#B6B2A8",
+          400: "#8E8B82",
+          500: "#6E6C66",
+          600: "#52514C",
+          700: "#3A3937",
+          800: "#262524",
+          900: "#141413",
         },
         // Status colors (subtle, not neon)
         status: {

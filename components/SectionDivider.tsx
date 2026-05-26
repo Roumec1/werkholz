@@ -9,7 +9,7 @@ export default function SectionDivider({ variant = "minimal", color = "stone" }:
       <div className="container-w">
         <div className="flex items-center justify-center gap-4 py-2">
           <div className="h-px flex-1 bg-stone-200" />
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-oak-400">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-moss-500">
             <circle cx="6" cy="6" r="2" fill="currentColor" opacity="0.5" />
           </svg>
           <div className="h-px flex-1 bg-stone-200" />

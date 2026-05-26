@@ -90,7 +90,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
 
                 {/* Care kit bonus */}
                 <div className="mt-4 flex items-start gap-3 p-4 rounded-md bg-oak-50 border border-oak-100">
-                  <div className="w-8 h-8 rounded-full bg-oak-200/60 flex items-center justify-center text-oak-700 shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-oak-200/60 flex items-center justify-center text-moss-700 shrink-0">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                       <path d="M5 1.5h4M6 1.5v2.5M5 4h4M3.5 8v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8L9 4H5L3.5 8z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" strokeLinecap="round" />
                     </svg>
@@ -135,7 +135,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                 {/* Delivery info widget */}
                 <div className="mt-10 p-5 rounded-md bg-cream border border-stone-200/60">
                   <div className="flex items-center gap-2">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-oak-500 shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-moss-600 shrink-0">
                       <path d="M1 5h9v6H1zM10 7h3l2 2v2h-5M3 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM12 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" strokeLinecap="round" />
                     </svg>
                     <span className="eyebrow">{dict.reservation.deliveryFrom}</span>
@@ -149,7 +149,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                   </p>
                   <div className="mt-3 space-y-1 text-xs text-stone-600">
                     <p className="flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-oak-500" />
+                      <span className="w-1 h-1 rounded-full bg-moss-600" />
                       {dict.reservation.berlin}
                     </p>
                     <p className="flex items-center gap-2">
@@ -163,7 +163,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
                       href="https://wa.me/491700000000"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-2 inline-flex items-center gap-2 text-sm text-ink hover:text-oak-600 transition-colors"
+                      className="mt-2 inline-flex items-center gap-2 text-sm text-ink hover:text-moss-600 transition-colors"
                     >
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />

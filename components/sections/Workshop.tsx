@@ -63,7 +63,7 @@ export default function Workshop({ dict }: Props) {
                   <figcaption className="mt-5 flex items-start gap-3 text-sm sm:text-[15px] text-stone-700 leading-[1.7]">
                     <span
                       aria-hidden="true"
-                      className="font-display italic text-oak-700 text-lg shrink-0 leading-none mt-0.5 tabular-nums"
+                      className="font-display italic text-moss-700 text-lg shrink-0 leading-none mt-0.5 tabular-nums"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>

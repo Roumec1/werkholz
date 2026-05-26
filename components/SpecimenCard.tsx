@@ -38,7 +38,7 @@ export default function SpecimenCard({ item, locale, position = "bottom-left" }:
       <p className="font-display italic text-lg sm:text-xl leading-none tracking-tight">
         {idStr}
       </p>
-      <div className="my-1.5 h-px bg-oak-500/65" />
+      <div className="my-1.5 h-px bg-moss-600/65" />
       <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.22em] text-stone-600 font-medium leading-none">
         {wood} · {year}
       </p>

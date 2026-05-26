@@ -176,7 +176,7 @@ export default function SizeVisualizer({ item, dict }: Props) {
 
       <div className="mt-4 flex items-center justify-between text-xs text-stone-500">
         <span className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-sm bg-oak-500" />
+          <span className="w-3 h-3 rounded-sm bg-moss-600" />
           {tableLabel}
         </span>
         <span>~ 1:1</span>

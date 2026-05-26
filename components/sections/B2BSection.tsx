@@ -25,7 +25,7 @@ export default function B2BSection({ locale, dict }: Props) {
               <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                 {dict.b2b.useCases.map((useCase) => (
                   <li key={useCase} className="flex items-center gap-3 text-stone-700">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-oak-500 shrink-0">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-moss-600 shrink-0">
                       <path d="M3 7l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <span className="text-sm">{useCase}</span>
