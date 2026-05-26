@@ -15,7 +15,7 @@
   },
   "hero": {
     "eyebrow": "Solid wood · Hand built · Berlin",
-    "headline": "About twenty tables a year.",
+    "headline": "About fifty tables a year.",
     "headlineAccent": "Every one by hand.",
     "subheadline": "Solid wood tables built to order — planned, cut, glued and oiled in a small workshop. No production line. No warehouse of stock. No subcontracting.",
     "cta1": "Plan your table",
@@ -104,12 +104,12 @@
   "stats": {
     "items": [
       {
-        "value": "~20",
+        "value": "~50",
         "label": "tables a year, by hand"
       },
       {
-        "value": "2",
-        "label": "makers, no employees"
+        "value": "3",
+        "label": "coats of hard wax oil, sanded between"
       },
       {
         "value": "0",

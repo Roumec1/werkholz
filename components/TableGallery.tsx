@@ -4,14 +4,17 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import type { TableItem } from "@/lib/tables";
 import type { Dictionary } from "@/lib/i18n";
+import type { Locale } from "@/lib/routes";
 import TableIllustration from "./TableIllustration";
+import SpecimenCard from "./SpecimenCard";
 
 interface Props {
   item: TableItem;
   dict: Dictionary;
+  locale: Locale;
 }
 
-export default function TableGallery({ item, dict }: Props) {
+export default function TableGallery({ item, dict, locale }: Props) {
   const g = dict.gallery;
   const [index, setIndex] = useState(0);
   const [lightbox, setLightbox] = useState(false);
@@ -93,6 +96,9 @@ export default function TableGallery({ item, dict }: Props) {
               {renderSlide(i)}
             </div>
           ))}
+
+          {/* Specimen card — sits above the tap-to-expand layer */}
+          <SpecimenCard item={item} locale={locale} position="top-left" />
 
           {/* Tap-to-expand */}
           <button

@@ -44,7 +44,7 @@ export default function TableDetailPage({ item, locale, dict }: Props) {
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-7">
-              <TableGallery item={item} dict={dict} />
+              <TableGallery item={item} dict={dict} locale={locale} />
               <div className="mt-6">
                 <SizeVisualizer item={item} dict={dict} />
               </div>

@@ -4,6 +4,7 @@ import { localePath, type Locale } from "@/lib/routes";
 import type { Dictionary } from "@/lib/i18n";
 import { featuredTables, tablesByStatus } from "@/lib/tables";
 import TableIllustration from "./TableIllustration";
+import SpecimenCard from "./SpecimenCard";
 
 interface Props {
   locale: Locale;
@@ -117,6 +118,9 @@ export default function Hero({ locale, dict }: Props) {
                     className="absolute inset-0"
                   />
                 )
+              )}
+              {featured && (
+                <SpecimenCard item={featured} locale={locale} position="bottom-left" />
               )}
             </div>
           </div>

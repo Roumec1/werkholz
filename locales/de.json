@@ -15,7 +15,7 @@
   },
   "hero": {
     "eyebrow": "Massivholz · In Handarbeit · Berlin",
-    "headline": "Etwa zwanzig Tische im Jahr.",
+    "headline": "Etwa fünfzig Tische im Jahr.",
     "headlineAccent": "Jeder von Hand.",
     "subheadline": "Massivholztische auf Bestellung — geplant, geschnitten, verleimt und geölt in einer kleinen Werkstatt. Keine Serie. Keine Lagerware. Keine Subunternehmer.",
     "cta1": "Tisch planen",
@@ -104,12 +104,12 @@
   "stats": {
     "items": [
       {
-        "value": "~20",
+        "value": "~50",
         "label": "Tische pro Jahr, in Handarbeit"
       },
       {
-        "value": "2",
-        "label": "Macher, keine Angestellten"
+        "value": "3",
+        "label": "Schichten Hartwachsöl, je dazwischen geschliffen"
       },
       {
         "value": "0",

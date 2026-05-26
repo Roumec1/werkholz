@@ -15,7 +15,7 @@
   },
   "hero": {
     "eyebrow": "Masivní dřevo · Ručně · Berlín",
-    "headline": "Asi dvacet stolů za rok.",
+    "headline": "Asi padesát stolů za rok.",
     "headlineAccent": "Každý ručně.",
     "subheadline": "Masivní stoly na zakázku — plánujeme, řežeme, lepíme a olejujeme v malé dílně. Žádná sériová výroba. Žádný sklad. Žádní subdodavatelé.",
     "cta1": "Naplánovat stůl",
@@ -104,12 +104,12 @@
   "stats": {
     "items": [
       {
-        "value": "~20",
+        "value": "~50",
         "label": "stolů ročně, ručně"
       },
       {
-        "value": "2",
-        "label": "řemeslníci, žádní zaměstnanci"
+        "value": "3",
+        "label": "vrstvy tvrdého voskového oleje, broušení mezi nimi"
       },
       {
         "value": "0",
