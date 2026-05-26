@@ -152,25 +152,56 @@
     transform: translateY(-4px);
   }
 
-  /* Status badge styles */
+  /*
+   * Status badges — liquid glass treatment.
+   *
+   * The recipe:
+   *   1. Heavy backdrop-filter (blur + saturate) so whatever's behind the
+   *      badge gets refracted — gives the glass its frosted depth.
+   *   2. Layered background: a translucent color tint on the bottom +
+   *      a top-down white highlight gradient on top, simulating light
+   *      catching the curved top edge.
+   *   3. Inner shadow stack: bright top inset (the lit edge), faint
+   *      dark bottom inset (the shadowed edge), thin white inner border
+   *      (the glass material edge).
+   *   4. Subtle outer micro-shadow so it lifts off the surface.
+   *   5. White text + a very subtle text-shadow for legibility over the
+   *      translucent surface.
+   */
   .badge {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide backdrop-blur-sm;
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wide text-white;
+    backdrop-filter: blur(14px) saturate(1.6);
+    -webkit-backdrop-filter: blur(14px) saturate(1.6);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+      inset 0 -1px 1px 0 rgba(0, 0, 0, 0.08),
+      inset 0 0 0 0.5px rgba(255, 255, 255, 0.22),
+      0 2px 8px -2px rgba(0, 0, 0, 0.18);
   }
 
   .badge-available {
-    @apply bg-status-available/80 text-white;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, transparent 55%),
+      linear-gradient(180deg, rgba(90, 122, 63, 0.58) 0%, rgba(90, 122, 63, 0.38) 100%);
   }
 
   .badge-production {
-    @apply bg-status-production/85 text-white;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, transparent 55%),
+      linear-gradient(180deg, rgba(168, 133, 80, 0.62) 0%, rgba(168, 133, 80, 0.42) 100%);
   }
 
   .badge-reserved {
-    @apply bg-status-reserved/85 text-white;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, transparent 55%),
+      linear-gradient(180deg, rgba(139, 106, 58, 0.62) 0%, rgba(139, 106, 58, 0.42) 100%);
   }
 
   .badge-sold {
-    @apply bg-stone-600/75 text-white;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, transparent 55%),
+      linear-gradient(180deg, rgba(107, 98, 88, 0.58) 0%, rgba(107, 98, 88, 0.38) 100%);
   }
 
   /* Pulse dot for available */
