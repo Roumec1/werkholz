@@ -14,33 +14,33 @@
     "close": "Zavřít"
   },
   "hero": {
-    "eyebrow": "Malá dílna · Ruční výroba · Doručení do Berlína",
+    "eyebrow": "Masivní dřevo · Ručně · Berlín",
     "headline": "Asi dvacet stolů za rok.",
-    "headlineAccent": "Vše ručně.",
-    "subheadline": "Jsme Jan a Tomas — dva bratři, jedna dílna. Každý masivní stůl na této stránce jsme naplánovali, nařezali a dokončili sami, pro konkrétní prostor. Žádná pobočka. Žádná masová výroba. Jen práce.",
+    "headlineAccent": "Každý ručně.",
+    "subheadline": "Masivní stoly na zakázku — plánujeme, řežeme, lepíme a olejujeme v malé dílně. Žádná sériová výroba. Žádný sklad. Žádní subdodavatelé.",
     "cta1": "Naplánovat stůl",
     "cta2": "Zobrazit aktuální kusy",
-    "trust1": "Ruční výroba",
-    "trust2": "Jen masivní dřevo",
-    "trust3": "Doručení do Berlína a okolí",
     "workshopLabel": "Na ponku",
-    "liveCountText": "stolů právě v dílně",
+    "liveCountText": "stolů právě v práci",
     "currentlyLabel": "Aktuálně"
   },
-  "makers": {
-    "eyebrow": "Dílna",
-    "title": "Jan a Tomas.",
-    "titleAccent": "Dva bratři, jedna dílna.",
-    "body": [
-      "Se dřevem pracujeme celý život — Jan se k němu dostal přes nábytkový design, Tomas přes truhlařinu. Před pár lety jsme spolu otevřeli dílnu a začali dělat masivní stoly na zakázku.",
-      "Každý stůl na této stránce jsme naplánovali, nařezali, slepili, vybrousili a dokončili sami. Žádní subdodavatelé. Žádný sklad hotových kusů. Začínáme s fošnou, vedeme si poznámky, a končíme stolem, který sedne do konkrétní místnosti.",
-      "Každý stůl je zespodu podepsaný. Když nám ho přinesete za dvacet let na novou vrstvu oleje, budeme si ho pamatovat."
+  "standards": {
+    "eyebrow": "Jak pracujeme",
+    "title": "Co děláme.",
+    "titleAccent": "A co ne.",
+    "doLabel": "Vždy",
+    "doItems": [
+      { "title": "Jen masivní dřevo.", "body": "Tloušťky desek 3 až 6 cm. Nikdy dýha, nikdy laminát." },
+      { "title": "Ručně dokončené.", "body": "Tři vrstvy tvrdého voskového oleje, mezi každou broušení. Žádný lak." },
+      { "title": "Podepsané a datované.", "body": "Zespodu. Vedeme záznamy o každém kuse — kdybyste se za deset let vrátili." }
     ],
-    "signature": "Jan & Tomas",
-    "signatureLabel": "Podpis na každém stole",
-    "imageCaption": "Masivní dřevo s přírodní hranou — tři týdny do hotova",
-    "ctaLabel": "Naplánovat stůl",
-    "ctaSecondary": "Jak pracujeme"
+    "dontLabel": "Nikdy",
+    "dontItems": [
+      { "title": "Spěšné zakázky.", "body": "Dřevo potřebuje čas se usadit. Nezlomíme proces kvůli žádnému termínu." },
+      { "title": "Subdodavatele.", "body": "Nic neopustí dílnu napůl hotové. Každý spoj, každé broušení — naše." },
+      { "title": "Skladovou výrobu.", "body": "Každý stůl začíná jako fošna. Končí jako váš. Nevyrábíme dopředu." }
+    ],
+    "imageCaption": "Masivní dřevo s přírodní hranou — tři týdny do hotova"
   },
   "featured": {
     "eyebrow": "Aktuálně v dílně",
@@ -154,7 +154,7 @@
     "title": "Stoly, které teď někomu patří.",
     "items": [
       {
-        "quote": "Potřebovali jsme jídelní stůl do úzkého bytu v Altbau — Tomas navrhl, ať přírodní hrana jde po diagonále, aby stůl vypadal v prostoru širší. Přesně tak.",
+        "quote": "Potřebovali jsme jídelní stůl do úzkého bytu v Altbau. Dílna navrhla, ať přírodní hrana jde po diagonále, aby stůl vypadal v prostoru širší. Přesně tak.",
         "name": "Anna a Michael Krügerovi",
         "role": "Jídelní stůl dub · Berlín Kreuzberg · jaro 2024"
       },
@@ -164,7 +164,7 @@
         "role": "12 bistro stolů z dubu · Berlín Mitte · 2023"
       },
       {
-        "quote": "Stůl sedí na milimetr přesně mezi dvě skříňky. Zespodu iniciály řemeslníků a datum — malý detail, ale přesně to dělá rozdíl.",
+        "quote": "Stůl sedí na milimetr přesně mezi dvě skříňky. Zespodu značka dílny a datum — malý detail, ale přesně to dělá rozdíl.",
         "name": "Lukas a Sophie Brandtovi",
         "role": "Kuchyňský stůl z buku · Postupim · podzim 2023"
       }
@@ -292,8 +292,8 @@
       "Masivní dřevo navíc pracuje. Prkno, které v pondělí hoblujete, nemá v pátek úplně stejnou šířku. Takže nelepíme desky ten den, kdy je hoblujeme. Necháme je odpočinout, zkontrolujeme, dohoblujeme, pak slepíme. Kdo tenhle krok obejde, dělá stoly, které ve třetím roce na spojích prasknou.",
       "Když nás požádáte o spěch, většinou řekneme ne. Ale stůl uvidíte od začátku. Fotky z ponku jak postupujeme, dvě tři týdně. Když je hotový a posíláme ho, není to překvapení."
     ],
-    "signature": "Jan & Tomas",
-    "signatureLocation": "z dílny"
+    "signature": "Z dílny.",
+    "signatureLocation": "Werkholz, Berlín"
   },
   "faq": {
     "eyebrow": "Otázky & odpovědi",

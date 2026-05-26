@@ -14,33 +14,33 @@
     "close": "Schließen"
   },
   "hero": {
-    "eyebrow": "Kleine Werkstatt · In Handarbeit · Lieferung nach Berlin",
+    "eyebrow": "Massivholz · In Handarbeit · Berlin",
     "headline": "Etwa zwanzig Tische im Jahr.",
-    "headlineAccent": "Alle in Handarbeit.",
-    "subheadline": "Wir sind Jan und Tomas — zwei Brüder, eine Werkstatt. Jeder Massivholztisch auf dieser Seite wurde von uns geplant, geschnitten und gefertigt, für einen ganz bestimmten Raum. Keine Filiale. Keine Massenfertigung. Nur die Arbeit.",
+    "headlineAccent": "Jeder von Hand.",
+    "subheadline": "Massivholztische auf Bestellung — geplant, geschnitten, verleimt und geölt in einer kleinen Werkstatt. Keine Serie. Keine Lagerware. Keine Subunternehmer.",
     "cta1": "Tisch planen",
     "cta2": "Aktuelle Stücke ansehen",
-    "trust1": "In Handarbeit",
-    "trust2": "Nur Massivholz",
-    "trust3": "Lieferung nach Berlin & Umgebung",
     "workshopLabel": "Auf der Werkbank",
-    "liveCountText": "Tische gerade in der Werkstatt",
+    "liveCountText": "Tische gerade in Arbeit",
     "currentlyLabel": "Aktuell"
   },
-  "makers": {
-    "eyebrow": "Die Werkstatt",
-    "title": "Jan und Tomas.",
-    "titleAccent": "Zwei Brüder, eine Werkstatt.",
-    "body": [
-      "Wir arbeiten unser Leben lang mit Holz — Jan kam über die Möbelgestaltung dazu, Tomas über die Schreinerei. Vor ein paar Jahren haben wir die Werkstatt gemeinsam aufgebaut und begonnen, Massivholztische auf Bestellung zu fertigen.",
-      "Jeder Tisch auf dieser Seite wurde von uns geplant, gesägt, verleimt, geschliffen und geölt. Keine Subunternehmer. Kein Lager mit fertiger Ware. Wir beginnen mit einer Bohle, machen Notizen während der Arbeit, und liefern ein Stück, das in einen bestimmten Raum passt.",
-      "Jeder Tisch wird auf der Unterseite signiert. Wenn Sie ihn in zwanzig Jahren zurückbringen für eine neue Ölung, werden wir uns daran erinnern."
+  "standards": {
+    "eyebrow": "Wie wir arbeiten",
+    "title": "Was wir tun.",
+    "titleAccent": "Und was nicht.",
+    "doLabel": "Immer",
+    "doItems": [
+      { "title": "Nur Massivholz.", "body": "Plattenstärken von 3 bis 6 cm. Nie Furnier, nie Spanplatte." },
+      { "title": "Von Hand veredelt.", "body": "Drei Schichten Hartwachsöl, zwischen jeder geschliffen. Kein Lack." },
+      { "title": "Signiert und datiert.", "body": "Auf der Unterseite. Wir führen Aufzeichnungen — falls Sie in zehn Jahren zurückkommen." }
     ],
-    "signature": "Jan & Tomas",
-    "signatureLabel": "Auf jedem Tisch signiert",
-    "imageCaption": "Massivholz mit Baumkante — drei Wochen bis fertig",
-    "ctaLabel": "Tisch planen",
-    "ctaSecondary": "Wie wir arbeiten"
+    "dontLabel": "Nie",
+    "dontItems": [
+      { "title": "Eilaufträge.", "body": "Das Holz braucht Zeit, um sich zu setzen. Wir brechen den Prozess für keinen Termin." },
+      { "title": "Subunternehmer.", "body": "Nichts verlässt halbfertig die Werkstatt. Jeder Schliff, jeder Schnitt — bei uns." },
+      { "title": "Lagerware.", "body": "Jeder Tisch beginnt als Bohle. Er endet als Ihrer. Wir fertigen nicht auf Vorrat." }
+    ],
+    "imageCaption": "Massivholz mit Baumkante — drei Wochen bis fertig"
   },
   "featured": {
     "eyebrow": "Aktuell in der Werkstatt",
@@ -154,7 +154,7 @@
     "title": "Tische, die jetzt jemandem gehören.",
     "items": [
       {
-        "quote": "Wir wollten einen Esstisch für unsere schmale Altbau-Wohnung — Tomas hat vorgeschlagen, die Baumkante diagonal zu legen, damit der Tisch optisch breiter wirkt. Genau richtig.",
+        "quote": "Wir wollten einen Esstisch für unsere schmale Altbau-Wohnung. Die Werkstatt hat vorgeschlagen, die Baumkante diagonal zu legen, damit der Tisch optisch breiter wirkt. Genau richtig.",
         "name": "Anna & Michael Krüger",
         "role": "Esstisch Eiche · Berlin Kreuzberg · Frühjahr 2024"
       },
@@ -164,7 +164,7 @@
         "role": "12 Bistrotische Eiche · Berlin Mitte · 2023"
       },
       {
-        "quote": "Der Tisch passt millimetergenau in unsere Küche zwischen zwei Schränken. Unter der Platte stehen die Initialen der Macher und das Datum — kleines Detail, aber genau das macht den Unterschied.",
+        "quote": "Der Tisch passt millimetergenau in unsere Küche zwischen zwei Schränken. Unter der Platte das Werkstatt-Zeichen und das Datum — kleines Detail, aber genau das macht den Unterschied.",
         "name": "Lukas & Sophie Brandt",
         "role": "Küchentisch Buche · Potsdam · Herbst 2023"
       }
@@ -292,8 +292,8 @@
       "Massivholz arbeitet außerdem. Ein Brett, das Sie am Montag hobeln, hat am Freitag nicht ganz dieselbe Breite. Also verleimen wir die Platten nicht an dem Tag, an dem wir sie hobeln. Wir lassen sie ruhen, prüfen nochmal, hobeln nach, dann verleimen. Wer diesen Schritt überspringt, baut Tische, die im dritten Jahr an den Fugen aufreißen.",
       "Wenn Sie uns bitten, schneller zu sein, sagen wir meistens Nein. Aber Sie sehen den Tisch von Anfang an. Fotos von der Werkbank während der Arbeit, zwei oder drei pro Woche. Wenn er geliefert wird, ist er keine Überraschung."
     ],
-    "signature": "Jan & Tomas",
-    "signatureLocation": "aus der Werkstatt"
+    "signature": "Aus der Werkstatt.",
+    "signatureLocation": "Werkholz, Berlin"
   },
   "faq": {
     "eyebrow": "Fragen & Antworten",

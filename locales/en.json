@@ -14,33 +14,33 @@
     "close": "Close"
   },
   "hero": {
-    "eyebrow": "A small workshop · Made by hand · Delivered to Berlin",
+    "eyebrow": "Solid wood · Hand built · Berlin",
     "headline": "About twenty tables a year.",
-    "headlineAccent": "All by hand.",
-    "subheadline": "We're Jan and Tomas — two brothers, one workshop. Every solid wood table on this site was planned, cut and finished by us, for someone's specific space. No franchise. No mass production. Just the work.",
+    "headlineAccent": "Every one by hand.",
+    "subheadline": "Solid wood tables built to order — planned, cut, glued and oiled in a small workshop. No production line. No warehouse of stock. No subcontracting.",
     "cta1": "Plan your table",
     "cta2": "See current pieces",
-    "trust1": "Made by hand",
-    "trust2": "Solid wood only",
-    "trust3": "Delivered to Berlin & beyond",
     "workshopLabel": "On the bench",
-    "liveCountText": "tables in the workshop right now",
+    "liveCountText": "tables under way",
     "currentlyLabel": "Currently"
   },
-  "makers": {
-    "eyebrow": "The workshop",
-    "title": "Jan and Tomas.",
-    "titleAccent": "Two brothers, one workshop.",
-    "body": [
-      "We've been working with wood our whole lives — Jan came to it through furniture design, Tomas through carpentry. A few years ago we set up the workshop together, and started building solid wood tables to order.",
-      "Every table on this site was planned, cut, glued, sanded and finished by us. No subcontracting. No warehouse of stock. We start with a slab, take notes as we go, and finish with a piece that fits a specific room.",
-      "Each table is signed underneath. If you bring it back to us in twenty years for a fresh coat of oil, we'll remember it."
+  "standards": {
+    "eyebrow": "How we work",
+    "title": "What we do.",
+    "titleAccent": "And what we don't.",
+    "doLabel": "Always",
+    "doItems": [
+      { "title": "Solid wood only.", "body": "Tabletop thicknesses of 3 to 6 cm. Never veneer, never engineered." },
+      { "title": "Hand-finished.", "body": "Three coats of hard wax oil, sanded between each. No lacquer." },
+      { "title": "Signed and dated.", "body": "On the underside. We keep a record of every piece — for when you return in ten years." }
     ],
-    "signature": "Jan & Tomas",
-    "signatureLabel": "Signed on every table",
-    "imageCaption": "Live-edge slab in the workshop — three weeks from finished",
-    "ctaLabel": "Plan your table",
-    "ctaSecondary": "How we work"
+    "dontLabel": "Never",
+    "dontItems": [
+      { "title": "Rush jobs.", "body": "The wood needs time to settle. We won't break the process to hit a deadline." },
+      { "title": "Subcontracting.", "body": "Nothing leaves the workshop half-made. Every joint, every sanding pass — ours." },
+      { "title": "Stock furniture.", "body": "Every table starts as a slab. It ends as yours. We don't pre-build inventory." }
+    ],
+    "imageCaption": "Live-edge slab in the workshop — three weeks from finished"
   },
   "featured": {
     "eyebrow": "Currently in the workshop",
@@ -154,7 +154,7 @@
     "title": "Tables that belong to someone now.",
     "items": [
       {
-        "quote": "We needed a dining table for a narrow Altbau apartment — Tomas suggested running the live edge diagonally so it would read wider in the room. Exactly right.",
+        "quote": "We needed a dining table for a narrow Altbau apartment. The workshop suggested running the live edge diagonally so it would read wider in the room. Exactly right.",
         "name": "Anna & Michael Krüger",
         "role": "Oak dining table · Kreuzberg, Berlin · Spring 2024"
       },
@@ -164,7 +164,7 @@
         "role": "12 oak bistro tables · Mitte, Berlin · 2023"
       },
       {
-        "quote": "The table fits to the millimeter between two cabinets. Underneath, the makers' initials and the date — a small thing, but exactly what makes the difference.",
+        "quote": "The table fits to the millimeter between two cabinets. Underneath, the workshop mark and the date — a small thing, but exactly what makes the difference.",
         "name": "Lukas & Sophie Brandt",
         "role": "Beech kitchen table · Potsdam · Autumn 2023"
       }
@@ -292,8 +292,8 @@
       "Solid wood also moves. A board you joint on Monday isn't quite the same width on Friday. So we don't glue panels the day we plane them — we rest them, recheck, re-plane, then glue. Cheating that step is how you get tables that crack at the joints in year three.",
       "If you ask us to rush, we'll usually say no. But you'll also see the table from the start. Photos from the bench as we go, two or three a week. By the time it ships, it isn't a surprise."
     ],
-    "signature": "Jan & Tomas",
-    "signatureLocation": "from the workshop"
+    "signature": "From the workshop.",
+    "signatureLocation": "Werkholz, Berlin"
   },
   "faq": {
     "eyebrow": "Questions & answers",

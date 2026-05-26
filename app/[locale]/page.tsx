@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Makers from "@/components/sections/Makers";
+import Standards from "@/components/sections/Standards";
 import Stats from "@/components/sections/Stats";
 import FeaturedPieces from "@/components/sections/FeaturedPieces";
 import Categories from "@/components/sections/Categories";
@@ -28,7 +28,7 @@ export default async function Home({
   return (
     <>
       <Hero locale={loc} dict={dict} />
-      <Makers locale={loc} dict={dict} />
+      <Standards dict={dict} />
       <Stats dict={dict} />
       <FeaturedPieces locale={loc} dict={dict} />
       <Categories locale={loc} dict={dict} />

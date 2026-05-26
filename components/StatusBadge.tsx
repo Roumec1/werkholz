@@ -19,7 +19,6 @@ export default function StatusBadge({ status, dict, size = "sm" }: Props) {
     <span
       className={`badge ${STYLES[status]} ${size === "md" ? "text-sm px-4 py-1.5" : ""}`}
     >
-      {status === "available" && <span className="pulse-dot" />}
       {dict.status[status]}
     </span>
   );

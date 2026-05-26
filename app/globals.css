@@ -164,23 +164,12 @@
   }
 
   /* Pulse dot for available */
+  /*
+   * Status indicator dot — a solid 8x8 ring, no animation. Artisanal brands
+   * don't blink at you. The dot itself is enough.
+   */
   .pulse-dot {
     @apply relative inline-block w-2 h-2 rounded-full bg-current;
-  }
-
-  .pulse-dot::after {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: 9999px;
-    background: currentColor;
-    opacity: 0.4;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 0.4; transform: scale(1); }
-    50% { opacity: 0; transform: scale(1.6); }
   }
 
   @keyframes fadeIn {

@@ -46,12 +46,12 @@ export default function Letter({ dict }: Props) {
               ))}
             </div>
 
-            {/* Signature block */}
-            <div className="mt-12 flex flex-col items-center gap-2">
-              <p className="font-display italic text-2xl sm:text-3xl text-ink">
+            {/* Closer — a quiet sign-off, not a name */}
+            <div className="mt-14 flex flex-col items-center gap-2">
+              <p className="font-display italic text-xl sm:text-2xl text-stone-700">
                 {l.signature}
               </p>
-              <p className="text-xs uppercase tracking-[0.2em] text-stone-500">
+              <p className="text-[10px] uppercase tracking-[0.32em] text-stone-500">
                 {l.signatureLocation}
               </p>
             </div>
