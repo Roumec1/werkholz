@@ -14,17 +14,33 @@
     "close": "Schließen"
   },
   "hero": {
-    "eyebrow": "Massivholz · Berlin & Deutschland",
-    "headline": "Holzarbeiten nach Maß aus unserer Werkstatt.",
-    "subheadline": "Massivholztische aus echtem Holz: Couchtische, Esstische, Bistrotische und Tische für Cafés, Büros und Restaurants. Gefertigt nach Wunsch und geliefert nach Berlin und deutschlandweit.",
-    "cta1": "Tisch anfragen",
+    "eyebrow": "Kleine Werkstatt · In Handarbeit · Lieferung nach Berlin",
+    "headline": "Etwa zwanzig Tische im Jahr.",
+    "headlineAccent": "Alle in Handarbeit.",
+    "subheadline": "Wir sind Jan und Tomas — zwei Brüder, eine Werkstatt. Jeder Massivholztisch auf dieser Seite wurde von uns geplant, geschnitten und gefertigt, für einen ganz bestimmten Raum. Keine Filiale. Keine Massenfertigung. Nur die Arbeit.",
+    "cta1": "Tisch planen",
     "cta2": "Aktuelle Stücke ansehen",
-    "trust1": "Massivholz",
-    "trust2": "Nach Maß gefertigt",
-    "trust3": "Lieferung deutschlandweit",
-    "workshopLabel": "In der Werkstatt",
-    "liveCountText": "Tische gerade verfügbar oder in Fertigung",
+    "trust1": "In Handarbeit",
+    "trust2": "Nur Massivholz",
+    "trust3": "Lieferung nach Berlin & Umgebung",
+    "workshopLabel": "Auf der Werkbank",
+    "liveCountText": "Tische gerade in der Werkstatt",
     "currentlyLabel": "Aktuell"
+  },
+  "makers": {
+    "eyebrow": "Die Werkstatt",
+    "title": "Jan und Tomas.",
+    "titleAccent": "Zwei Brüder, eine Werkstatt.",
+    "body": [
+      "Wir arbeiten unser Leben lang mit Holz — Jan kam über die Möbelgestaltung dazu, Tomas über die Schreinerei. Vor ein paar Jahren haben wir die Werkstatt gemeinsam aufgebaut und begonnen, Massivholztische auf Bestellung zu fertigen.",
+      "Jeder Tisch auf dieser Seite wurde von uns geplant, gesägt, verleimt, geschliffen und geölt. Keine Subunternehmer. Kein Lager mit fertiger Ware. Wir beginnen mit einer Bohle, machen Notizen während der Arbeit, und liefern ein Stück, das in einen bestimmten Raum passt.",
+      "Jeder Tisch wird auf der Unterseite signiert. Wenn Sie ihn in zwanzig Jahren zurückbringen für eine neue Ölung, werden wir uns daran erinnern."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLabel": "Auf jedem Tisch signiert",
+    "imageCaption": "Massivholz mit Baumkante — drei Wochen bis fertig",
+    "ctaLabel": "Tisch planen",
+    "ctaSecondary": "Wie wir arbeiten"
   },
   "featured": {
     "eyebrow": "Aktuell in der Werkstatt",

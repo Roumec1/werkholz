@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { localePath, type Locale } from "@/lib/routes";
 import type { Dictionary } from "@/lib/i18n";
@@ -10,7 +11,11 @@ interface Props {
 }
 
 export default function Hero({ locale, dict }: Props) {
-  const featured = featuredTables()[0];
+  // Prefer a featured piece with real photos for the hero visual
+  const featured =
+    featuredTables().find((t) => t.images && t.images.length > 0) ??
+    featuredTables()[0];
+  const heroPhoto = featured?.images?.[0];
   const liveCount = tablesByStatus("in_production").length + tablesByStatus("available").length;
 
   return (
@@ -32,7 +37,10 @@ export default function Hero({ locale, dict }: Props) {
               className="mt-6 font-display font-light text-display-xl text-ink text-balance animate-fade-up"
               style={{ animationDelay: "200ms", opacity: 0 }}
             >
-              {dict.hero.headline}
+              {dict.hero.headline}{" "}
+              <em className="italic text-oak-700 font-normal">
+                {dict.hero.headlineAccent}
+              </em>
             </h1>
 
             <p
@@ -70,8 +78,19 @@ export default function Hero({ locale, dict }: Props) {
             className="lg:col-span-5 relative animate-fade-up"
             style={{ animationDelay: "400ms", opacity: 0 }}
           >
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-3xl overflow-hidden shadow-2xl shadow-oak-900/15">
-              {featured && <TableIllustration item={featured} className="absolute inset-0" />}
+            <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-3xl overflow-hidden shadow-2xl shadow-oak-900/15 bg-bone">
+              {heroPhoto ? (
+                <Image
+                  src={heroPhoto}
+                  alt={featured?.title[locale] ?? ""}
+                  fill
+                  sizes="(min-width: 1024px) 42vw, 90vw"
+                  className="object-cover scale-[1.05]"
+                  priority
+                />
+              ) : (
+                featured && <TableIllustration item={featured} className="absolute inset-0" />
+              )}
             </div>
 
             {/* Floating live-status chip */}

@@ -14,17 +14,33 @@
     "close": "Close"
   },
   "hero": {
-    "eyebrow": "Solid wood · Berlin & Germany",
-    "headline": "Custom woodwork from our workshop.",
-    "subheadline": "Solid wood tables made to order: coffee tables, dining tables, bistro tables and tables for cafés, offices and restaurants. Built to your requirements and delivered to Berlin and across Germany.",
-    "cta1": "Request a table",
-    "cta2": "View current pieces",
-    "trust1": "Solid wood",
-    "trust2": "Made to order",
-    "trust3": "Delivered across Germany",
-    "workshopLabel": "In the workshop",
-    "liveCountText": "tables available or in production",
+    "eyebrow": "A small workshop · Made by hand · Delivered to Berlin",
+    "headline": "About twenty tables a year.",
+    "headlineAccent": "All by hand.",
+    "subheadline": "We're Jan and Tomas — two brothers, one workshop. Every solid wood table on this site was planned, cut and finished by us, for someone's specific space. No franchise. No mass production. Just the work.",
+    "cta1": "Plan your table",
+    "cta2": "See current pieces",
+    "trust1": "Made by hand",
+    "trust2": "Solid wood only",
+    "trust3": "Delivered to Berlin & beyond",
+    "workshopLabel": "On the bench",
+    "liveCountText": "tables in the workshop right now",
     "currentlyLabel": "Currently"
+  },
+  "makers": {
+    "eyebrow": "The workshop",
+    "title": "Jan and Tomas.",
+    "titleAccent": "Two brothers, one workshop.",
+    "body": [
+      "We've been working with wood our whole lives — Jan came to it through furniture design, Tomas through carpentry. A few years ago we set up the workshop together, and started building solid wood tables to order.",
+      "Every table on this site was planned, cut, glued, sanded and finished by us. No subcontracting. No warehouse of stock. We start with a slab, take notes as we go, and finish with a piece that fits a specific room.",
+      "Each table is signed underneath. If you bring it back to us in twenty years for a fresh coat of oil, we'll remember it."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLabel": "Signed on every table",
+    "imageCaption": "Live-edge slab in the workshop — three weeks from finished",
+    "ctaLabel": "Plan your table",
+    "ctaSecondary": "How we work"
   },
   "featured": {
     "eyebrow": "Currently in the workshop",

@@ -14,17 +14,33 @@
     "close": "Zavřít"
   },
   "hero": {
-    "eyebrow": "Masivní dřevo · Berlín & Německo",
-    "headline": "Zakázková výroba ze dřeva z naší dílny.",
-    "subheadline": "Masivní stoly na míru: konferenční, jídelní, bistro stoly a stoly pro kavárny, kanceláře a restaurace. Vyrobeno podle zadání a doručeno do Berlína i po celém Německu.",
-    "cta1": "Poptat stůl",
+    "eyebrow": "Malá dílna · Ruční výroba · Doručení do Berlína",
+    "headline": "Asi dvacet stolů za rok.",
+    "headlineAccent": "Vše ručně.",
+    "subheadline": "Jsme Jan a Tomas — dva bratři, jedna dílna. Každý masivní stůl na této stránce jsme naplánovali, nařezali a dokončili sami, pro konkrétní prostor. Žádná pobočka. Žádná masová výroba. Jen práce.",
+    "cta1": "Naplánovat stůl",
     "cta2": "Zobrazit aktuální kusy",
-    "trust1": "Masivní dřevo",
-    "trust2": "Vyrobeno na míru",
-    "trust3": "Doručení po celém Německu",
-    "workshopLabel": "V dílně",
-    "liveCountText": "stolů dostupných nebo ve výrobě",
+    "trust1": "Ruční výroba",
+    "trust2": "Jen masivní dřevo",
+    "trust3": "Doručení do Berlína a okolí",
+    "workshopLabel": "Na ponku",
+    "liveCountText": "stolů právě v dílně",
     "currentlyLabel": "Aktuálně"
+  },
+  "makers": {
+    "eyebrow": "Dílna",
+    "title": "Jan a Tomas.",
+    "titleAccent": "Dva bratři, jedna dílna.",
+    "body": [
+      "Se dřevem pracujeme celý život — Jan se k němu dostal přes nábytkový design, Tomas přes truhlařinu. Před pár lety jsme spolu otevřeli dílnu a začali dělat masivní stoly na zakázku.",
+      "Každý stůl na této stránce jsme naplánovali, nařezali, slepili, vybrousili a dokončili sami. Žádní subdodavatelé. Žádný sklad hotových kusů. Začínáme s fošnou, vedeme si poznámky, a končíme stolem, který sedne do konkrétní místnosti.",
+      "Každý stůl je zespodu podepsaný. Když nám ho přinesete za dvacet let na novou vrstvu oleje, budeme si ho pamatovat."
+    ],
+    "signature": "Jan & Tomas",
+    "signatureLabel": "Podpis na každém stole",
+    "imageCaption": "Masivní dřevo s přírodní hranou — tři týdny do hotova",
+    "ctaLabel": "Naplánovat stůl",
+    "ctaSecondary": "Jak pracujeme"
   },
   "featured": {
     "eyebrow": "Aktuálně v dílně",
